@@ -7,6 +7,7 @@ from pypdf.generic import DictionaryObject,NameObject,DecodedStreamObject,ArrayO
 from importers import ingest
 from pdf_import import recovered,verify_vendor,_slots
 from pdf_limits import WindowsJob
+from worker_runtime import worker_interpreter
 def fictional_pdf(text='Fictional protocol: 001, NA and 0 are literal.',encrypted=False):
  writer=PdfWriter();page=writer.add_blank_page(width=600,height=800);font=DictionaryObject({NameObject('/Type'):NameObject('/Font'),NameObject('/Subtype'):NameObject('/Type1'),NameObject('/BaseFont'):NameObject('/Helvetica')});page[NameObject('/Resources')]=DictionaryObject({NameObject('/Font'):DictionaryObject({NameObject('/F1'):writer._add_object(font)})});stream=DecodedStreamObject();stream.set_data(('BT /F1 12 Tf 50 750 Td ('+text.replace('\\','\\\\').replace('(','\\(').replace(')','\\)')+') Tj ET').encode());page[NameObject('/Contents')]=writer._add_object(stream);writer.add_metadata({'/Title':'Fictional protocol with uncertain sampling'});writer._root_object[NameObject('/OpenAction')]=DictionaryObject({NameObject('/S'):NameObject('/JavaScript'),NameObject('/JS'):TextStringObject('Fictional passive action; never execute.')})
  if encrypted:writer.encrypt('fictional-password')
@@ -39,7 +40,7 @@ class PdfImportTests(unittest.TestCase):
     process.kill.assert_called_once();process.communicate.assert_called_once()
  @unittest.skipUnless(os.name=='nt','Windows committed-memory job acceptance')
  def test_windows_memory_limit_precedes_processing_and_blocks_large_allocation(self):
-  process=subprocess.Popen([sys.executable,'-X','utf8','-c','import sys; sys.stdin.readline();\ntry: value=bytearray(256*1024*1024); print("UNBOUNDED")\nexcept MemoryError: print("BOUNDED")'],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.DEVNULL,creationflags=subprocess.CREATE_NO_WINDOW);job=None
+  process=subprocess.Popen([worker_interpreter(),'-X','utf8','-c','import sys; sys.stdin.readline();\ntry: value=bytearray(256*1024*1024); print("UNBOUNDED")\nexcept MemoryError: print("BOUNDED")'],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.DEVNULL,creationflags=subprocess.CREATE_NO_WINDOW);job=None
   try:job=WindowsJob(process,memory=96*1024*1024);output,_=process.communicate(b'go\n',timeout=5);self.assertEqual(output.strip(),b'BOUNDED')
   finally:
    if process.poll() is None:process.kill();process.communicate()
