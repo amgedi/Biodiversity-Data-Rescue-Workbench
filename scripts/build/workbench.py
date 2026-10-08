@@ -93,7 +93,7 @@ def build(release=False,activate=True):
         (STATE/'build-identity.json').write_text(json.dumps(stamp,indent=2))
         stage('Verified source / frozen frontend parity')
         stage('Compiling current root launcher and dispatcher')
-        subprocess.run(['cargo','build','--release','--bins'],cwd=ROOT/'app/launcher/src-tauri',env=env,check=True)
+        subprocess.run(['cargo','build','--release','--bins','--features','custom-protocol'],cwd=ROOT/'app/launcher/src-tauri',env=env,check=True)
         if activate:
             from scripts.launcher.versions import promote
             promote(stamp)

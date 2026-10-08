@@ -6,7 +6,7 @@ def collect(destination):
  def retain(group,name,version,license_value,files):
   folder=destination/group/(name+'-'+version);folder.mkdir(parents=True,exist_ok=True);copied=[]
   for i,p in enumerate(files):
-   if p.is_file():
+   if p.is_file() and '__pycache__' not in p.parts and p.suffix not in ('.pyc','.pyo'):
     target=folder/(str(i)+'-'+p.name);shutil.copy2(p,target);copied.append(target.relative_to(destination).as_posix())
   inventory.append({'group':group,'name':name,'version':version,'license':license_value,'notices':copied})
  base=Path(sys.base_prefix)/'LICENSE.txt'

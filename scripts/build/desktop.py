@@ -30,6 +30,6 @@ def main():
     if (desktop/'engine').exists():
         history=ROOT/'artifacts/build/history';history.mkdir(parents=True,exist_ok=True)
         (desktop/'engine').rename(history/('engine-'+datetime.datetime.now().strftime('%Y%m%d-%H%M%S-%f')))
-    shutil.copytree(ROOT/'artifacts/build/engine/workbench-engine',desktop/'engine')
+    shutil.copytree(ROOT/'artifacts/build/engine/workbench-engine',desktop/'engine',ignore=shutil.ignore_patterns('__pycache__','*.pyc','*.pyo'))
     print('Engine staged; compile the Tauri shell next.')
 if __name__=='__main__':main()
