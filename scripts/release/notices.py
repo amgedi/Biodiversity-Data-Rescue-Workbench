@@ -17,7 +17,7 @@ def collect(destination):
   retain('python',dist.metadata['Name'],dist.version,dist.metadata.get('License-Expression') or dist.metadata.get('License','See notices'),files)
  seen=set()
  for component in ['desktop','launcher']:
-  result=subprocess.run(['cargo','metadata','--locked','--filter-platform','x86_64-pc-windows-msvc','--format-version','1'],cwd=ROOT/'app'/component/'src-tauri',capture_output=True,text=True,check=True)
+  result=subprocess.run(['cargo','metadata','--locked','--filter-platform','x86_64-pc-windows-msvc','--format-version','1'],cwd=ROOT/'app'/component/'src-tauri',capture_output=True,text=True,encoding='utf-8',check=True)
   metadata=json.loads(result.stdout);resolved={n['id'] for n in metadata['resolve']['nodes']}
   for package in metadata['packages']:
    if package['id'] not in resolved or package['id'] in seen or package['source'] is None:continue
