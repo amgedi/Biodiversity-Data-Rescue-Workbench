@@ -1,7 +1,7 @@
 import {t as structuralText,htmlMessage as structuralHtml} from './i18n.mjs';
 import {translateTable,evidenceGuard} from './translation-core.mjs';
 import {profile as legacyProfile, issues as legacyIssues, validateProject as validateV1, TERMS} from './model.mjs';
-export const APP_VERSION = '0.7.0-dev.0';
+export const APP_VERSION = '0.7.0';
 export const STATUSES = ['Confirmed', 'Inferred', 'Unknown', 'Conflicting', 'Not Applicable'];
 export const META_FIELDS = [['title','Title'],['description','Abstract / description'],['purpose','Purpose'],['creator','Creators'],['contributors','Contributors'],['contact','Contacts'],['organizations','Organizations'],['citation','Citation'],['publicationDate','Publication / release date'],['license','License / rights'],['funding','Funding & acknowledgements'],['methods','Methods'],['samplingProtocol','Sampling protocol'],['studyDesign','Study design'],['temporalCoverage','Temporal coverage'],['spatialCoverage','Geographic coverage'],['taxonomicCoverage','Taxonomic coverage'],['keywords','Keywords'],['originalSoftware','Original software / system'],['publications','Related publications / DOI / URL'],['limitations','Known limitations'],['provenance','Provenance'],['sensitivity','Access restrictions'],['datum','Coordinate datum / reference system'],['coordinateUncertainty','Coordinate uncertainty']];
 export const interpretation = (value = '', status = 'Unknown') => ({value, status, confidence:'', rationale:'', evidence:[], reviewerNotes:''});

@@ -8,7 +8,7 @@ A local-first workbench for preserving original files, investigating uncertain d
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
 ![Platform: Windows x64](https://img.shields.io/badge/Platform-Windows_x64-355e49)
-![Status: Development](https://img.shields.io/badge/Status-0.7.0--dev.0-8b6a32)
+[![Release: v0.7.0](https://img.shields.io/badge/Release-v0.7.0-355e49)](https://github.com/amgedi/Biodiversity-Data-Rescue-Workbench/releases/tag/v0.7.0)
 
 ## What is Bio?
 
@@ -49,9 +49,11 @@ Current V7 interface previews with fictional data. These are browser-rendered pr
 
 ## Getting started
 
-Public downloads will become available from [GitHub Releases](https://github.com/amgedi/Biodiversity-Data-Rescue-Workbench/releases) with the first release. **No stable release is available yet.** For a source build, follow [build and test](docs/build.md).
+[Download latest release](https://github.com/amgedi/Biodiversity-Data-Rescue-Workbench/releases/latest) · [Windows x64 portable ZIP](https://github.com/amgedi/Biodiversity-Data-Rescue-Workbench/releases/download/v0.7.0/Biodiversity-Data-Rescue-Workbench-0.7.0-Portable.zip) · [SHA-256 checksums](https://github.com/amgedi/Biodiversity-Data-Rescue-Workbench/releases/download/v0.7.0/SHA256SUMS.txt)
 
-With a development portable package:
+The first release provides a portable package. An installer is not included. For a source build, follow [build and test](docs/build.md).
+
+With the portable package:
 
 1. Extract the complete archive into a writable folder and verify its checksums.
 2. Open **Launch Workbench.exe**, then **Open Workbench**.
@@ -82,9 +84,9 @@ Working storage is not encrypted. Projects normally live under `%LOCALAPPDATA%\B
 
 ## Installation and project status
 
-Current version: **0.7.0-dev.0**. Bio is in early development ahead of its first public release. Windows x64 and WebView2 are required. Development binaries are unsigned. Packaged use does not require Python or Node; source builds need the documented toolchain.
+Current version: **0.7.0**, the first public release. Bio is early 0.x research software; feedback from real datasets is welcome. Windows x64 and WebView2 are required. Binaries are unsigned. Packaged use does not require Python or Node; source builds need the documented toolchain.
 
-The portable distribution includes the launcher and selected runtime; keep all folders together. Installer distribution and stable release acceptance are not claimed. See [architecture](docs/architecture.md) and [build instructions](docs/build.md) for development details.
+The portable distribution includes the launcher and selected runtime; keep all folders together. Installer distribution is not included. Manual native visual acceptance was deferred by the maintainer; automated, native unit, and headless browser checks passed. See [architecture](docs/architecture.md) and [build instructions](docs/build.md) for development details.
 
 ## Contributing
 

@@ -1,6 +1,6 @@
 {
   "name": "biodiversity-data-rescue-workbench",
-  "version": "0.7.0-dev.0",
+  "version": "0.7.0",
   "private": true,
   "type": "module",
   "description": "Local scientific Workbench with a bundled Windows desktop engine and optional browser/PWA developer workflow.",

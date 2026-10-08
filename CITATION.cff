@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it using this metadata."
 type: software
 title: "Biodiversity Data Rescue Workbench"
-version: "0.7.0-dev.0"
+version: "0.7.0"
 authors:
   - name: "amgedi"
 repository-code: "https://github.com/amgedi/Biodiversity-Data-Rescue-Workbench"

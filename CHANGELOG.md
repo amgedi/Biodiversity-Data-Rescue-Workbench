@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased — preparing 0.7.0
+## Unreleased â€” preparing 0.7.0
 
 ### Added
 
@@ -22,4 +22,4 @@
 - Exact table/file search destinations and focus after opening a result.
 - Native drag feedback, visible intake errors and misleading success after rejected file batches.
 
-This section is unreleased. A version heading and release date are added only after final acceptance.
+First public release. Manual native visual acceptance was deferred by the maintainer; automated, native unit, and headless browser checks passed. Windows x64 portable distribution is provided; binaries are unsigned.

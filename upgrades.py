@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 from pathlib import PurePosixPath
 from storage import LOCK, validate
 from migration_registry import Migration, MigrationRegistry
-APP_VERSION='0.7.0-dev.0'
+APP_VERSION='0.7.0'
 SCHEMA_VERSION=3
 def now():return datetime.now(timezone.utc).isoformat()
 def atomic(path,value):
