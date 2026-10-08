@@ -11,9 +11,9 @@ python -m pip install -r requirements-build.txt
 npm ci
 npm test
 python -m unittest discover -s tests
+python scripts/build/workbench.py build
 cargo test --manifest-path app/desktop/src-tauri/Cargo.toml
 cargo test --manifest-path app/launcher/src-tauri/Cargo.toml --bins
-python scripts/build/workbench.py build
 ```
 
 First-time Cargo dependency resolution may require network access. Subsequent cached builds can work offline. Do not assume a pre-existing private runtime folder or compiler cache exists in a fresh clone.
