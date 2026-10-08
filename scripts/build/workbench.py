@@ -82,6 +82,10 @@ def build(release=False,activate=True):
         rust_flags.append('--remap-path-prefix='+str(Path.home())+'=/build-user')
         env['CARGO_ENCODED_RUSTFLAGS']='\x1f'.join(rust_flags)
         env.pop('RUSTFLAGS',None)
+        if os.name=='nt':
+            pathmap='/pathmap:'+str(Path.home())+'=/build-user'
+            for flag_name in ('CFLAGS','CXXFLAGS'):
+                env[flag_name]=(env.get(flag_name,'')+' '+pathmap).strip()
         env['WORKBENCH_BUILD_ID']=stamp['buildId'];env['WORKBENCH_SOURCE_FINGERPRINT']=stamp['sourceFingerprint']
         subprocess.run([str(ROOT/'node_modules/.bin/tauri.cmd'),'build'],cwd=ROOT/'app/desktop/src-tauri',env=env,check=True)
         exe=ROOT/'app/desktop/src-tauri/target/release/biodiversity-workbench.exe'
