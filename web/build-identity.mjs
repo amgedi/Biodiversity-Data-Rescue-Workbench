@@ -1,0 +1,2 @@
+export let buildIdentity={buildId:'Identity unavailable',sourceFingerprint:null,engineFingerprint:null,frontendFingerprint:null,builtAt:null};
+export const identityReady=fetch('/api/build-identity',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Build identity unavailable');return r.json();}).then(value=>{buildIdentity=Object.freeze(value);window.dispatchEvent(new CustomEvent('biorescue-build-identity'));}).catch(()=>{});

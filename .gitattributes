@@ -1,2 +1,2 @@
-# Preserve bytes for hash-checked vendored resources and source fingerprints.
-* -text
+# Preserve bytes for hash-checked resources and source fingerprints.
+* -text whitespace=cr-at-eol

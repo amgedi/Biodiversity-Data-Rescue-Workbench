@@ -38,7 +38,6 @@ support-bundles/
 *.key
 credentials*.json
 web/build-identity.json
-web/build-identity.mjs
 
 # Local development history; retain privately, do not publish
 CURRENT_STATUS.md
