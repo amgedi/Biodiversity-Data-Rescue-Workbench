@@ -11,7 +11,7 @@ def source_files():
     files = list(ROOT.glob('*.py'))
     for name in ('web', 'scripts/build', 'scripts/release', 'scripts/launcher', 'vendor', 'vendor-xls', 'vendor-dwca', 'app/desktop/startup', 'app/desktop/src-tauri/src', 'app/desktop/src-tauri/capabilities', 'app/desktop/src-tauri/permissions', 'app/launcher/src', 'app/launcher/web','app/launcher/src-tauri/src','app/launcher/src-tauri/capabilities'):
         files += [p for p in (ROOT/name).rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name != 'build-identity.json']
-    for name in ('package.json','package-lock.json','requirements-crypto.txt','requirements-standards.txt','app/desktop/src-tauri/Cargo.toml','app/desktop/src-tauri/Cargo.lock','app/desktop/src-tauri/build.rs','app/desktop/src-tauri/tauri.conf.json','app/launcher/src-tauri/Cargo.toml','app/launcher/src-tauri/Cargo.lock','app/launcher/src-tauri/build.rs','app/launcher/src-tauri/tauri.conf.json'):
+    for name in ('package.json','package-lock.json','requirements-build.txt','requirements-crypto.txt','requirements-standards.txt','app/desktop/src-tauri/Cargo.toml','app/desktop/src-tauri/Cargo.lock','app/desktop/src-tauri/build.rs','app/desktop/src-tauri/tauri.conf.json','app/launcher/src-tauri/Cargo.toml','app/launcher/src-tauri/Cargo.lock','app/launcher/src-tauri/build.rs','app/launcher/src-tauri/tauri.conf.json'):
         files.append(ROOT/name)
     candidates=sorted(set(p for p in files if p.is_file()))
     if (ROOT/'.git').exists():
@@ -23,10 +23,14 @@ def source_files():
 def identity():
     manifest = {p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in source_files()}
     digest = lambda items: hashlib.sha256(json.dumps(items, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
+    commit=None
+    if (ROOT/'.git').exists():
+        result=subprocess.run(['git','rev-parse','HEAD'],cwd=ROOT,capture_output=True,text=True)
+        if result.returncode==0:commit=result.stdout.strip()
     return {'version':json.loads((ROOT/'package.json').read_text())['version'], 'checkpoint':CHECKPOINT,
             'sourceFingerprint':digest(manifest), 'frontendFingerprint':digest({n:h for n,h in manifest.items() if n.startswith('web/')}),
             'engineFingerprint':digest({n:h for n,h in manifest.items() if n.endswith('.py') and '/' not in n or n.startswith(('vendor/','vendor-xls/','vendor-dwca/'))}),
-            'gitCommit':None, 'sourceFiles':manifest}
+            'gitCommit':commit, 'sourceFiles':manifest}
 
 def status():
     now=identity(); path=STATE/'build-identity.json'
