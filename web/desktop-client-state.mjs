@@ -1,5 +1,5 @@
 const invoke=globalThis.window?.__TAURI_INTERNALS__?.invoke;
-export const persistentKey=key=>['biorescue-grid-views','biorescue-preferences','biorescue-workspace-profile','biorescue-mode','biorescue-language','biorescue-local-templates','biorescue-theme','biorescue-help-read-v7','biorescue-search-recent-v7'].includes(key)||key.startsWith('biorescue-product-tour-v');
+export const persistentKey=key=>['biorescue-grid-views','biorescue-preferences','biorescue-workspace-profile','biorescue-mode','biorescue-language','biorescue-local-templates','biorescue-theme','biorescue-help-read-v7','biorescue-support','biorescue-search-recent-v7'].includes(key)||key.startsWith('biorescue-product-tour-v');
 let writes=Promise.resolve();
 export const nativePreferencesReady=(async()=>{
  if(!invoke)return;

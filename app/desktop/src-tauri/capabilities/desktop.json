@@ -25,6 +25,7 @@
     "allow-native-window-action",
     "allow-native-accessibility",
     "allow-initial-route",
-    "allow-native-stream-save"
+    "allow-native-stream-save",
+    "allow-support-open"
   ]
 }

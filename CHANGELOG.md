@@ -4,6 +4,9 @@
 
 ### Added
 
+- Optional Support Bio panels in the Workbench and launcher, with verified external support links.
+- A persistent reminder opt-out and at most two quiet reminders, ninety days apart, after completing a lesson.
+
 - Local-first source preservation, extraction inspection, evidence and uncertainty review.
 - Native Windows Workbench and launcher with explicit current-build identity and recoverable version history.
 - Searchable Help Center, learning paths, guided tutorials and offline Bio Buddy guidance.

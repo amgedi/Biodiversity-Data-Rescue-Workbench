@@ -11,7 +11,7 @@ def source_files():
     files = list(ROOT.glob('*.py'))
     for name in ('web', 'third-party', 'scripts/build', 'scripts/release', 'scripts/launcher', 'vendor', 'vendor-xls', 'vendor-dwca', 'app/desktop/startup', 'app/desktop/src-tauri/src', 'app/desktop/src-tauri/capabilities', 'app/desktop/src-tauri/permissions', 'app/launcher/src', 'app/launcher/web','app/launcher/src-tauri/src','app/launcher/src-tauri/capabilities'):
         files += [p for p in (ROOT/name).rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name != 'build-identity.json']
-    for name in ('package.json','package-lock.json','requirements-build.txt','requirements-crypto.txt','requirements-standards.txt','app/desktop/src-tauri/Cargo.toml','app/desktop/src-tauri/Cargo.lock','app/desktop/src-tauri/build.rs','app/desktop/src-tauri/tauri.conf.json','app/launcher/src-tauri/Cargo.toml','app/launcher/src-tauri/Cargo.lock','app/launcher/src-tauri/build.rs','app/launcher/src-tauri/tauri.conf.json'):
+    for name in ('app/support-links.rs','package.json','package-lock.json','requirements-build.txt','requirements-crypto.txt','requirements-standards.txt','app/desktop/src-tauri/Cargo.toml','app/desktop/src-tauri/Cargo.lock','app/desktop/src-tauri/build.rs','app/desktop/src-tauri/tauri.conf.json','app/launcher/src-tauri/Cargo.toml','app/launcher/src-tauri/Cargo.lock','app/launcher/src-tauri/build.rs','app/launcher/src-tauri/tauri.conf.json'):
         files.append(ROOT/name)
     candidates=sorted(set(p for p in files if p.is_file()))
     if (ROOT/'.git').exists():

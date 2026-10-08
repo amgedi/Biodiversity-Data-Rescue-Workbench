@@ -54,3 +54,5 @@ html[data-motion=off] .global-search-dialog,html[data-motion=reduced] .global-se
 .search-field{flex-direction:row}.intake-add-actions{max-width:none}.intake-add-actions small{min-width:180px}.source-intake-dialog .intake-options summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}html[data-motion=off] .source-drop-zone,html[data-motion=reduced] .source-drop-zone{transition:none}
 .global-search-field{width:100%;max-width:none}
 #help-article{scroll-margin-top:90px}
+
+.support-reminder,.support-settings{max-width:680px;margin-top:32px;padding:22px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}.support-reminder p,.support-settings p{color:var(--muted);line-height:1.6}.support-reminder .heading-actions{gap:16px;flex-wrap:wrap}.support-reminder-control{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:24px}.support-reminder-control small{display:block;margin-top:6px;color:var(--muted)}

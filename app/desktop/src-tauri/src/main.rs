@@ -1,4 +1,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+#[path="../../../support-links.rs"] mod support_links;
 use std::{fs, io::{BufRead, BufReader, Write, Read}, path::{Path, PathBuf}, process::{Child, Command, Stdio}, sync::{Mutex, atomic::{AtomicUsize, Ordering}}, time::Duration};
 use tauri::{Manager, Emitter, WebviewUrl, WebviewWindowBuilder};
 use tauri_plugin_dialog::DialogExt;
@@ -63,7 +64,7 @@ fn caption_theme(window:&tauri::WebviewWindow,name:&str)->Result<(),String>{
 #[derive(Deserialize)] struct Ready {port:u16,token:String}
 #[derive(Clone, Serialize)] struct Intake {name:String,base64:String}
 
-fn client_key(key:&str)->bool {key.len()<=160 && (matches!(key,"biorescue-grid-views"|"biorescue-preferences"|"biorescue-workspace-profile"|"biorescue-mode"|"biorescue-language"|"biorescue-local-templates"|"biorescue-theme"|"biorescue-help-read-v7"|"biorescue-search-recent-v7")||key.starts_with("biorescue-product-tour-v"))}
+fn client_key(key:&str)->bool {key.len()<=160 && (matches!(key,"biorescue-grid-views"|"biorescue-preferences"|"biorescue-workspace-profile"|"biorescue-mode"|"biorescue-language"|"biorescue-local-templates"|"biorescue-theme"|"biorescue-help-read-v7"|"biorescue-support"|"biorescue-search-recent-v7")||key.starts_with("biorescue-product-tour-v"))}
 fn identifier(value:&str)->bool {!value.is_empty()&&value.len()<=120&&value.bytes().all(|c|c.is_ascii_alphanumeric()||c==b'-'||c==b'_')}
 fn read_json(path:&Path,limit:u64)->Result<serde_json::Value,String>{let file=fs::File::open(path).map_err(|_|"Local client storage could not be read")?;let mut bytes=vec![];file.take(limit+1).read_to_end(&mut bytes).map_err(|_|"Local client storage could not be read")?;if bytes.len() as u64>limit{return Err("Local client storage exceeds its limit".into())}serde_json::from_slice(&bytes).map_err(|_|"Local client configuration is invalid".into())}
 fn publish_json(path:&Path,value:&serde_json::Value)->Result<(),String>{let bytes=serde_json::to_vec(value).map_err(|_|"Client state could not be encoded")?;let parent=path.parent().ok_or("Invalid client storage location")?;fs::create_dir_all(parent).map_err(|_|"Local client storage is unavailable")?;let temp=path.with_extension("pending");let mut file=fs::OpenOptions::new().write(true).create_new(true).open(&temp).map_err(|_|"A client write is already pending; keep this window open")?;if file.write_all(&bytes).and_then(|_|file.sync_all()).is_err(){let _=fs::remove_file(&temp);return Err("Client state could not be saved".into())}drop(file);if fs::rename(&temp,path).is_err(){let _=fs::remove_file(&temp);return Err("Client state could not be published".into())}Ok(())}
@@ -190,6 +191,7 @@ fn stream_route(kind:&str,id:&str)->Result<String,String>{if id.is_empty()||id.l
  if let Err(error)=file.write_all(&bytes).and_then(|_|file.sync_all()){let _=fs::remove_file(temp);return Err(error.to_string())}drop(file);
  if let Err(error)=fs::rename(&temp,&path){let _=fs::remove_file(temp);return Err(error.to_string())}Ok(true)
  }).await.map_err(|e|e.to_string())?}
+#[tauri::command] fn support_open(destination:String)->Result<(),String>{support_links::open(&destination)}
 fn main(){
  // Check before the single-instance plugin forwards anything to an older shell.
  // The identical executable may forward project/library arguments; other builds stay isolated.
@@ -209,7 +211,7 @@ fn main(){
  }
  let data=std::env::var_os("WORKBENCH_DESKTOP_DATA").map(PathBuf::from).unwrap_or_else(||PathBuf::from(std::env::var_os("LOCALAPPDATA").expect("LOCALAPPDATA unavailable")).join("Biodiversity Data Rescue Workbench").join("projects-data"));
  let logs=data.parent().unwrap_or(&data).join("logs");
- let app=tauri::Builder::default().plugin(tauri_plugin_single_instance::init(|app,args,_|{let handle=app.clone();let route=launch_route(&args);tauri::async_runtime::spawn(async move{let _=open_workbench(handle,route).await;});})).plugin(tauri_plugin_dialog::init()).manage(State{engine:Mutex::new(Engine::default()),counter:AtomicUsize::new(1),data,logs,client:Mutex::new(()),initial_route:Mutex::new(launch_route(&std::env::args().collect::<Vec<_>>()))}).invoke_handler(tauri::generate_handler![initial_route,native_accessibility,engine_status,retry_engine,close_startup,open_workbench,open_logs,native_intake,native_clipboard_intake,native_stream_save,native_save,native_client_state,native_window_recovery,native_window_action]).setup(|app|{
+ let app=tauri::Builder::default().plugin(tauri_plugin_single_instance::init(|app,args,_|{let handle=app.clone();let route=launch_route(&args);tauri::async_runtime::spawn(async move{let _=open_workbench(handle,route).await;});})).plugin(tauri_plugin_dialog::init()).manage(State{engine:Mutex::new(Engine::default()),counter:AtomicUsize::new(1),data,logs,client:Mutex::new(()),initial_route:Mutex::new(launch_route(&std::env::args().collect::<Vec<_>>()))}).invoke_handler(tauri::generate_handler![support_open,initial_route,native_accessibility,engine_status,retry_engine,close_startup,open_workbench,open_logs,native_intake,native_clipboard_intake,native_stream_save,native_save,native_client_state,native_window_recovery,native_window_action]).setup(|app|{
   startup(app.handle()).map_err(std::io::Error::other)?;engine_start(app.handle().clone());Ok(())
  }).build(tauri::generate_context!()).expect("Could not initialize Workbench desktop");
  app.run(|app,event|{if matches!(event,tauri::RunEvent::Exit){let state=app.state::<State>();let mut engine=state.engine.lock().unwrap();if let Some(mut child)=engine.child.take(){drop(child.stdin.take());for _ in 0..100{if matches!(child.try_wait(),Ok(Some(_))){return}std::thread::sleep(Duration::from_millis(100));}let _=child.kill();let _=child.wait();}}});

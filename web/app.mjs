@@ -1,3 +1,74 @@
+// web/support.mjs
+var destinations = Object.freeze([
+  Object.freeze({ id: "github-sponsors", label: "GitHub Sponsors", url: "https://github.com/sponsors/amgedi" }),
+  Object.freeze({ id: "ko-fi", label: "Ko-fi", url: "https://ko-fi.com/openfhs" })
+]);
+var SUPPORT_KEY = "biorescue-support";
+var COOLDOWN = 90 * 24 * 60 * 60 * 1e3;
+var initialSupport = () => ({ enabled: true, eligible: false, lastShown: 0, dismissed: 0, shown: 0 });
+function cleanSupport(value) {
+  const clean = initialSupport();
+  if (!value || typeof value !== "object") return clean;
+  clean.enabled = value.enabled !== false;
+  clean.eligible = value.eligible === true;
+  for (const key2 of ["lastShown", "dismissed", "shown"]) clean[key2] = Number.isSafeInteger(value[key2]) && value[key2] >= 0 ? value[key2] : 0;
+  return clean;
+}
+function readSupport(storage = localStorage) {
+  try {
+    return cleanSupport(JSON.parse(storage.getItem(SUPPORT_KEY) || "null"));
+  } catch {
+    return { ...initialSupport(), enabled: false };
+  }
+}
+function updateSupport(patch, storage = localStorage) {
+  const state = cleanSupport({ ...readSupport(storage), ...patch });
+  storage.setItem(SUPPORT_KEY, JSON.stringify(state));
+  return state;
+}
+function reminderEligible(state, context, now = Date.now()) {
+  return state.enabled && state.eligible && state.shown < 2 && context.route === "Home" && !context.projectOpen && !context.busy && !context.dialogOpen && !context.errorSeen && now - Math.max(state.lastShown, state.dismissed) >= COOLDOWN;
+}
+async function openSupport(id, { invoke = globalThis.window?.__TAURI_INTERNALS__?.invoke, open = globalThis.window?.open?.bind(globalThis.window) } = {}) {
+  const target = destinations.find((item) => item.id === id);
+  if (!target) throw Error("Unknown support destination.");
+  if (invoke) return invoke("support_open", { destination: id });
+  if (!open) throw Error("The browser could not be opened.");
+  open(target.url, "_blank", "noopener,noreferrer");
+}
+function supportPanel() {
+  return `<p>Bio is free and open source.</p><p>If the Workbench helped you preserve or rescue a dataset, optional support helps fund development, testing, documentation, accessibility, and long-term maintenance.</p><div class="heading-actions">${destinations.map((d) => `<button class="button" data-support-destination="${d.id}">${d.label} \u2197</button>`).join("")}</div><p class="muted">Opens the selected page in your browser. Every feature remains free.</p><button class="button" data-action="dismiss">Maybe later</button>`;
+}
+function mountSupportReminder(host, context, { storage = localStorage, openPanel, now = Date.now() } = {}) {
+  const state = readSupport(storage);
+  if (!host || !reminderEligible(state, context, now)) return false;
+  try {
+    updateSupport({ lastShown: now, shown: state.shown + 1 }, storage);
+  } catch {
+    return false;
+  }
+  const card = document.createElement("aside");
+  card.className = "support-reminder";
+  card.setAttribute("aria-label", "Optional project support");
+  card.innerHTML = '<strong>Enjoying Bio?</strong><p>Bio is free and open source. If it has been useful, you can support continued development.</p><div class="heading-actions"><button class="text-button" data-support-yes>Support Bio</button><button class="text-button" data-support-later>Not now</button><button class="text-button" data-support-never>Don\u2019t show this again</button></div>';
+  host.append(card);
+  const dismiss = (patch) => {
+    try {
+      updateSupport({ dismissed: now, ...patch }, storage);
+    } catch {
+    } finally {
+      card.remove();
+    }
+  };
+  card.querySelector("[data-support-yes]").onclick = () => {
+    dismiss({});
+    openPanel();
+  };
+  card.querySelector("[data-support-later]").onclick = () => dismiss({});
+  card.querySelector("[data-support-never]").onclick = () => dismiss({ enabled: false });
+  return true;
+}
+
 // web/v7/workspaces/native-drop.mjs
 async function mountNativeDrop({ listen, dialog, intake, open, notice: notice2 }) {
   const target = () => {
@@ -35948,6 +36019,7 @@ function learningCenter(api) {
       record.updatedAt = (/* @__PURE__ */ new Date()).toISOString();
       store(lesson2.id, record);
       if (finished) {
+        if (record.complete) window.dispatchEvent(new CustomEvent("biorescue-lesson-complete"));
         clear();
         navigate2("Learning");
         notice2(record.complete ? "Lesson completed; every registered target was observed. Scientific data were not changed." : "Lesson remains incomplete because one or more registered targets were skipped.");
@@ -36568,6 +36640,27 @@ function projectLibrary(api) {
 // web/v7/app.mjs
 var $ = (s) => document.querySelector(s);
 var native2 = window.__TAURI_INTERNALS__?.invoke;
+var supportErrorSeen = false;
+function showSupport() {
+  modal("Support Biodiversity Data Rescue Workbench", supportPanel());
+}
+window.addEventListener("biorescue-lesson-complete", () => {
+  try {
+    updateSupport({ eligible: true });
+  } catch {
+  }
+});
+document.addEventListener("click", safe(async (event) => {
+  const target = event.target.closest("[data-support-destination]");
+  if (target) await openSupport(target.dataset.supportDestination);
+  const toggle = event.target.closest("[data-support-toggle]");
+  if (toggle) {
+    const state = updateSupport({ enabled: !readSupport().enabled });
+    toggle.setAttribute("aria-pressed", String(state.enabled));
+    toggle.textContent = state.enabled ? "On" : "Off";
+    notice("Support reminders " + (state.enabled ? "enabled." : "disabled."));
+  }
+}));
 var adaptToZoom = () => {
   const zoom = Number(getComputedStyle(document.documentElement).zoom) || 1;
   document.body.classList.toggle("zoom-compact", window.innerWidth / zoom <= 950 && zoom > 1);
@@ -36621,6 +36714,10 @@ async function request(path, body) {
 }
 var json = async (path, body) => (await request(path, body)).json();
 function notice(message, error = false) {
+  if (error) {
+    supportErrorSeen = true;
+    document.querySelector(".support-reminder")?.remove();
+  }
   const host = $("#notice");
   host.textContent = message;
   host.className = "visible" + (error ? " error" : "");
@@ -36890,6 +36987,8 @@ function render() {
     default:
       main.innerHTML = home(projects);
   }
+  if (route === "Settings" && category === "About") main.querySelector(".preferences-content").insertAdjacentHTML("beforeend", `<section class="support-settings"><h3>Support the project</h3><p>Bio is free and open source. Supporting development is always optional.</p><button class="button" data-action="support-bio">Support Bio</button><div class="support-reminder-control"><span>Support reminders<small>At most twice, at least 90 days apart, after completing a lesson.</small></span><button class="button" data-support-toggle aria-pressed="${readSupport().enabled}">${readSupport().enabled ? "On" : "Off"}</button></div></section>`);
+  mountSupportReminder(main, { route, projectOpen: !!project, busy, dialogOpen: !!document.querySelector("dialog[open]"), errorSeen: supportErrorSeen || !!window.__WORKBENCH_CLIENT_WARNING__ }, { openPanel: showSupport });
   bindChoices();
   bindForms();
   drafts.restore();
@@ -37173,7 +37272,7 @@ function menu() {
   const host = $("#command-menu");
   host.hidden = !host.hidden;
   if (host.hidden) return;
-  host.innerHTML = `<span class="eyebrow">PROJECT</span><button data-action="import">${icon2("plus")}New rescue / Add source</button><button data-route="Projects">${icon2("library")}Open project</button>${native2 ? `<button data-action="new-window">${icon2("window")}New window <kbd>Ctrl Shift N</kbd></button>` : ""}<span class="eyebrow">PACKAGE</span><button data-route="Package">${icon2("package")}Create package</button><button data-action="backup">${icon2("backup")}Project backup</button><span class="eyebrow">APPLICATION</span><button data-route="Settings">${icon2("settings")}Settings</button><button data-route="Help">${icon2("help")}Help & Learning</button><button data-action="commands">${icon2("search")}Search commands <kbd>Ctrl K</kbd></button>`;
+  host.innerHTML = `<span class="eyebrow">PROJECT</span><button data-action="import">${icon2("plus")}New rescue / Add source</button><button data-route="Projects">${icon2("library")}Open project</button>${native2 ? `<button data-action="new-window">${icon2("window")}New window <kbd>Ctrl Shift N</kbd></button>` : ""}<span class="eyebrow">PACKAGE</span><button data-route="Package">${icon2("package")}Create package</button><button data-action="backup">${icon2("backup")}Project backup</button><span class="eyebrow">APPLICATION</span><button data-action="support-bio">${icon2("help")}Support Bio</button><button data-route="Settings">${icon2("settings")}Settings</button><button data-route="Help">${icon2("help")}Help & Learning</button><button data-action="commands">${icon2("search")}Search commands <kbd>Ctrl K</kbd></button>`;
   host.querySelector("button")?.focus();
 }
 var tourStops = [["Sources", '[data-action="verify"]', "Your originals live here.", "Check retained source hashes and byte lengths before relying on the working extraction."], ["Understand", '[data-action="understand-grid"]', "Explore without guessing.", "Candidate findings report bounded evidence. Open the data workspace to inspect literal values."], ["Review", ".decision-main", "A decision needs a reason.", "Queue decisions organize your investigation; they do not confirm scientific meaning."], ["Repair", ".repair-layout", "Preview before changing.", "Mechanical changes act on working values and retain an audited reason."], ["Standardize", ".mapping-workspace", "Meaning comes before mapping.", "A field definition, its evidence and its standard term remain explicit."], ["Validate", ".validation-summary", "Checks have limits.", "Structural blockers, review warnings and advisory unknowns remain distinct."], ["Package", ".package-preflight", "Review what leaves the workstation.", "Private preservation packages contain originals and sensitive research."]];
@@ -37309,6 +37408,7 @@ document.addEventListener("click", safe(async (event) => {
   else if (action === "inspect-import") await inspectImport();
   else if (action === "dismiss" || action === "end-tour") $("#dialog").close();
   else if (action === "commands") commands();
+  else if (action === "support-bio") showSupport();
   else if (action === "menu") menu();
   else if (action === "assistant") {
     if (inspectorOpen) closeInspector();

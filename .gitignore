@@ -62,3 +62,10 @@ Desktop.ini
 
 # Historical stylesheet reconstruction depends on private build captures
 scripts/build/styles.cjs
+
+# Reviewed public interface previews only
+!docs/images/
+docs/images/*
+!docs/images/workbench-home.jpg
+!docs/images/help-center.jpg
+!docs/images/launcher.jpg

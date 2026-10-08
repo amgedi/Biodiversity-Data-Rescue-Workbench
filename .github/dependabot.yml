@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: monthly
+  - package-ecosystem: cargo
+    directory: /app/desktop/src-tauri
+    schedule:
+      interval: monthly
+  - package-ecosystem: cargo
+    directory: /app/launcher/src-tauri
+    schedule:
+      interval: monthly
