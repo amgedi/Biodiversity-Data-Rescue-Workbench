@@ -29,6 +29,8 @@ def main():
   if source.exists():target=portable/'docs'/name;target.parent.mkdir(exist_ok=True);shutil.copy2(source,target)
  (portable/'INSTALL.txt').write_text('Biodiversity Data Rescue Workbench '+version+'\n\nExtract the entire archive to a writable directory. Open Launch Workbench.exe. Keep all folders together. Windows x64 and WebView2 are required. Python and Node are not required.\n\nBinaries are unsigned. Verify SHA256SUMS.txt from a trusted source. Projects remain under the separate local application-data library. Saved projects are not independent backups.\n\nThis package contains one verified runtime. Local source installations can retain additional builds; this portable archive does not include private rollback history.\n\nNo automatic update installation is claimed. Use Check for updates to compare official GitHub releases, then obtain the complete newer package from the release page.\n')
  (portable/'SOURCE.txt').write_text('Original code: AGPL-3.0-only. Corresponding source and build instructions:\nhttps://github.com/amgedi/Biodiversity-Data-Rescue-Workbench\nBuild: '+bid+'\nVersion: '+version+'\nThird-party licenses remain with their source/resources.\n')
+ from scripts.release.notices import collect
+ notice_count=collect(portable/'third-party-notices')
  checks={p.relative_to(portable).as_posix():sha(p) for p in portable.rglob('*') if p.is_file()}
  (portable/'SHA256.json').write_text(json.dumps(checks,indent=2))
  archive=output/(portable.name+'.zip')
