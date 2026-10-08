@@ -13,7 +13,7 @@ def collect(destination):
  if not base.is_file():raise RuntimeError('Python distribution license is missing')
  retain('python','CPython',sys.version.split()[0],'PSF', [base])
  for dist in importlib.metadata.distributions():
-  files=[Path(dist.locate_file(f)) for f in (dist.files or []) if any(part.lower().startswith(('license','copying','notice')) for part in f.parts)]
+  files=[Path(dist.locate_file(f)) for f in (dist.files or []) if any(part.lower().startswith(('license','licence','copying','notice')) for part in f.parts)]
   retain('python',dist.metadata['Name'],dist.version,dist.metadata.get('License-Expression') or dist.metadata.get('License','See notices'),files)
  seen=set()
  for component in ['desktop','launcher']:
@@ -22,8 +22,11 @@ def collect(destination):
   for package in metadata['packages']:
    if package['id'] not in resolved or package['id'] in seen or package['source'] is None:continue
    seen.add(package['id']);base=Path(package['manifest_path']).parent
-   files=[p for p in base.iterdir() if p.is_file() and p.name.lower().startswith(('license','copying','notice'))]
+   files=[p for p in base.iterdir() if p.is_file() and p.name.lower().startswith(('license','licence','copying','notice'))]
    if package.get('license_file'):files.append(base/package['license_file'])
+   supplement=ROOT/'third-party/licenses'/(package['name']+'-'+package['version'])
+   if supplement.is_dir():files.extend(p for p in supplement.iterdir() if p.is_file())
+   if not files:raise RuntimeError('Dependency license notice missing: '+package['name'])
    retain('rust',package['name'],package['version'],package.get('license') or 'See notices',files)
  for name in ['react','react-dom','scheduler']:
   base=ROOT/'node_modules'/name;package=json.loads((base/'package.json').read_text())
