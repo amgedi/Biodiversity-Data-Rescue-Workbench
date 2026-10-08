@@ -9,3 +9,5 @@ Version and OS:
 Steps to reproduce:
 Expected behavior:
 Actual behavior:
+
+Screenshots (optional; remove private data and local paths):

@@ -36987,7 +36987,7 @@ function render() {
     default:
       main.innerHTML = home(projects);
   }
-  if (route === "Settings" && category === "About") main.querySelector(".preferences-content").insertAdjacentHTML("beforeend", `<section class="support-settings"><h3>Support the project</h3><p>Bio is free and open source. Supporting development is always optional.</p><button class="button" data-action="support-bio">Support Bio</button><div class="support-reminder-control"><span>Support reminders<small>At most twice, at least 90 days apart, after completing a lesson.</small></span><button class="button" data-support-toggle aria-pressed="${readSupport().enabled}">${readSupport().enabled ? "On" : "Off"}</button></div></section>`);
+  if (route === "Settings" && category === "About") main.querySelector(".preferences-content").insertAdjacentHTML("beforeend", `<section class="support-settings"><h3>Support the project</h3><p>Bio is free and open source. Supporting development is always optional.</p><button class="button" data-action="support-bio">Support Bio</button><div class="support-reminder-control"><span>Support reminders<small>At most twice, at least 90 days apart, after completing a lesson.</small></span><button class="button" data-support-toggle aria-label="Support reminders" aria-pressed="${readSupport().enabled}">${readSupport().enabled ? "On" : "Off"}</button></div></section>`);
   mountSupportReminder(main, { route, projectOpen: !!project, busy, dialogOpen: !!document.querySelector("dialog[open]"), errorSeen: supportErrorSeen || !!window.__WORKBENCH_CLIENT_WARNING__ }, { openPanel: showSupport });
   bindChoices();
   bindForms();
@@ -37033,6 +37033,7 @@ function bindForms() {
   });
 }
 function modal(title, body) {
+  document.querySelector(".support-reminder")?.remove();
   drafts.capture();
   const dialog = $("#dialog");
   if (dialog.open) dialog.close();
