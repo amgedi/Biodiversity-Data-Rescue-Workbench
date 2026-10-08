@@ -34,7 +34,7 @@ def main():
  checks={p.relative_to(portable).as_posix():sha(p) for p in portable.rglob('*') if p.is_file()}
  (portable/'SHA256.json').write_text(json.dumps(checks,indent=2))
  archive=output/(portable.name+'.zip')
- with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
+ with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,strict_timestamps=False) as z:
   for p in portable.rglob('*'):
    if p.is_file():z.write(p,p.relative_to(portable.parent))
  with zipfile.ZipFile(archive) as z:assert z.testzip() is None

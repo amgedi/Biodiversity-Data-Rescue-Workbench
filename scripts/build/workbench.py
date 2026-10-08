@@ -48,7 +48,8 @@ def validate_release_acceptance(record, fingerprint):
             and all(record.get(key) is True for key in ('featureParityComplete','desktopAcceptance','launcherAccepted','helpTutorialParity'))
             and type(record.get('packagedVisualIterations')) is int and record['packagedVisualIterations']>=3)
 
-def build(release=False):
+def build(release=False,activate=True):
+    if release and not activate:raise RuntimeError('Release mode requires completed activation acceptance; use build --no-activate for a background candidate.')
     subprocess.run(['node',str(ROOT/'scripts/build/ui_v7.mjs')],cwd=ROOT,check=True)
     (ROOT/'web/styles.css').write_text((ROOT/'web/v7/design-system/workstation.css').read_text(encoding='utf-8')+'\n'+(ROOT/'web/v7/design-system/pre-release.css').read_text(encoding='utf-8'),encoding='utf-8')
     subprocess.run(['node',str(ROOT/'scripts/build/launcher_v2.mjs')],cwd=ROOT,check=True)
@@ -93,8 +94,11 @@ def build(release=False):
         stage('Verified source / frozen frontend parity')
         stage('Compiling current root launcher and dispatcher')
         subprocess.run(['cargo','build','--release','--bins'],cwd=ROOT/'app/launcher/src-tauri',env=env,check=True)
-        from scripts.launcher.versions import promote
-        promote(stamp)
+        if activate:
+            from scripts.launcher.versions import promote
+            promote(stamp)
+        else:
+            stage('Compiled candidate verified; activation skipped by request')
         if release:
             env['WORKBENCH_RELEASE_OUTPUT']=str(ROOT/'release/staging'/stamp['buildId'])
             subprocess.run([sys.executable,str(ROOT/'scripts/release/package.py')],cwd=ROOT,env=env,check=True)
@@ -104,13 +108,13 @@ def build(release=False):
 
 def main():
     if os.environ.get('WORKBENCH_LAUNCHER_GATE')=='1' and sys.stdin.readline().strip()!='START': raise RuntimeError('Launcher cancelled before owned job initialization.')
-    parser=argparse.ArgumentParser();parser.add_argument('mode',choices=['status','build','release','web','development','regression']);parser.add_argument('--port',type=int,default=8768);args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('mode',choices=['status','build','release','web','development','regression']);parser.add_argument('--port',type=int,default=8768);parser.add_argument('--no-activate',action='store_true',help='Compile and verify without changing active versions or opening windows');args=parser.parse_args()
     if args.mode=='regression':
         subprocess.run(['node','--test','--test-isolation=none',*[str(p) for p in sorted((ROOT/'tests').glob('*.test.mjs'))]],cwd=ROOT,check=True)
         subprocess.run([sys.executable,'-m','unittest','discover','-s','tests'],cwd=ROOT,check=True)
         return
     if args.mode=='status': print(json.dumps(status()));return
-    if args.mode in ('build','release'): build(args.mode=='release');return
+    if args.mode in ('build','release'): build(args.mode=='release',not args.no_activate);return
     data=Path(os.environ['WORKBENCH_LAUNCHER_DATA']) if os.environ.get('WORKBENCH_LAUNCHER_DATA') else Path(os.environ.get('LOCALAPPDATA',str(ROOT/'artifacts')))/'Biodiversity Data Rescue Workbench'/('development-data' if args.mode=='development' else 'launcher-web-data')
     stage('Starting isolated '+args.mode+' workspace')
     subprocess.run([sys.executable,'-X','utf8',str(ROOT/'server.py'),'--port',str(args.port),'--data-dir',str(data)],cwd=ROOT,check=True)

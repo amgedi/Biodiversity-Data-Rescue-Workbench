@@ -27,3 +27,5 @@ python server.py --port 8766 --data-dir .local-preview
 ```
 
 Open `http://127.0.0.1:8766/`. Stop the process when finished. Use synthetic data; this mode is for local development. See [release process](release-process.md) for candidate packaging and acceptance.
+
+For unattended compilation without opening windows or changing the active runtime, use `python scripts/build/workbench.py build --no-activate`. Native visible acceptance and activation remain separate release requirements.
