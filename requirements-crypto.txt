@@ -1,2 +1,2 @@
 # Optional file-backed large-investigation encrypted portability; bundled for desktop.
-cryptography==48.0.0
+cryptography==50.0.2

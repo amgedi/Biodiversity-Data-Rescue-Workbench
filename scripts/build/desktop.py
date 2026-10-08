@@ -6,7 +6,7 @@ desktop=ROOT/'app/desktop/src-tauri'
 def main():
     from PIL import Image
     import cryptography
-    if cryptography.__version__!='48.0.0':raise RuntimeError('Install the pinned requirements-crypto.txt before building the encrypted portability engine.')
+    if cryptography.__version__!='50.0.2':raise RuntimeError('Install the pinned requirements-crypto.txt before building the encrypted portability engine.')
     icons=desktop/'icons';icons.mkdir(parents=True,exist_ok=True)
     with Image.open(ROOT/'web/branding/biodiversity-icon-master.png') as image:
         image.convert('RGBA').save(icons/'icon.ico',sizes=[(16,16),(24,24),(32,32),(48,48),(64,64),(128,128),(256,256)])
