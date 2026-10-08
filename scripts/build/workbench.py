@@ -1,6 +1,6 @@
 """Single local build/launch backend. Never installs tools or changes research data."""
 from pathlib import Path
-import argparse, datetime, hashlib, importlib.util, json, os, shutil, subprocess, sys
+import argparse, datetime, hashlib, importlib.util, json, os, shutil, shlex, subprocess, sys
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT))
@@ -71,7 +71,13 @@ def build(release=False):
         stamp_path=ROOT/'app/desktop/src-tauri/engine/_internal/web/build-identity.json'
         stamp_path.write_text(json.dumps({k:v for k,v in stamp.items() if k!='sourceFiles'},indent=2))
         stage('Compiling native desktop shell')
-        env=os.environ.copy();env['WORKBENCH_BUILD_ID']=stamp['buildId'];env['WORKBENCH_SOURCE_FINGERPRINT']=stamp['sourceFingerprint']
+        env=os.environ.copy()
+        flags=env.get('CARGO_ENCODED_RUSTFLAGS')
+        rust_flags=flags.split('\x1f') if flags else shlex.split(env.get('RUSTFLAGS',''))
+        rust_flags.append('--remap-path-prefix='+str(Path.home())+'=/build-user')
+        env['CARGO_ENCODED_RUSTFLAGS']='\x1f'.join(rust_flags)
+        env.pop('RUSTFLAGS',None)
+        env['WORKBENCH_BUILD_ID']=stamp['buildId'];env['WORKBENCH_SOURCE_FINGERPRINT']=stamp['sourceFingerprint']
         subprocess.run([str(ROOT/'node_modules/.bin/tauri.cmd'),'build'],cwd=ROOT/'app/desktop/src-tauri',env=env,check=True)
         exe=ROOT/'app/desktop/src-tauri/target/release/biodiversity-workbench.exe'
         stamp['executableSHA256']=hashlib.sha256(exe.read_bytes()).hexdigest()
@@ -82,7 +88,7 @@ def build(release=False):
         (STATE/'build-identity.json').write_text(json.dumps(stamp,indent=2))
         stage('Verified source / frozen frontend parity')
         stage('Compiling current root launcher and dispatcher')
-        subprocess.run(['cargo','build','--release','--bins'],cwd=ROOT/'app/launcher/src-tauri',check=True)
+        subprocess.run(['cargo','build','--release','--bins'],cwd=ROOT/'app/launcher/src-tauri',env=env,check=True)
         from scripts.launcher.versions import promote
         promote(stamp)
         if release:
