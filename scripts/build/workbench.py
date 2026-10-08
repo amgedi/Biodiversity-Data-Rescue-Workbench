@@ -83,7 +83,7 @@ def build(release=False,activate=True):
         env['CARGO_ENCODED_RUSTFLAGS']='\x1f'.join(rust_flags)
         env.pop('RUSTFLAGS',None)
         if os.name=='nt':
-            pathmap='/pathmap:'+str(Path.home())+'=/build-user'
+            pathmap='/experimental:deterministic /pathmap:'+str(Path.home())+'=/build-user'
             for flag_name in ('CFLAGS','CXXFLAGS'):
                 env[flag_name]=(env.get(flag_name,'')+' '+pathmap).strip()
         env['WORKBENCH_BUILD_ID']=stamp['buildId'];env['WORKBENCH_SOURCE_FINGERPRINT']=stamp['sourceFingerprint']
