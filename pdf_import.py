@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parent
 _slots=threading.BoundedSemaphore(2)
 def verify_vendor():
  vendor=ROOT/'vendor';manifest=json.loads((vendor/'pypdf-manifest.json').read_text(encoding='utf-8'))
- if manifest.get('name')!='pypdf' or manifest.get('version')!='6.10.0':raise ValueError('PDF_READER_INTEGRITY')
+ if manifest.get('name')!='pypdf' or manifest.get('version')!='6.19.0':raise ValueError('PDF_READER_INTEGRITY')
  for name,facts in manifest['files'].items():
   path=vendor/name
   if not path.resolve().is_relative_to(vendor.resolve()) or path.is_symlink():raise ValueError('PDF_READER_INTEGRITY')

@@ -4,9 +4,9 @@ xlrd 2.0.2 is bundled unmodified for passive legacy `.xls` recovery. Its BSD lic
 
 ## PDF reader
 
-pypdf 6.10.0, BSD-3-Clause, bundled unmodified from its pinned upstream distribution. Full copyright, conditions and disclaimer are retained in [vendor/PYPDF_LICENSE.txt](vendor/PYPDF_LICENSE.txt). [vendor/pypdf-manifest.json](vendor/pypdf-manifest.json) records every source hash and byte length. No runtime installation or cloud service is needed.
+pypdf 6.19.0, BSD-3-Clause, bundled unmodified from its pinned upstream distribution. Full copyright, conditions and disclaimer are retained in [vendor/PYPDF_LICENSE.txt](vendor/PYPDF_LICENSE.txt). [vendor/pypdf-manifest.json](vendor/pypdf-manifest.json) records every source hash and byte length. No runtime installation or cloud service is needed.
 
-[Official PDF extraction documentation](https://pypdf.readthedocs.io/en/6.10.0/user/extract-text.html) describes text-order/OCR and memory limitations. The Workbench adds a separately bounded process and explicitly reviewed evidence; it does not assert faithful visual/table reconstruction.
+[Official PDF extraction documentation](https://pypdf.readthedocs.io/en/6.19.0/user/extract-text.html) describes text-order/OCR and memory limitations. The Workbench adds a separately bounded process and explicitly reviewed evidence; it does not assert faithful visual/table reconstruction.
 
 Windows memory bounds use [Job Object process limits](https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-jobobject_extended_limit_information). POSIX uses process address-space limits; these are different measurements and do not certify total Workbench RSS.
 
