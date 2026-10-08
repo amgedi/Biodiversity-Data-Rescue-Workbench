@@ -1,0 +1,14 @@
+"""Pinned standard capabilities. No remote schemas are fetched at application runtime."""
+PROFILES = {
+    'frictionless': {'name':'Frictionless Data Package / Table Schema','version':'1','url':'https://specs.frictionlessdata.io/','capability':'Multi-table descriptors, declared field types/constraints, primary and foreign keys; official vendored v1 descriptor/resource/Table Schema/CSV dialect JSON Schema checks with optional jsonschema. Cell/constraint value validation remains a local subset.'},
+    'darwinCore': {'name':'Darwin Core / Conceptual Model','version':'guide 2026-05-26','url':'https://dwc.tdwg.org/dp/','capability':'Evidence-aware field mappings, explicit term IRIs, relational design. Ratified guide checks, explicit table/field preparation and a separately pinned TDWG-linked July 2026 review provider are available offline. Ratified versioned machine-schema conformance remains pending upstream.'},
+    'dwcArchive': {'name':'Darwin Core Archive','version':'text guide 2023-09-13; bounded star export','url':'https://dwc.tdwg.org/text/','capability':'Reviewed selection of one genuine core and direct extensions; exact literal identifiers, CSV dialect, term-index and link checks. No automatic flattening. Pinned official descriptor XSD imports currently fail compilation; full schema and external consumer conformance remain unverified. Private working-data conversion is separate from preservation and public-release clearance.'},
+    'eml': {'name':'Ecological Metadata Language','version':'2.2.0','url':'https://eml.ecoinformatics.org/','capability':'Draft XML from confirmed metadata, missing-information diagnostics. Full local EML 2.2.0 XSD validation is available for XML files with optional lxml. Generated drafts are separately checked; XSD is not scientific completeness.'},
+    'roCrate': {'name':'RO-Crate','version':'1.3','url':'https://www.researchobject.org/ro-crate/specification/1.3/','capability':'Preservation metadata graph for confirmed title, description, license, publication/release date and organizational creator; local root/graph/entity/payload/date checks, full JSON-LD and profile validation pending.'},
+    'camtrap': {'name':'Camtrap DP','version':'1.0.2 target; conformance pending','url':'https://camtrap-dp.tdwg.org/','capability':'Recognizes deployments/media/observations structures; Official 1.0.2 descriptor validation and implemented table rules are available locally. Complete media/publication semantics and schema-backed export remain pending.'},
+}
+
+
+def awareness(project):
+    names={t['name'].lower() for t in project['tables']}
+    return {'camtrapCandidate':{'deployments','media','observations'}.issubset(names),'profiles':PROFILES,'scientificValidity':'Structural checks do not establish scientific correctness.'}

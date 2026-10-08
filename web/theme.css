@@ -1,0 +1,50 @@
+/* Semantic tokens are loaded last and cover every existing workspace surface. */
+:root{--page:#f7f8f4;--surface:#ffffff;--inset:#edf1ea;--soft:#f1f5ed;--foreground:#223b35;--secondary-text:#53675b;--line:#a9b8aa;--accent:#245b49;--accent-ink:#ffffff;--focus:#795512;--danger:#943c2b;--shade:#00000066;--text-scale:1;color-scheme:light;--green:var(--accent);--dark:var(--accent);--muted:var(--secondary-text);--border:var(--line);--paper:var(--surface)}
+html[data-theme=dark]{--page:#142b26;--surface:#203b32;--inset:#19352c;--soft:#29453a;--foreground:#e4eee5;--secondary-text:#bdcec0;--line:#718877;--accent:#c1e3ca;--accent-ink:#142b26;--focus:#f5cf80;--danger:#ffb9a8;color-scheme:dark}
+html[data-theme=paper]{--page:#fff;--surface:#fff;--inset:#fff;--soft:#fff;--foreground:#000;--secondary-text:#000;--line:#000;--accent:#000;--accent-ink:#fff;--focus:#000;--danger:#000}
+html[data-theme=mono-dark]{--page:#0b0b0b;--surface:#181818;--inset:#111;--soft:#262626;--foreground:#fff;--secondary-text:#d5d5d5;--line:#929292;--accent:#fff;--accent-ink:#000;--focus:#fff;--danger:#fff;color-scheme:dark}
+html[data-theme=sand]{--page:#f8f2e9;--surface:#fffdf9;--inset:#f0e6d6;--soft:#f4edde;--foreground:#392d23;--secondary-text:#655140;--line:#b09a7d;--accent:#76502d;--accent-ink:#fff;--focus:#624311;--danger:#983d2f}
+html[data-theme=slate]{--page:#161d2b;--surface:#202b3b;--inset:#1b2432;--soft:#2d3a4f;--foreground:#f0f4fa;--secondary-text:#c2cfdf;--line:#7c8fa9;--accent:#b7d5fa;--accent-ink:#161d2b;--focus:#ffdb99;--danger:#ffb7b5;color-scheme:dark}
+html[data-theme=ocean]{--page:#f2f7fb;--surface:#fff;--inset:#e5eff6;--soft:#ecf4fa;--foreground:#16394c;--secondary-text:#456574;--line:#91adba;--accent:#1a5977;--accent-ink:#fff;--focus:#765300;--danger:#953e36}
+html[data-theme=forest]{--page:#11271e;--surface:#1b3627;--inset:#173023;--soft:#264333;--foreground:#eef4e8;--secondary-text:#c6d4bd;--line:#839b7a;--accent:#d3e7b0;--accent-ink:#11271e;--focus:#ffe7a3;--danger:#ffc1ae;color-scheme:dark}
+html,html body{background:var(--page);color:var(--foreground)}
+html :is(.sidebar,.topbar,footer){background:var(--inset);color:var(--secondary-text);border-color:var(--line)}
+html :is(.panel,.recent-card,.stats-grid article,dialog,.resource-card,.welcome,.readonly-comparison,.assertion){background:var(--surface);color:var(--foreground);border-color:var(--line)}
+html :is(.readiness article,.relation-card,.preview-result,.inline-note,.beginner-help,.callout,.count-pill,.local-pill,.uncertainty,.checks-results,.export-warning,.empty-projects,.issue-icon,.issue-icon.review,.issue-icon.context){background:var(--soft);color:var(--foreground);border-color:var(--line)}
+html :is(h1,h2,h3,.welcome h1,.welcome p,.readiness p,.brand,.brand small,.timeline p,.cell,td,.local-note strong,.provenance-panel dd,.empty-projects strong){color:var(--foreground)}
+html :is(label,.muted,.nav,.tabs button,.project-item,.stats-grid article>span,.stats-grid strong small,.recent-card p,.recent-card small,.side-label,.local-note p,.metadata-value,.source-format,.save-status,.timeline time,.timeline small,.event-number,.original-value,.welcome-detail,.repair-preview,.column-type,.column-profiles summary,.inventory-card p,.provenance-panel p,.provenance-panel dt,.empty,.blank-cell,.file-badge,.source-tag){color:var(--secondary-text)}
+html :is(input,select,textarea,th,tbody th,.expert-json,pre,.inventory-card pre){background:var(--page);color:var(--foreground);border-color:var(--line)}
+html :is(input::placeholder,textarea::placeholder){color:var(--secondary-text);opacity:1}
+html :is(.button.secondary,.resource-strip button,.dropzone){background:var(--soft);color:var(--foreground);border-color:var(--line)}
+html :is(.button.primary,.brand-mark){background:var(--accent);color:var(--accent-ink);box-shadow:none}
+html .text-button,html .eyebrow,html .relation-arrow{color:var(--accent)}
+html :is(.button:hover,.cell:hover,tr:hover td,.nav:hover,.nav.active,.project-item.selected,.recent-card:hover,.resource-strip button.selected){background:var(--soft);color:var(--foreground);border-color:var(--accent)}
+html .button.primary:hover{background:var(--accent);color:var(--accent-ink);text-decoration:underline}
+html .tabs button.active{color:var(--accent);border-color:var(--accent)}
+html :is(.issue,.dictionary-row,.timeline li,.table-scroll,td,th,.original-value,.local-note,.file-badge,.source-tag){border-color:var(--line)}
+html .dropzone span,html .dropzone .upload-symbol{color:var(--secondary-text)}
+html .diagnostic-plot,html .coordinate-plot{background:var(--page);border-color:var(--line)}
+html :is(.diagnostic-plot text,.coordinate-plot text){fill:var(--foreground)}
+html .diagnostic-plot line{stroke:var(--line)}html .diagnostic-plot circle{fill:var(--accent);stroke:var(--surface)}
+html .frequency-bar span{background:var(--accent)}
+html .timeline-dot{background:var(--accent);border-color:var(--surface);box-shadow:none}
+html #notice,html .update-banner{background:var(--surface);color:var(--foreground);border:2px solid var(--accent);box-shadow:0 4px 20px var(--shade)}
+html #notice.error{border-color:var(--danger)}html #notice.error::before{content:'Error: ';font-weight:bold}
+html dialog::backdrop{background:var(--shade)}html .skip{background:var(--surface);color:var(--foreground)}
+html :is(button,a,input,select,textarea,[tabindex]):focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+html .state-Inferred{border-style:dashed}html .state-Conflicting{border-width:2px}html .state-Unknown{border-style:dotted}
+html :is(button,input,select,textarea):disabled{opacity:1;cursor:not-allowed;border-style:dashed;color:var(--secondary-text)}
+html .button:disabled{background:var(--inset);color:var(--secondary-text)}
+html[data-theme=paper] :is(.button,.uncertainty,.issue-icon),html[data-theme=mono-dark] :is(.button,.uncertainty,.issue-icon){border:1px solid var(--line)}
+.upload-area{position:relative;cursor:pointer;min-height:155px;display:flex;align-items:center;justify-content:center;text-align:center;gap:10px;padding:24px;border:2px dashed var(--line);background:var(--soft)}
+.upload-area input[type=file]{position:absolute;inset:0;width:100%;height:100%;margin:0!important;max-width:none!important;opacity:0;cursor:pointer;z-index:1;font-size:16px}
+.upload-area:focus-within,.upload-area.dragover{outline:3px solid var(--focus);outline-offset:3px;border-color:var(--accent)}
+.upload-area.has-file{border-style:solid}.upload-selection{overflow-wrap:anywhere;max-width:100%;font-weight:600}.upload-title{font-weight:700!important;font-size:14px!important}
+fieldset{border:1px solid var(--line);border-radius:8px;padding:20px;margin:20px 0;min-width:0}legend{font-weight:700;padding:0 8px;font-size:16px}#preferences-form{margin-top:25px}
+html[data-text-size=large]{--text-scale:1.2}html body{font-size:calc(14px * var(--text-scale))}html :is(input,textarea,select,.button,.text-button,td,.cell){font-size:calc(12px * var(--text-scale))}html :is(label,th,.muted,.readiness p,.inventory-card p,.tutorial li,.beginner-help){font-size:calc(12px * var(--text-scale))}
+html[data-density=compact] :is(td,th){padding:6px 10px}html[data-density=compact] .cell{padding:6px 10px}
+@keyframes brand-breathe{50%{transform:translateY(-2px)}}html[data-motion=subtle] .brand-mark{animation:brand-breathe 7s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){html[data-motion=subtle] .brand-mark{animation:none}}html[data-motion=off] *,html[data-motion=off] *::before,html[data-motion=off] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+@media(forced-colors:active){.upload-area:focus-within{outline-color:Highlight}.uncertainty{border:2px solid CanvasText}}
+
+html .slash,html .step-number{color:var(--secondary-text);border-color:var(--line)}html .status-dot{background:var(--accent)}

@@ -1,0 +1,1 @@
+import {applyPreferences} from './preferences.mjs';import {enhanceUploads} from './uploads.mjs';applyPreferences();matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>applyPreferences());enhanceUploads();new MutationObserver(()=>enhanceUploads()).observe(document.body,{childList:true,subtree:true});

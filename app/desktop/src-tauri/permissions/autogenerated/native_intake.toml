@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-native-intake"
+description = "Enables the native_intake command without any pre-configured scope."
+commands.allow = ["native_intake"]
+
+[[permission]]
+identifier = "deny-native-intake"
+description = "Denies the native_intake command without any pre-configured scope."
+commands.deny = ["native_intake"]

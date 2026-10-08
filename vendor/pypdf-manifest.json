@@ -1,0 +1,756 @@
+{
+  "name": "pypdf",
+  "version": "6.10.0",
+  "license": "BSD-3-Clause",
+  "source": "Pinned pypdf 6.10.0 source distribution; original copyright/license retained without modification.",
+  "files": {
+    "PYPDF_LICENSE.txt": {
+      "sha256": "a97ac230e5f33ef10a5367a850eb01f91f1a0b064e34742c7794d2294557f524",
+      "bytes": 1605
+    },
+    "biodiversity/sources.json": {
+      "sha256": "31263ce9a92aae14ac4fdf6cd67ef712411977f964af3f961d3f8dd82befab48",
+      "bytes": 11440
+    },
+    "pypdf/constants.py": {
+      "sha256": "9f672ef873a6a16e7feb14165442a8e36ad2249d0ff7484bd6cf33fa9174a1cb",
+      "bytes": 23634
+    },
+    "pypdf/errors.py": {
+      "sha256": "070d56f61c4eb03830ab053a628436974f89894c93aba979423542afe5b81850",
+      "bytes": 1947
+    },
+    "pypdf/filters.py": {
+      "sha256": "237c2d528bdaeccdd68233730b2a74ac634854a9899a34bcebc8d8af5c0b347f",
+      "bytes": 30420
+    },
+    "pypdf/pagerange.py": {
+      "sha256": "d9bb76d634199bef5aab66d57f74d7b87f3fc06571edbf53e94acc1570842614",
+      "bytes": 7108
+    },
+    "pypdf/papersizes.py": {
+      "sha256": "e93cf9b1f34dff724e51aa58f3753e95a928867a57600d2148440d98e54b14bf",
+      "bytes": 1413
+    },
+    "pypdf/py.typed": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "pypdf/types.py": {
+      "sha256": "b09ef01f393b111fc227b90ffacf2ef5ac459e40979c5a6bf27cdc8f50314dab",
+      "bytes": 1915
+    },
+    "pypdf/xmp.py": {
+      "sha256": "00289e95b3fb680b03cb67e67b8a3d61de32ec7e0a7c46d4337494c4c97c8c8e",
+      "bytes": 30239
+    },
+    "pypdf/_cmap.py": {
+      "sha256": "0b8eea205808d522a7e4bad3e222b39c6964752b58a3a3b7259904292ee09241",
+      "bytes": 12572
+    },
+    "pypdf/_doc_common.py": {
+      "sha256": "54a5f4cd06ba5f658a9ed175b9c6224134b3dcf9f98ab11fc4da1f36e02a262e",
+      "bytes": 54398
+    },
+    "pypdf/_encryption.py": {
+      "sha256": "319f3e012455b473ceb9c51df87f4a45f94eab902f88f14f8e5769901540a1ce",
+      "bytes": 49546
+    },
+    "pypdf/_font.py": {
+      "sha256": "50ad53071d7979e53daa4661bf38a0e1823eb6365382007eca20b414b73767bb",
+      "bytes": 14256
+    },
+    "pypdf/_page.py": {
+      "sha256": "f93c459a77c433dbd2541e94d1fdfa599e486ca5fe3e3efe9348eaf94552639c",
+      "bytes": 90193
+    },
+    "pypdf/_page_labels.py": {
+      "sha256": "bfa0a9bba3495c2f5143f05e19d866d39695f19eb3c623d1367eaa129d41b951",
+      "bytes": 8626
+    },
+    "pypdf/_protocols.py": {
+      "sha256": "eeacfdd8b55d3eb6244a97543e9029f54e065b98f13414df55ca545b052110ea",
+      "bytes": 2123
+    },
+    "pypdf/_reader.py": {
+      "sha256": "9aaa6780e62c061509f0d3b658dbdac185404fecadac01f7f9d35ac009ce2024",
+      "bytes": 57708
+    },
+    "pypdf/_utils.py": {
+      "sha256": "2df8188c0ad153b97d19201bb681b3bbdbd507e7243e2d657b4eb543a7072656",
+      "bytes": 20814
+    },
+    "pypdf/_version.py": {
+      "sha256": "2416f2ebd53fb332339ad719e9569c95eedc0157bb9e1573ee0205d0d07716aa",
+      "bytes": 23
+    },
+    "pypdf/_writer.py": {
+      "sha256": "1819e02d0b0bcd9c1fa483dc5c22e2a7849be22c93474c33c235dd6dd076a4e3",
+      "bytes": 131834
+    },
+    "pypdf/__init__.py": {
+      "sha256": "612ff566b4378c13c7b1180cb2da89ac0b6cde5500a63fe530e30ae6a88b1b9c",
+      "bytes": 1283
+    },
+    "schemas/csv-dialect.json": {
+      "sha256": "96eb8d2b64a2cecff0ef0cf793fb897344fca68a22843e4a6adf8d8305e2084d",
+      "bytes": 120
+    },
+    "schemas/data-package.json": {
+      "sha256": "80812b280be979e640279c5442468c49bfd99758af99e5f83cb144c0d077a05d",
+      "bytes": 257
+    },
+    "schemas/data-resource.json": {
+      "sha256": "64490bb0ce5af0fc511db000bcf04627bfb0fb0dab88a1f144a3a772da089865",
+      "bytes": 122
+    },
+    "schemas/dictionary.json": {
+      "sha256": "72088052e7d7adfb5f7679f9906ae4656912f86e2e70cb8ec7af93fd64a75720",
+      "bytes": 79846
+    },
+    "schemas/LICENSE.md": {
+      "sha256": "88d9b4eb60579c191ec391ca04c16130572d7eedc4a86daa58bf28c6e14c9bcd",
+      "bytes": 1210
+    },
+    "schemas/sources.json": {
+      "sha256": "def024c6265ca10e05ce24832e857bc241180ee84c953268bb7a9978d81bde61",
+      "bytes": 2195
+    },
+    "schemas/table-schema.json": {
+      "sha256": "cb1389e7b0394f5f1f9a7e07d7301b145e67d393d693b953012988fba9bc8bea",
+      "bytes": 121
+    },
+    "schemas/tabular-data-resource.json": {
+      "sha256": "c7ff4381cf72cfe62477486e4d2d50170c4e5bfca806b27d7523d163bcd165d3",
+      "bytes": 129
+    },
+    "pypdf/annotations/_base.py": {
+      "sha256": "79ea1cf6fdb0d798c05212978f8f25d5b07ae98801815fb6bf92085091febf0b",
+      "bytes": 961
+    },
+    "pypdf/annotations/_markup_annotations.py": {
+      "sha256": "b162a1181086ed7f688c0bc4691304a093fe7d8e8572b94574e9ad79f219066d",
+      "bytes": 11862
+    },
+    "pypdf/annotations/_non_markup_annotations.py": {
+      "sha256": "676214bdc08e713729261497adec7ff6b8983360fae17c4543fbda735d013515",
+      "bytes": 3649
+    },
+    "pypdf/annotations/__init__.py": {
+      "sha256": "7f693ffa3027dfd082076ecac50fdef771a29e7ce40076d49e749e1899758f21",
+      "bytes": 990
+    },
+    "pypdf/generic/_appearance_stream.py": {
+      "sha256": "31c0cbd2070a34df4d5cd53a64fc60b7b398a25dbe168356615980c20030e0f3",
+      "bytes": 26834
+    },
+    "pypdf/generic/_base.py": {
+      "sha256": "f488de45b70b1eb73f94b1947d564c8ee83ca3eb7af17ece35295f9c32a73e64",
+      "bytes": 32755
+    },
+    "pypdf/generic/_data_structures.py": {
+      "sha256": "35f76eb49aa9f253fb1cd3e5eb9e3875b80f9bbc2616c755e376bde054e7b782",
+      "bytes": 65869
+    },
+    "pypdf/generic/_files.py": {
+      "sha256": "36d4a4468e890608ac8b840ecab56778ef3dd5ba15b2e636e614708a3e97f510",
+      "bytes": 16238
+    },
+    "pypdf/generic/_fit.py": {
+      "sha256": "5ff8800c98f5618e0f512b52eeb1560b6c51d8b5154af2ad500932d001402033",
+      "bytes": 5515
+    },
+    "pypdf/generic/_image_inline.py": {
+      "sha256": "2a5000fd91a2446ce368f1b74af6eda8619e36a6d065517e515536302f2efd28",
+      "bytes": 12819
+    },
+    "pypdf/generic/_image_xobject.py": {
+      "sha256": "7f560334bae2f927a5faaa72ca75c0ee7c7e662493a8061433ce9338414883af",
+      "bytes": 21965
+    },
+    "pypdf/generic/_link.py": {
+      "sha256": "b4da99d86616c6a80566c948d032d97a85e59ed6b182c1c2f1791615f496c781",
+      "bytes": 5929
+    },
+    "pypdf/generic/_outline.py": {
+      "sha256": "a8a6cc5f8d8e59faa7a2922213a054cba12f7532c67b766d8da89637ce49a5a6",
+      "bytes": 1094
+    },
+    "pypdf/generic/_rectangle.py": {
+      "sha256": "94ea927c58af43180137d2d4f5aa87a313c7f1a08f4c350d81166c34451de9f7",
+      "bytes": 3785
+    },
+    "pypdf/generic/_utils.py": {
+      "sha256": "bd30c07ac7c6f9c24d0ca8a5cff91b805a1d0084f37797a3a695871a3bc2a279",
+      "bytes": 7258
+    },
+    "pypdf/generic/_viewerpref.py": {
+      "sha256": "b6a5445a6bddfc359316848ca51393b25d528a338d9ef71267e8d74e8fdc8cea",
+      "bytes": 6774
+    },
+    "pypdf/generic/__init__.py": {
+      "sha256": "56ba9d61fb5010278f0d4dab5d532012a45a60547ccce57f7ef260a35f71feec",
+      "bytes": 3468
+    },
+    "pypdf/_codecs/adobe_glyphs.py": {
+      "sha256": "b7770314f0eac08cf5c3d07481d5738dd73c7842bd02e4639397fb95a130fdf6",
+      "bytes": 447213
+    },
+    "pypdf/_codecs/core_font_metrics.py": {
+      "sha256": "14b3d66d3678871790597820d63a397b8a972821642846397bce54d9b2c533a9",
+      "bytes": 114968
+    },
+    "pypdf/_codecs/pdfdoc.py": {
+      "sha256": "c5f4af30562cbf1b9a490d14bbdbd90ca681d16bbce61d6e0a20758bdac07145",
+      "bytes": 4269
+    },
+    "pypdf/_codecs/std.py": {
+      "sha256": "0f240cb84a40184a52f6ecb58d67f87278fe92a4a13ce0228f9b08ed0d580fc1",
+      "bytes": 2630
+    },
+    "pypdf/_codecs/symbol.py": {
+      "sha256": "9c86864089615822623cc1ebc149661871fefdf397c842af82e466b8a5dc1809",
+      "bytes": 3734
+    },
+    "pypdf/_codecs/zapfding.py": {
+      "sha256": "3d0c63c510bad7a778d711777b15713f55bc9cce10ad97e33b7966b4bc6913fb",
+      "bytes": 3742
+    },
+    "pypdf/_codecs/_codecs.py": {
+      "sha256": "e3aa11649c92c06c42269d648c87abee3b3f4d84a38f81acda2d9471edeff9e1",
+      "bytes": 10555
+    },
+    "pypdf/_codecs/__init__.py": {
+      "sha256": "035d44440b70b56ae91953b34d296b0b56b74fd1c29562c1591c067b7fcf7eed",
+      "bytes": 1373
+    },
+    "pypdf/_crypt_providers/_base.py": {
+      "sha256": "fdfe77323eaf8af84464c438bcdc4de46d083a0158fa7e7f95e91ed1cfea88d5",
+      "bytes": 1711
+    },
+    "pypdf/_crypt_providers/_cryptography.py": {
+      "sha256": "f733a4933312b17e1a974454934a8cd1d29f7dc1e47b8c1f9845caf64c28450f",
+      "bytes": 4460
+    },
+    "pypdf/_crypt_providers/_fallback.py": {
+      "sha256": "bec628a30475602015feaf87add21986451cac26fa1ef44134c626d3742d094f",
+      "bytes": 3334
+    },
+    "pypdf/_crypt_providers/_pycryptodome.py": {
+      "sha256": "bb8bed2e8ecdbfa02a6513671f5a0d3425af4d86a8c1f4957febe5916def4fab",
+      "bytes": 3280
+    },
+    "pypdf/_crypt_providers/__init__.py": {
+      "sha256": "2b767a02e5e15d579780b7adf93ba4ab682df47eba3a076ea6cbf1212d429a42",
+      "bytes": 3054
+    },
+    "pypdf/_text_extraction/_text_extractor.py": {
+      "sha256": "b54a9bbc2ebd305706406501b7f63caeab1535ffbcb0c171003c8a9da8b4a232",
+      "bytes": 14388
+    },
+    "pypdf/_text_extraction/__init__.py": {
+      "sha256": "6b7677deb4154e230a1adc2deff6df5e53e8b1b493f2bcc42e8367b74e77fd0c",
+      "bytes": 8515
+    },
+    "pypdf/_text_extraction/_layout_mode/_fixed_width_page.py": {
+      "sha256": "789bde0dbc8ca281bdef4a893a13394706fd668cb2243ca7cd6a55f5aec84b6d",
+      "bytes": 15370
+    },
+    "pypdf/_text_extraction/_layout_mode/_text_state_manager.py": {
+      "sha256": "5d5ac88de4dde6349d31ec41431b34b4be48e5150e8ad4663759842ce70a626e",
+      "bytes": 8221
+    },
+    "pypdf/_text_extraction/_layout_mode/_text_state_params.py": {
+      "sha256": "872c3aa670bcba9064a055542772c7f21048207acdc22a9aa9c632cc8232afa6",
+      "bytes": 5481
+    },
+    "pypdf/_text_extraction/_layout_mode/__init__.py": {
+      "sha256": "454408c22530ce778db5c9639d533a8e445a7a6ea980fee6383dbe3019ada6fc",
+      "bytes": 340
+    },
+    "biodiversity/camtrap-1.0.2/camtrap-dp-profile.json": {
+      "sha256": "daea4da7d64531e17986daad30bd3852701c7326a79b1b5e49a213c5489a8652",
+      "bytes": 20298
+    },
+    "biodiversity/camtrap-1.0.2/deployments-table-schema.json": {
+      "sha256": "2893074dbc0a2331f038bca22626cfdc65614c7d2009df908adbb403281f4dfa",
+      "bytes": 9420
+    },
+    "biodiversity/camtrap-1.0.2/LICENSE": {
+      "sha256": "62fbe02066e064542927a95d4f2bfe16e9337a0f624bba57693c2d42ae364342",
+      "bytes": 1084
+    },
+    "biodiversity/camtrap-1.0.2/media-table-schema.json": {
+      "sha256": "79b3acb6e4431dd748829364b6df17c120774127a0091b9eaa7a012d9fae3867",
+      "bytes": 4322
+    },
+    "biodiversity/camtrap-1.0.2/observations-table-schema.json": {
+      "sha256": "b008021a15c575f38468f511d8a3fd6468d2a670c952f3914481fb3379e6232a",
+      "bytes": 13026
+    },
+    "biodiversity/dependencies/geojson-rfc.json": {
+      "sha256": "5456d0bdf070d3b654ee6b78c7d807c2663756931cf9f5e50726ed6241535666",
+      "bytes": 46177
+    },
+    "biodiversity/dependencies/geojson.json": {
+      "sha256": "5456d0bdf070d3b654ee6b78c7d807c2663756931cf9f5e50726ed6241535666",
+      "bytes": 46177
+    },
+    "biodiversity/dependencies/LICENSE": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    "biodiversity/dependencies/schema-store-geojson.json": {
+      "sha256": "5532d1f9974aa19b69846c1b1d902100fd375663595b849a17ff1ceac31e5774",
+      "bytes": 166
+    },
+    "biodiversity/dwc-dp-review/dwc-dp-profile.json": {
+      "sha256": "f78f06f6935ef69b91c1aca4dc63a1e5924b1a018eac4373abc50ad9acfd2d8e",
+      "bytes": 4648
+    },
+    "biodiversity/dwc-dp-review/LICENSE": {
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "bytes": 7048
+    },
+    "biodiversity/dwc-dp-review/provider.json": {
+      "sha256": "83e287f7e6fa9c53dafa8d169d62f24bfd5b4137893c0a6c7955d1051eef1d10",
+      "bytes": 27773
+    },
+    "biodiversity/eml-2.2.0/eml-access.xsd": {
+      "sha256": "cceb1ff5ad5231d0071d1cdb47f4a5e18a3ef6fa56d65b9a25ad41ca64209d1e",
+      "bytes": 11830
+    },
+    "biodiversity/eml-2.2.0/eml-attribute.xsd": {
+      "sha256": "902f6f3cba66b9ee362d3b53cee69020dc0717c1d6dc889c7e5015c6aeca797f",
+      "bytes": 86976
+    },
+    "biodiversity/eml-2.2.0/eml-constraint.xsd": {
+      "sha256": "9178f1d5600adbf53f0c34bbf5a59a98452a95748e810896b8c89431cf524ec5",
+      "bytes": 27152
+    },
+    "biodiversity/eml-2.2.0/eml-coverage.xsd": {
+      "sha256": "5c0ed2c63ce486db3bb3a03587b782217ece87fe5c67e83bc9adafd756fdbb20",
+      "bytes": 72264
+    },
+    "biodiversity/eml-2.2.0/eml-dataset.xsd": {
+      "sha256": "d376054e440663adf5fbc35b536db2bd59f1d5fa664b943bff92b4c78cd35060",
+      "bytes": 28001
+    },
+    "biodiversity/eml-2.2.0/eml-dataTable.xsd": {
+      "sha256": "76a9157a34aa09f910bec3aaad836085d1a7fa5d644f999e3e2c2a0e555a8f02",
+      "bytes": 7693
+    },
+    "biodiversity/eml-2.2.0/eml-documentation.xsd": {
+      "sha256": "ffebe48a437a25be1aa916e2f34bd61b8a68f5840c2cc65e8529e04ba692fa54",
+      "bytes": 2899
+    },
+    "biodiversity/eml-2.2.0/eml-entity.xsd": {
+      "sha256": "41957c95e507af102c78f6b5405e03150afc0f2ae5964e5836964d9a0db48fd2",
+      "bytes": 14949
+    },
+    "biodiversity/eml-2.2.0/eml-literature.xsd": {
+      "sha256": "4f2f38e0f7c42160d051731620359d7d002310a54feb60e6122f8222fd3c778c",
+      "bytes": 58814
+    },
+    "biodiversity/eml-2.2.0/eml-methods.xsd": {
+      "sha256": "9621686ffff46dfad0cd556fe6ded2265b92f2ec4d5e2217af9bfb939b8e6701",
+      "bytes": 21970
+    },
+    "biodiversity/eml-2.2.0/eml-party.xsd": {
+      "sha256": "ec8e598c05380a21184e09162ac1e71a4fbbebb9fe0694387307bf4d16c43be6",
+      "bytes": 28924
+    },
+    "biodiversity/eml-2.2.0/eml-physical.xsd": {
+      "sha256": "74d538266b6982ee26949750e59e975e45050291310379cb4e653c3cc9452133",
+      "bytes": 76821
+    },
+    "biodiversity/eml-2.2.0/eml-project.xsd": {
+      "sha256": "daeb3b1137824e9d77c17608817e48040159ffa0b4027ee00b1f605bbb6f632d",
+      "bytes": 29309
+    },
+    "biodiversity/eml-2.2.0/eml-protocol.xsd": {
+      "sha256": "bf9b67a62bc998d673dd9a68d1de5893dd83f1892098eeddf7239436e707fbae",
+      "bytes": 4952
+    },
+    "biodiversity/eml-2.2.0/eml-resource.xsd": {
+      "sha256": "8a8732baefd740a5ce413ca0d03a0b8b7d0bc157e6c316d8e23720db21d00e82",
+      "bytes": 68327
+    },
+    "biodiversity/eml-2.2.0/eml-semantics.xsd": {
+      "sha256": "154246efa86f177256f2f073b2667abbc5066fbef12eed1f6090b3aea2314a22",
+      "bytes": 15511
+    },
+    "biodiversity/eml-2.2.0/eml-software.xsd": {
+      "sha256": "ed78571419fd4bff206850cb79b34460200f2249aef859e8c7fab20ce66fcd49",
+      "bytes": 21403
+    },
+    "biodiversity/eml-2.2.0/eml-spatialRaster.xsd": {
+      "sha256": "c9dc78d083573b490ffb544e4ec197a7e08cdbe25371290fe2a3307f6cd5c172",
+      "bytes": 46367
+    },
+    "biodiversity/eml-2.2.0/eml-spatialReference.xsd": {
+      "sha256": "a7896a6ac0ff101801bcae54b217585ab76d14a7b6d8b147ce310532921d2252",
+      "bytes": 167250
+    },
+    "biodiversity/eml-2.2.0/eml-spatialVector.xsd": {
+      "sha256": "845de661565b3a9ae4c579979904fc6ce2bda548f99aa6b89fb8f65394a60462",
+      "bytes": 13021
+    },
+    "biodiversity/eml-2.2.0/eml-storedProcedure.xsd": {
+      "sha256": "19a314f7d803e9a161115aedc3ba2582a13d9ddfa137b24c903581b371ccadf9",
+      "bytes": 10334
+    },
+    "biodiversity/eml-2.2.0/eml-text.xsd": {
+      "sha256": "595419363ff368f23d00ec5265003a7b490684e34c6247cf2d423093c393ceb2",
+      "bytes": 32155
+    },
+    "biodiversity/eml-2.2.0/eml-unitTypeDefinitions.xsd": {
+      "sha256": "a01920a6e7681cc96b70a93f5c94c8ab13ac7ebfe5812442c01da1ec72c842ae",
+      "bytes": 23090
+    },
+    "biodiversity/eml-2.2.0/eml-view.xsd": {
+      "sha256": "aea2786845a104bc541e0a70a53bf70bce8566b1368dd3d87e5198ec8572576f",
+      "bytes": 7008
+    },
+    "biodiversity/eml-2.2.0/eml.xsd": {
+      "sha256": "031c5652982cca98b203eae3311739dd531c636cb3fa8eb6e17cb85176d1f004",
+      "bytes": 22368
+    },
+    "biodiversity/eml-2.2.0/LICENSE": {
+      "sha256": "b8d0e2bcbf36f6af3cdbf94055ad2ea675d5a19fc623eb0ec82febb2b08e719b",
+      "bytes": 18109
+    },
+    "biodiversity/eml-2.2.0/stmml.xsd": {
+      "sha256": "4f5f38c1f15a7ed3575e5efa46c0ebdf64065ad0892a8086f0197de87bac08b9",
+      "bytes": 133761
+    },
+    "biodiversity/eml-2.2.0/xml.xsd": {
+      "sha256": "6448b52cf4eced7203a24b49d1c9524e31596ed692042a7a471997b79db29011",
+      "bytes": 579
+    },
+    "biodiversity/dwc-dp-review/table-schemas/agent-agent-role.json": {
+      "sha256": "defe1f2cfc69b4692c9079738cfa91f2531a39abe2f0e9211f43fc76eddb799f",
+      "bytes": 5583
+    },
+    "biodiversity/dwc-dp-review/table-schemas/agent-identifier.json": {
+      "sha256": "703b2b2da8ec07c4fe914f9e6a5080461c95eff457565314d572f426e3590b66",
+      "bytes": 3748
+    },
+    "biodiversity/dwc-dp-review/table-schemas/agent-media.json": {
+      "sha256": "81227ebc70b909d4d1d242e068297ca57c2b6dfbf0de8f10135bbd2936126b4d",
+      "bytes": 6256
+    },
+    "biodiversity/dwc-dp-review/table-schemas/agent.json": {
+      "sha256": "3c03e7a854a017869195a5d8797f4277a01cd5ef29dce2f2fb310e9c067d0989",
+      "bytes": 3111
+    },
+    "biodiversity/dwc-dp-review/table-schemas/bibliographic-resource.json": {
+      "sha256": "26bd0bd640af853e103f534cff5ec80e1636050281e9148d3d1e236850e71d28",
+      "bytes": 15384
+    },
+    "biodiversity/dwc-dp-review/table-schemas/chronometric-age-agent-role.json": {
+      "sha256": "e63dcda30583b7fba21484820c598c79b7409ef93b2bcc44294b92def8dc94cb",
+      "bytes": 5329
+    },
+    "biodiversity/dwc-dp-review/table-schemas/chronometric-age-assertion.json": {
+      "sha256": "2c1b58e5f042cc313e99554c4c57da2278a73a61e9a935ff80c3bb0f15521fd3",
+      "bytes": 13938
+    },
+    "biodiversity/dwc-dp-review/table-schemas/chronometric-age-media.json": {
+      "sha256": "9073105f4b9dc06d3feb73f852b26626fed25108fec7ccb6ca610da991ef97b0",
+      "bytes": 6333
+    },
+    "biodiversity/dwc-dp-review/table-schemas/chronometric-age-protocol.json": {
+      "sha256": "2ff3a5940df7e5a201a83d76f42d912bb11c03b153ee9c459069a1d8a56212b5",
+      "bytes": 1967
+    },
+    "biodiversity/dwc-dp-review/table-schemas/chronometric-age-reference.json": {
+      "sha256": "1bc4e6b39d00a245baafc02323624c3a067e2d636bd4057ff1861e5c64d93ef7",
+      "bytes": 2498
+    },
+    "biodiversity/dwc-dp-review/table-schemas/chronometric-age.json": {
+      "sha256": "5d5624e0b948d82d0ae7a2fc0a429fce89b79c57d9845635474b0bc7f53545a2",
+      "bytes": 16789
+    },
+    "biodiversity/dwc-dp-review/table-schemas/event-agent-role.json": {
+      "sha256": "00385c36553db78f606e92c397a6a49f2607b96db09e0603672a9edbf6ef9a85",
+      "bytes": 5180
+    },
+    "biodiversity/dwc-dp-review/table-schemas/event-assertion.json": {
+      "sha256": "b5f0554048312db61d60359eb6ec2cd3dd47fe37967887723516ae27478eadbe",
+      "bytes": 13800
+    },
+    "biodiversity/dwc-dp-review/table-schemas/event-identifier.json": {
+      "sha256": "f7ef6ae00be36e222f5925c777fb558ace4c965a6dff44fdd476f2a5fc10ced5",
+      "bytes": 3553
+    },
+    "biodiversity/dwc-dp-review/table-schemas/event-media.json": {
+      "sha256": "924a1d9bde6a8ec47f5cbdb16c762ac7f156f923a1aa69666af8d874233f6ae0",
+      "bytes": 6184
+    },
+    "biodiversity/dwc-dp-review/table-schemas/event-protocol.json": {
+      "sha256": "a58e1c472e7e94f89e0f47141d2507bf1f47930a1a871cfb01e3bf32a0b7a46c",
+      "bytes": 1821
+    },
+    "biodiversity/dwc-dp-review/table-schemas/event-provenance.json": {
+      "sha256": "05f3397b8dfd8fecee2e0d8cbf244648ef5abaecce1e5aed6b4dcdbcd3302c3e",
+      "bytes": 1833
+    },
+    "biodiversity/dwc-dp-review/table-schemas/event-reference.json": {
+      "sha256": "1307695fa2585a462e0a9d3013b52080d60573919f82c23c366f68b5b73aefbf",
+      "bytes": 2349
+    },
+    "biodiversity/dwc-dp-review/table-schemas/event-usage-policy.json": {
+      "sha256": "0019d80f15299f0d55e2ff090a3a7dd50c10c0486dc9862e9cac05d2fa1ce171",
+      "bytes": 1897
+    },
+    "biodiversity/dwc-dp-review/table-schemas/event.json": {
+      "sha256": "2e0603714f8e5d76a88d97573de85641cb28c75cca2a8a161b2264a918dac011",
+      "bytes": 63868
+    },
+    "biodiversity/dwc-dp-review/table-schemas/geological-context-media.json": {
+      "sha256": "a7143e31492e3af750a6244da61e1e6622e1eb3297ca5960c17201ae9d1b536b",
+      "bytes": 6347
+    },
+    "biodiversity/dwc-dp-review/table-schemas/geological-context.json": {
+      "sha256": "9a1579e322bceebbd0b189aba59ed048077c7623fe3518e05148fa107be3768c",
+      "bytes": 13330
+    },
+    "biodiversity/dwc-dp-review/table-schemas/geological-material.json": {
+      "sha256": "1d85d89859ee7edacd326ec82a1861176c26e8eca2068ff5941b90bfc12cc42c",
+      "bytes": 9561
+    },
+    "biodiversity/dwc-dp-review/table-schemas/identification-agent-role.json": {
+      "sha256": "21c3a2d481aadb5ef70c49b36b9bdf10106de60865c1ba49a9e6ecb1ac3589ca",
+      "bytes": 5297
+    },
+    "biodiversity/dwc-dp-review/table-schemas/identification-reference.json": {
+      "sha256": "2a361355391819a5f8fcbe3854553b9dd9ce790759d4ace34efa1e97935f082c",
+      "bytes": 2451
+    },
+    "biodiversity/dwc-dp-review/table-schemas/identification-taxon.json": {
+      "sha256": "33a8c30037d517aa0b9ff5eca58c3ec21121f80f5c7350608746afc4d4a03b0b",
+      "bytes": 20966
+    },
+    "biodiversity/dwc-dp-review/table-schemas/identification.json": {
+      "sha256": "4e9a428dd0c0507c5e84717a545014a44d1014566dcd5a961a295601e57581b3",
+      "bytes": 39060
+    },
+    "biodiversity/dwc-dp-review/table-schemas/material-agent-role.json": {
+      "sha256": "9c949b361c1de516bc050b5fd679e64b79d365f28916ac00e12423422a471acc",
+      "bytes": 5262
+    },
+    "biodiversity/dwc-dp-review/table-schemas/material-assertion.json": {
+      "sha256": "f3bcf03ee1b383c39e2a5471d672ccc4e356d724e1711c674ec1564062ad2a7f",
+      "bytes": 13879
+    },
+    "biodiversity/dwc-dp-review/table-schemas/material-geological-context.json": {
+      "sha256": "e276704061932c3b43aa5d2957954be62ad28f02268c4214fb055bf6c1897789",
+      "bytes": 2126
+    },
+    "biodiversity/dwc-dp-review/table-schemas/material-identifier.json": {
+      "sha256": "cedce46f444a316a648c81d678a1b4ead64df10393a45e267adc3def7f51c197",
+      "bytes": 3632
+    },
+    "biodiversity/dwc-dp-review/table-schemas/material-media.json": {
+      "sha256": "fac2847085733ca1f8e8c43e6b3a0c9a4e5ba2986f6d3c20cdca01e89171c7ae",
+      "bytes": 6266
+    },
+    "biodiversity/dwc-dp-review/table-schemas/material-protocol.json": {
+      "sha256": "e13250b6131d659633ee146ba2823c7da33878a3fbd9a1a401556db521ad631c",
+      "bytes": 1900
+    },
+    "biodiversity/dwc-dp-review/table-schemas/material-provenance.json": {
+      "sha256": "deaeec4ab7ea0ce26be0b68480faa1af6229a640a7c1b99822f5786b7f4d7aa5",
+      "bytes": 1915
+    },
+    "biodiversity/dwc-dp-review/table-schemas/material-reference.json": {
+      "sha256": "ccb24ea315ac7c9908c03358ee9f473f0a80e48ffde94b54919c8fb53f8443fc",
+      "bytes": 2431
+    },
+    "biodiversity/dwc-dp-review/table-schemas/material-usage-policy.json": {
+      "sha256": "c44f9f1dfda26114c94d1ec0566c0d7ad1314303ece0ae448e7854c1bc42f828",
+      "bytes": 1969
+    },
+    "biodiversity/dwc-dp-review/table-schemas/material.json": {
+      "sha256": "7f809c4e9dd2accd91bb50b16461261275ea0fc4aec90d53f64dc2b17b902364",
+      "bytes": 53713
+    },
+    "biodiversity/dwc-dp-review/table-schemas/media-agent-role.json": {
+      "sha256": "f5a7c42296d9f0469e89ba127b5fd20cb0f7408f6e52560df605b44f8920f0fa",
+      "bytes": 5199
+    },
+    "biodiversity/dwc-dp-review/table-schemas/media-assertion.json": {
+      "sha256": "e9ec64a516f6d8da1cfe9659d64d38aa9f37be5bf3a287ae6c111cc5069c7287",
+      "bytes": 13819
+    },
+    "biodiversity/dwc-dp-review/table-schemas/media-identifier.json": {
+      "sha256": "600f556e98aedd0b5e402d3771099540f33f1de92a4263660a6b18d2599cf237",
+      "bytes": 3572
+    },
+    "biodiversity/dwc-dp-review/table-schemas/media-provenance.json": {
+      "sha256": "f9cec260d91f2131557981c1d80c034947d7825b1c50f34c330c1e78f92c389a",
+      "bytes": 1852
+    },
+    "biodiversity/dwc-dp-review/table-schemas/media-usage-policy.json": {
+      "sha256": "14e890dbdae23d2bafa6d6f2e16734f6feb27514e3d8034461d3292c0fecc53d",
+      "bytes": 1906
+    },
+    "biodiversity/dwc-dp-review/table-schemas/media.json": {
+      "sha256": "221fdad12cc1c112a3c8d7e9d91adbfef6c56dfc4aa9a3899c95a5101b6dc3cf",
+      "bytes": 69447
+    },
+    "biodiversity/dwc-dp-review/table-schemas/molecular-protocol-agent-role.json": {
+      "sha256": "2fa5f2a66c0f08a413b8897785fc2c27d55048cb9aa0f9fea80070340b309ed4",
+      "bytes": 5343
+    },
+    "biodiversity/dwc-dp-review/table-schemas/molecular-protocol-assertion.json": {
+      "sha256": "261932183230f44b972f44f9dfa30af7560e7c11ec591daeb2bef880346992ec",
+      "bytes": 13947
+    },
+    "biodiversity/dwc-dp-review/table-schemas/molecular-protocol-reference.json": {
+      "sha256": "688a3a4fc3dacfd6ef188a8eb9c30a757ae8d91eaeb24afc8910f6d6af84b12a",
+      "bytes": 2515
+    },
+    "biodiversity/dwc-dp-review/table-schemas/molecular-protocol.json": {
+      "sha256": "50f0fd08c6a4190b33852d044b55d162bf5a86ced49d8adc93970a4d019ccd80",
+      "bytes": 61064
+    },
+    "biodiversity/dwc-dp-review/table-schemas/nucleotide-analysis-assertion.json": {
+      "sha256": "4d2b1e83727f43d5b2e686feff12af09e2877f29cd0fc1e35110ef79c7cf7ec5",
+      "bytes": 12063
+    },
+    "biodiversity/dwc-dp-review/table-schemas/nucleotide-analysis.json": {
+      "sha256": "ebd235695d783e30a1e08156666a53a5049cca3a23c7fdfdd096539bd86e0cee",
+      "bytes": 5863
+    },
+    "biodiversity/dwc-dp-review/table-schemas/nucleotide-sequence.json": {
+      "sha256": "da765f29cb89b9c902a223c0004d97b13e0a1dddaccc4efb4950d82ec7ed791c",
+      "bytes": 2258
+    },
+    "biodiversity/dwc-dp-review/table-schemas/occurrence-agent-role.json": {
+      "sha256": "0eaccc93ec54a40a4f6ce5cf9d4375ba59fbe5a8f8a4c6a5aeb582dd4d505180",
+      "bytes": 5245
+    },
+    "biodiversity/dwc-dp-review/table-schemas/occurrence-assertion.json": {
+      "sha256": "4eb6d373646a7d62bb67f6d22338f4c1288a8173838fccb2df62d6f379e8fa55",
+      "bytes": 13860
+    },
+    "biodiversity/dwc-dp-review/table-schemas/occurrence-identifier.json": {
+      "sha256": "2ff11adb09c650a043e89256fadb92543e3b876d108b2b24c22fb197bf18b46b",
+      "bytes": 3613
+    },
+    "biodiversity/dwc-dp-review/table-schemas/occurrence-media.json": {
+      "sha256": "3424410d50a9c1f67ea385bc97f0659a37239b3df48641a54c944cefd34e3ac1",
+      "bytes": 6249
+    },
+    "biodiversity/dwc-dp-review/table-schemas/occurrence-protocol.json": {
+      "sha256": "8929ab9753287891e4b7d2fbcff13bfcb1291bb5c2754e7547ac3adbf91e7e3b",
+      "bytes": 1897
+    },
+    "biodiversity/dwc-dp-review/table-schemas/occurrence-reference.json": {
+      "sha256": "7a3c11420454914592448feccbe102599b93be3f5d5e95c6a05ca2e74af8b4f7",
+      "bytes": 2414
+    },
+    "biodiversity/dwc-dp-review/table-schemas/occurrence.json": {
+      "sha256": "0f501f688bbbc23df56c793153cc359edea27588acbc0ce8ac8f9c21aa982e72",
+      "bytes": 34402
+    },
+    "biodiversity/dwc-dp-review/table-schemas/organism-assertion.json": {
+      "sha256": "7c80dd27fd0a1366a91ae5aa1c83a0d3262074c1dda8db4f7c3a87c186982443",
+      "bytes": 13836
+    },
+    "biodiversity/dwc-dp-review/table-schemas/organism-identifier.json": {
+      "sha256": "73245936fcd5594f58b446db049f6fff235125439f2cdff654d74c2c42f26fd6",
+      "bytes": 3589
+    },
+    "biodiversity/dwc-dp-review/table-schemas/organism-interaction-agent-role.json": {
+      "sha256": "2df3acfb4da8c0f3dc1468ec95f0a4ff488f85d4bada9b8ef5f7ec1f97503b9b",
+      "bytes": 5369
+    },
+    "biodiversity/dwc-dp-review/table-schemas/organism-interaction-assertion.json": {
+      "sha256": "2d8eadf806066db1a900dacfabbd9cda8d805b159b3a8658c14ed042031b5a56",
+      "bytes": 13974
+    },
+    "biodiversity/dwc-dp-review/table-schemas/organism-interaction-media.json": {
+      "sha256": "ca3fa407c38b03eb39d344957d8b0baa6a7070f2512b71f49799395fd2bd2cb2",
+      "bytes": 6354
+    },
+    "biodiversity/dwc-dp-review/table-schemas/organism-interaction-reference.json": {
+      "sha256": "6455b9b3692a7d7b6a5849dd44b206cc239d0fed2fac95eff6a225218678c3a4",
+      "bytes": 2538
+    },
+    "biodiversity/dwc-dp-review/table-schemas/organism-interaction.json": {
+      "sha256": "55b227d12410507040c2d43ef750108092a00e80d6d835d6c7156a6dec32e770",
+      "bytes": 8973
+    },
+    "biodiversity/dwc-dp-review/table-schemas/organism-reference.json": {
+      "sha256": "c2357d3d28732d113c491da824a09bc928ce6a23db25dedb0436e8680759f8c2",
+      "bytes": 2388
+    },
+    "biodiversity/dwc-dp-review/table-schemas/organism-relationship.json": {
+      "sha256": "bd6f320da57b2ffb6a5fb74ff9719aa5c7669982c611f7f577749433acca13d8",
+      "bytes": 9242
+    },
+    "biodiversity/dwc-dp-review/table-schemas/organism.json": {
+      "sha256": "28388a3c926d9e8f2cc8a03e160ee6f24c2cf1efacba2f91c076f89fe1a398a0",
+      "bytes": 5163
+    },
+    "biodiversity/dwc-dp-review/table-schemas/protocol-reference.json": {
+      "sha256": "9a2b35914788b069ada15fd1c223da293d982416397ec4c9d42ed02ad00f361b",
+      "bytes": 2388
+    },
+    "biodiversity/dwc-dp-review/table-schemas/protocol.json": {
+      "sha256": "434db67677ea756fa1a3fef1c5a5c5bd60954bb517329107dc2e2200a83bdfff",
+      "bytes": 3844
+    },
+    "biodiversity/dwc-dp-review/table-schemas/provenance.json": {
+      "sha256": "a2761472c0ffdbac00014a41d74f8a8e5803f955db6e49ef2a0d195b4c796219",
+      "bytes": 20189
+    },
+    "biodiversity/dwc-dp-review/table-schemas/resource-relationship.json": {
+      "sha256": "e0e781b4a2fe0e1a3c3094a411d4f5f189ef7cb9e17161fd8d6c3c3dc4901ed2",
+      "bytes": 9939
+    },
+    "biodiversity/dwc-dp-review/table-schemas/survey-agent-role.json": {
+      "sha256": "63af714080e8cb322e4fa97d8a53111c326d851118afc4817f27199c4ae942d7",
+      "bytes": 5195
+    },
+    "biodiversity/dwc-dp-review/table-schemas/survey-assertion.json": {
+      "sha256": "1832b508ae540458f0aa6dc6d43e657b0a05ace2d0abda52ceef3c28780cca97",
+      "bytes": 13814
+    },
+    "biodiversity/dwc-dp-review/table-schemas/survey-identifier.json": {
+      "sha256": "0c2aaa26620994d92e3c72e9abbb706b0c64f377d117038b1d01f20f6819ee6d",
+      "bytes": 3567
+    },
+    "biodiversity/dwc-dp-review/table-schemas/survey-protocol.json": {
+      "sha256": "100a306a0b4c6d91a776fc9f8318de48c349a3dbf75e1be08da3e6dc641a0a36",
+      "bytes": 1836
+    },
+    "biodiversity/dwc-dp-review/table-schemas/survey-reference.json": {
+      "sha256": "6627f05de9580bbc5a69a8c3052535d1bbcd0d17b846d873b25ed7baec396f60",
+      "bytes": 2364
+    },
+    "biodiversity/dwc-dp-review/table-schemas/survey-survey-target.json": {
+      "sha256": "525e9b71bebae8328e550580db303992172c4029a2bf9949fcb7ece71ec12c18",
+      "bytes": 1898
+    },
+    "biodiversity/dwc-dp-review/table-schemas/survey-target-descriptor.json": {
+      "sha256": "cb7d9f8b2a3c597635d876c54ffb0c17692ce79a66c16a1f6ccc7f4d7668f552",
+      "bytes": 6217
+    },
+    "biodiversity/dwc-dp-review/table-schemas/survey-target.json": {
+      "sha256": "e589b1afb07d0b2ac88eaf338fe2bd4ab5a8dc3a8655ab0ae314d27c488543fe",
+      "bytes": 4019
+    },
+    "biodiversity/dwc-dp-review/table-schemas/survey.json": {
+      "sha256": "fb197969446a06fe995edff4c21aec46bc7ab7dae9c000e4deb529e4973358da",
+      "bytes": 45023
+    },
+    "biodiversity/dwc-dp-review/table-schemas/usage-policy.json": {
+      "sha256": "771b29a661fe8a196de598fb1c6c618d44d2ca95e35cb3ccf91d63525c92c851",
+      "bytes": 12048
+    }
+  }
+}

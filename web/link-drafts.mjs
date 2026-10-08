@@ -1,0 +1,8 @@
+const cache=new Map();
+export function validLinkDraft(value,child,jobs){const parent=jobs.find(job=>job.id===value?.parentId);return !!parent&&Array.isArray(value.pairs)&&value.pairs.length>=1&&value.pairs.length<=5&&value.pairs.every(pair=>Array.isArray(pair)&&pair.length===2&&pair.every(Number.isInteger)&&pair[0]>=0&&pair[0]<child.headers.length&&pair[1]>=0&&pair[1]<parent.headers.length)&&typeof value.status==='string'&&['Unknown','Inferred','Confirmed','Conflicting','Not Applicable'].includes(value.status)&&typeof value.reviewer==='string'&&value.reviewer.length<=200&&typeof value.reason==='string'&&value.reason.length<=2000&&(value.relationshipId===null||typeof value.relationshipId==='string'&&value.relationshipId.length<=100);}
+export class LinkDrafts{
+ constructor(id,child,jobs,storage){this.id=id;this.child=child;this.jobs=jobs;this.storage=storage;this.key='biorescue-link-draft-v1:'+id;let value=cache.get(id);if(!value)try{const raw=storage?.getItem(this.key);if(raw&&raw.length<15000)value=JSON.parse(raw);}catch{}this.value=validLinkDraft(value,child,jobs)?structuredClone(value):null;}
+ get(){return this.value?structuredClone(this.value):null;}
+ save(value){if(!validLinkDraft(value,this.child,this.jobs))return;this.value=structuredClone(value);cache.set(this.id,this.value);try{if(!this.storage)throw Error('storage');this.storage.setItem(this.key,JSON.stringify(this.value));}catch{throw new Error('LARGE_METADATA_DRAFT_STORAGE');}}
+ clear(){this.value=null;cache.delete(this.id);try{if(!this.storage)throw Error('storage');this.storage.removeItem(this.key);}catch{throw new Error('LARGE_METADATA_DRAFT_STORAGE');}}
+}

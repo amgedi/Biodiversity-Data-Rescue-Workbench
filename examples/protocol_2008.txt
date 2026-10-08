@@ -1,0 +1,24 @@
+WOODLAND 2008 — FICTIONAL TRAINING PROTOCOL
+
+This is fictional training material, not an actual study or a claim about real locations.
+
+Three inherited tables: events, obs, taxa. event_id in obs identifies the survey
+record in events. taxon_code links an observation to a taxa row. The local
+dictionary was incomplete; do not assign identities to unknown taxon codes.
+
+Field n: number of individuals visually detected during the recorded survey.
+The code NA means the count was not recorded. A literal zero is a recorded
+zero count and must not become missing. Other sentinel codes were not documented.
+
+Survey effort is recorded in minutes in effort_min. An event with no observation
+rows is not proof that no organisms were detected; records may be missing.
+
+Observer names were removed from this fictional example. Species labels and
+coordinates are illustrative only. Some coordinates are intentionally questionable.
+The coordinate datum did not survive. Do not assume WGS84.
+
+Dates with slashes could be day/month or month/day; the notebook convention is lost.
+The cryptic field code has no surviving definition. Keep it Unknown.
+There is no evidence supporting automatic duplicate removal.
+
+All files in this fictional tutorial are provided under CC0-1.0.

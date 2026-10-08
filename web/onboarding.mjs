@@ -1,0 +1,44 @@
+import {glossary} from './glossary.mjs';
+export {glossary} from './glossary.mjs';
+import {toolLabel,TOOLS} from './workspace-profile.mjs';
+import {uiLabel} from './i18n.mjs';
+import {htmlMessage as uiText,t as uiValue} from './i18n.mjs';
+import {createProductTour} from './tour.mjs';
+import {htmlMessage as tr} from './i18n.mjs';
+import {esc,ask,icon} from './components.mjs';
+export const steps=[
+ ['Project','Meet your disposable practice project','This fictional Rocky Mountain amphibian collection contains conflicting records. Progress is a checklist, not a certification.'],
+ ['Sources','Preserve before interpreting','Check every original file and its checksum. Working edits never replace source bytes.'],
+ ['Sources','Read the old README','Find README_old.txt. Record uncertainty rather than treating an old description as unquestionable.'],
+ ['Sources','Compare three final workbooks','Compare survey_FINAL.xlsx, survey_FINAL2.xlsx and survey_FINAL_FIXED.xlsx. A filename does not establish authority.'],
+ ['Sources','Inspect text conventions','Review delimiter, encoding, header row and literal values. A successful parse does not prove the interpretation.'],
+ ['Inspect','Explore independent tables','Choose observations, events, species codes and weather. Tables have distinct grains.'],
+ ['Inspect','Look for missingness','Keep blank, NA, zero and absence distinct until a protocol defines their meanings.'],
+ ['Metadata','Recover a field meaning','Read protocol_REVISED.txt and attach it as evidence when documenting the count field n.'],
+ ['Evidence','Keep competing claims','Record both meanings of code 4 as separate assertions. Do not silently pick one.'],
+ ['Metadata','Leave mystery unknown','An unexplained field remains Unknown. A guess can be recorded as Inferred with rationale.'],
+ ['Metadata','Document dates conservatively','Do not choose month-first or day-first from ambiguous values alone. Partial dates retain their precision.'],
+ ['Metadata','Check spatial context','Coordinates require a reference system and datum. Unknown context stays visible.'],
+ ['Relationships','Review the event identifier','Declare an identifier only with evidence. Inspect duplicate E2 rather than dropping records.'],
+ ['Relationships','Inspect orphan observations','Investigate E404 and missing parent events. A suggested link is not confirmed evidence.'],
+ ['Relationships','Preserve non-detections','An event without observations may record survey effort. Do not equate it to missing data.'],
+ ['Snapshots','Create a named checkpoint','Keep a checkpoint before repairs; also export an independent portable backup.'],
+ ['Repair','Preview whitespace repairs','Read affected values before applying trim. Every meaningful change needs a reason.'],
+ ['Repair','Review missing-value normalization','Confirm a missing-value convention before changing literal codes. Zero is a measurement.'],
+ ['Audit / Report','Inspect the audit trail','Undo and redo add events. Recipe replay verifies sources and creates a separate project.'],
+ ['Map to Standards','Review a suggested mapping','A term suggestion is a candidate. Confirm meaning and evidence before standard export.'],
+ ['Validate','Review remaining findings','Errors, warnings and information have different purposes; no quality score replaces scientific review.'],
+ ['Export','Preview sensitive-location handling','Check coordinate redaction and evidence before preparing a public package. Original data remains preserved.'],
+ ['Export','Save and inspect a preservation package','Export originals, cleaned tables, dictionary and report. Reopen a backup as an explicit copy and compare checksums.']
+];
+for(const [route,key]of [["Review queue", "review"], ["Translate & standardize", "meaning"], ["Translate & standardize", "unit"], ["Translate & standardize", "codes"], ["Translate & standardize", "date"], ["Translate & standardize", "missing"], ["Translate & standardize", "coordinate"], ["Saved for later", "notes"], ["Settings", "templates"], ["Export", "final"]]){const row=[route];Object.defineProperty(row,'1',{enumerable:true,get:()=>uiValue('v062.tutorial.'+key+'.title')});Object.defineProperty(row,'2',{enumerable:true,get:()=>uiValue('v062.tutorial.'+key+'.text')});steps.push(row);}
+export function setupOnboarding({getProject,isTutorial=()=>false,navigate,notice}){
+ const productTour=createProductTour({navigate,notice,getProject});
+ const key=id=>'biorescue-tutorial-'+id;
+ function read(){try{return JSON.parse(localStorage.getItem(key(getProject().id))||'null')||{index:0,done:[],skipped:[]};}catch{return {index:0,done:[],skipped:[]};}}
+ function store(value){localStorage.setItem(key(getProject().id),JSON.stringify(value));}
+ function panel(){const p=getProject();if(!p||!isTutorial()||!p.resources.some(r=>r.name==='README_old.txt'))return;const state=read(),index=Math.max(0,Math.min(steps.length-1,state.index)),step=steps[index];const area=document.createElement('section');area.className='panel tutorial-guide';area.innerHTML=`<div class="eyebrow">${uiText("ui.8f800269b80a",{p0:(index+1)})}</div><h2>${esc(uiLabel(step[1]))}</h2><p>${esc(uiLabel(step[2]))}</p><p class="muted">${uiText("ui.2b1f43017eee",{p0:(state.done.length),p1:(state.skipped.length)})}</p><div class="small-actions"><button class="button secondary" data-guide="previous" ${index?'':'disabled'}>${tr("previous")}</button><button class="button primary" data-guide="go">${uiText("ui.8f12e592f795",{p0:(uiLabel(step[0]))})}</button><button class="button secondary" data-guide="done" data-i18n="ui.94eb627a4ebf">${tr("ui.94eb627a4ebf")}</button><button class="text-button" data-guide="skip" data-i18n="ui.b58eb52c8810">${tr("ui.b58eb52c8810")}</button><button class="text-button" data-guide="restart" data-i18n="ui.9ca08c4d84e1">${tr("ui.9ca08c4d84e1")}</button></div>`;const disclosure=document.createElement('details');disclosure.className='practice-lesson';const summary=document.createElement('summary');summary.textContent=uiValue('v07.practiceTag')+' · '+uiLabel(step[1]);disclosure.append(summary,area);document.querySelector('.data-view-bar,.rescue-tabs,.project-heading')?.after(disclosure);for(const button of area.querySelectorAll('[data-guide]'))button.onclick=async()=>{const action=button.dataset.guide;if(action==='go')return navigate(step[0]);if(action==='restart'){if(!await ask({title:uiValue("ui.cf5ee69de1cc"),body:uiValue("ui.46db3d02787e"),choices:[{value:'restart',label:uiValue("ui.9ca08c4d84e1")},{value:null,label:uiValue("cancel")}]}))return;state.index=0;state.done=[];state.skipped=[];}else if(action==='previous')state.index=Math.max(0,index-1);else{const collection=action==='done'?'done':'skipped';if(!state[collection].includes(index))state[collection].push(index);state.index=Math.min(steps.length-1,index+1);}try{store(state);disclosure.remove();panel();}catch(e){notice(uiValue("ui.16c82bcbf79c",{p0:(e.message)}),true);}};}
+ function help(){document.querySelector('#main').innerHTML=`<section class="panel"><div class="eyebrow">${tr("ui.d6d324921dd5")}</div><h1 data-i18n="help">${tr("help")}</h1><p data-i18n="ui.98792384dfe4">${tr("ui.98792384dfe4")}</p><div class="small-actions"><button class="button primary" data-action="nightmare" data-i18n="ui.7f96ba92f792">${tr("ui.7f96ba92f792")}</button><button class="button secondary" data-tour data-i18n="ui.fbd5a2c5e9f4">${tr("ui.fbd5a2c5e9f4")}</button><button class="button secondary" data-section="Projects" data-i18n="ui.e82a6eb21afd">${tr("ui.e82a6eb21afd")}</button></div><h2 data-i18n="ui.172a20b31ed2">${tr("ui.172a20b31ed2")}</h2><label>${tr("ui.ecb3af6d2163")}<input type="search" id="glossary-search" data-tour-id="help-search"></label><div id="glossary-entries"></div></section>`;const draw=query=>{document.querySelector('#glossary-entries').innerHTML=TOOLS.map(name=>[toolLabel(name),uiValue('v06.help.'+name)]).filter(x=>x.join(' ').toLocaleLowerCase().includes(query.toLocaleLowerCase())).map(([heading,body])=>`<article class="help-topic"><h3>${esc(heading)}</h3><p>${esc(body)}</p></article>`).join('')+ ["occurrence", "event", "field", "table", "inference", "validation", "darwinCore", "dwcdp", "eml", "rocrate", "camtrap", "taxon", "codebook", "missing", "normalization"].map(key=>[uiValue('v06.glossary.'+key+'.term'),uiValue('v06.glossary.'+key+'.definition')]).concat(glossary.map(x=>x.map(uiLabel))).filter(x=>x.join(' ').toLowerCase().includes(query.toLowerCase())).map(([term,meaning])=>`<article><h3>${esc(term)}</h3><p>${esc(meaning)}</p></article>`).join('')||`<p data-i18n="ui.12d446fd91d7">${tr("ui.12d446fd91d7")}</p>`;};draw('');document.querySelector('#glossary-search').setAttribute('aria-label',uiValue('v06.helpSearch'));document.querySelector('#glossary-search').oninput=e=>draw(e.target.value);document.querySelector('[data-tour]').onclick=tour;}
+ const tour=options=>productTour.start(options);
+ return {panel,help,tour};
+}

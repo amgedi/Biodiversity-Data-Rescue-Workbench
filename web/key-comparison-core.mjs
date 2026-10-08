@@ -1,0 +1,35 @@
+export const COMPARISON_LIMITS=Object.freeze({rowsPerTable:100000,fields:100,keyPairs:5,cells:2000000,keyCodeUnits:10000000,reportBytes:20*1024*1024});
+const fail=code=>{throw new Error('COMPARE_'+code);};
+function validateTable(table){if(!table||!Array.isArray(table.headers)||!table.headers.length||table.headers.length>250||table.headers.some(h=>typeof h!=='string'||h.length>1000)||!Array.isArray(table.rows)||table.rows.length>COMPARISON_LIMITS.rowsPerTable)fail('LIMIT');for(const row of table.rows)if(!Array.isArray(row)||row.length!==table.headers.length||row.some(v=>typeof v!=='string'))fail('SHAPE');if(table.originalTable&&!Number.isInteger(table.originalTable.rows?.length))fail('ORIGINS');if(table.rowOrigins!==undefined&&table.rowOrigins!==null&&(!Array.isArray(table.rowOrigins)||table.rowOrigins.length!==table.rows.length||table.rowOrigins.some(n=>!Number.isInteger(n)||n<0||table.originalTable&&n>=table.originalTable.rows.length)))fail('ORIGINS');}
+export function validateComparison(left,right,spec){validateTable(left);validateTable(right);for(const [name,max]of [['keys',COMPARISON_LIMITS.keyPairs],['fields',COMPARISON_LIMITS.fields]]){const pairs=spec?.[name];if(!Array.isArray(pairs)||!pairs.length||pairs.length>max||pairs.some(pair=>!Array.isArray(pair)||pair.length!==2||pair.some(n=>!Number.isInteger(n))||pair[0]<0||pair[0]>=left.headers.length||pair[1]<0||pair[1]>=right.headers.length)||new Set(pairs.map(pair=>JSON.stringify(pair))).size!==pairs.length)fail('SELECTION');}if((left.rows.length+right.rows.length)*(spec.keys.length+spec.fields.length)>COMPARISON_LIMITS.cells)fail('LIMIT');}
+export function compareLiteralTables(left,right,spec){
+ validateComparison(left,right,spec);let budget=COMPARISON_LIMITS.keyCodeUnits;
+ function index(table,side){const groups=new Map(),keys=[];for(const [i,row]of table.rows.entries()){const values=spec.keys.map(pair=>row[pair[side]]);for(const value of values){budget-=value.length;if(budget<0)fail('LIMIT');}const key=values.some(v=>v==='')?null:JSON.stringify(values);keys.push(key);if(key!==null){const group=groups.get(key)||[];group.push(i);groups.set(key,group);}}return {groups,keys};}
+ const a=index(left,0),b=index(right,1),consumedRight=new Set(),records=[],counts={equal:0,different:0,leftOnly:0,rightOnly:0,leftMissingKey:0,rightMissingKey:0,ambiguous:0};
+ const origin=(table,i)=>i===null?null:table.originalTable&&Array.isArray(table.rowOrigins)?table.rowOrigins[i]+1:null;
+ const add=(status,li,ri,lc=0,rc=0,changedFields=[])=>{counts[status]++;records.push({status,leftRecord:li===null?null:li+1,rightRecord:ri===null?null:ri+1,leftOriginalRecord:origin(left,li),rightOriginalRecord:origin(right,ri),leftKeyMultiplicity:lc,rightKeyMultiplicity:rc,changedFields});};
+ for(const [li,key]of a.keys.entries()){
+  if(key===null){add('leftMissingKey',li,null);continue;}const leftGroup=a.groups.get(key),rightGroup=b.groups.get(key)||[];
+  if(!rightGroup.length){add('leftOnly',li,null,leftGroup.length,0);continue;}
+  if(leftGroup.length!==1||rightGroup.length!==1){add('ambiguous',li,null,leftGroup.length,rightGroup.length);continue;}
+  const ri=rightGroup[0],changed=spec.fields.flatMap(([lc,rc],i)=>left.rows[li][lc]===right.rows[ri][rc]?[]:[i]);consumedRight.add(ri);add(changed.length?'different':'equal',li,ri,1,1,changed);
+ }
+ for(const [ri,key]of b.keys.entries()){
+  if(consumedRight.has(ri))continue;if(key===null){add('rightMissingKey',null,ri);continue;}const rightGroup=b.groups.get(key),leftGroup=a.groups.get(key)||[];add(leftGroup.length?'ambiguous':'rightOnly',null,ri,leftGroup.length,rightGroup.length);
+ }
+ return {comparisonVersion:1,matching:'exact ordered literal strings; only empty key components are unlinked',limits:{...COMPARISON_LIMITS},counts,leftRecords:left.rows.length,rightRecords:right.rows.length,leftDuplicateKeyGroups:[...a.groups.values()].filter(group=>group.length>1).length,rightDuplicateKeyGroups:[...b.groups.values()].filter(group=>group.length>1).length,records};
+}
+const hash=async value=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(value))))].map(n=>n.toString(16).padStart(2,'0')).join('');
+function snapshot(table){return {id:table.id,name:table.name,resourceId:table.resourceId,headers:[...table.headers],rows:table.rows.map(row=>[...row]),rowOrigins:Array.isArray(table.rowOrigins)?[...table.rowOrigins]:null,originalTable:table.originalTable?{rows:{length:table.originalTable.rows.length}}:null,columns:structuredClone(table.columns||[])};}
+const data=table=>[table.headers,table.rows,table.rowOrigins];
+export async function reviewedComparison(project,leftId,rightId,spec,review,integrity){
+ const left=project.tables.find(table=>table.id===leftId),right=project.tables.find(table=>table.id===rightId);if(!left||!right||leftId===rightId)fail('TABLE');validateComparison(left,right,spec);
+ if(!review||typeof review.reason!=='string'||!review.reason.trim()||review.reason.length>4000||typeof review.reviewer!=='string'||review.reviewer.length>200||review.confirmed!==true)fail('REVIEW');
+ const sourceIds=new Set([left.resourceId,right.resourceId]),sources=project.resources.filter(resource=>sourceIds.has(resource.id)).map(({id,name,sha256,bytes})=>({id,name,sha256,bytes}));
+ if(sources.length!==sourceIds.size||sources.some(source=>!/^([a-f0-9]{64})$/.test(source.sha256)||!Number.isInteger(source.bytes)||source.bytes<0))fail('SOURCE');
+ for(const source of sources){const checks=integrity?.find(check=>check.resourceId===source.id);if(!checks||checks.expected!==source.sha256||checks.expectedBytes!==source.bytes||!['backupMatches','diskMatches','backupByteLengthMatches','diskByteLengthMatches'].every(key=>checks[key]===true))fail('INTEGRITY');}
+ const a=snapshot(left),b=snapshot(right),recipe={keys:spec.keys.map(pair=>[...pair]),fields:spec.fields.map(pair=>[...pair])},result=compareLiteralTables(a,b,recipe),identity={projectId:project.id,projectRevision:project.revision,review:{reviewer:review.reviewer,reason:review.reason.trim(),confirmedLiteralPairing:true},sources,integrity:structuredClone(integrity.filter(check=>sourceIds.has(check.resourceId)))};
+ const descriptor=async table=>({tableId:table.id,name:table.name,resourceId:table.resourceId,workingFingerprint:await hash(data(table)),fingerprintRecipe:'SHA-256 of UTF-8 JSON.stringify([headers, rows, rowOrigins-or-null])',rowOrigins:table.rowOrigins,headers:table.headers,selectedDefinitions:[...new Set(recipe.keys.concat(recipe.fields).map(pair=>pair[table===a?0:1]))].map(index=>({index,definition:table.columns[index]??null}))});
+ const report={reportVersion:1,...identity,recipe,left:await descriptor(a),right:await descriptor(b),result,scientificEquivalenceAsserted:false,sourceOrWorkingDataChanged:false,interpretation:'Private read-only literal comparison; selected keys do not establish biological identity, standardized equivalence or relationship cardinality.'};
+ if(new TextEncoder().encode(JSON.stringify(report)).length>COMPARISON_LIMITS.reportBytes)fail('REPORT_LIMIT');return {report,left:a,right:b};
+}

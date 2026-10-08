@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Biodiversity Data Rescue Workbench",
+  "version": "0.7.0-dev.0",
+  "identifier": "org.biodiversity.rescue.workbench",
+  "build": {"frontendDist": "../startup"},
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [],
+    "security": {"csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src ipc: http://ipc.localhost; object-src 'none'"}
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "resources": ["engine/**/*"],
+    "icon": ["icons/icon.ico"],
+    "windows": {"nsis": {"installMode": "currentUser", "displayLanguageSelector": false}}
+  }
+}

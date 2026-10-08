@@ -1,0 +1,635 @@
+{
+  "version": 2,
+  "projectSchemaVersion": 3,
+  "migrationHistory": [],
+  "evidenceAssertions": [],
+  "recovery": {},
+  "appVersion": "0.7.0-dev.0",
+  "id": "37e1cc86-c49e-4ed4-99db-f458fbddc871",
+  "revision": 0,
+  "createdAt": "2026-10-04T16:30:42.044Z",
+  "updatedAt": "2026-10-04T16:30:42.048Z",
+  "metadata": {
+    "title": {
+      "value": "Simple amphibian survey · fictional practice",
+      "status": "Confirmed",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "description": {
+      "value": "Authored fictional training collection. Inspect literals, uncertainty, evidence and package purpose. No real research records.",
+      "status": "Confirmed",
+      "confidence": "",
+      "rationale": "Authored exclusively for local practice.",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "purpose": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "creator": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "contributors": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "contact": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "organizations": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "citation": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "publicationDate": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "license": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "funding": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "methods": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "samplingProtocol": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "studyDesign": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "temporalCoverage": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "spatialCoverage": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "taxonomicCoverage": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "keywords": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "originalSoftware": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "publications": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "limitations": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "provenance": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "sensitivity": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "datum": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "coordinateUncertainty": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    }
+  },
+  "resources": [
+    {
+      "name": "amphibian-events.csv",
+      "base64": "ZXZlbnRfaWQsZGF0ZV9saXRlcmFsLGVmZm9ydF9taW51dGVzCkEwMSwyMDIwLTA1LTAxLDMwCkEwMiwyMDIwLTA1LTAyLDMwCkEwMywyMDIwLTA1LTAzLDMwCg==",
+      "bytes": 91,
+      "sha256": "ebd6ed641da375ab4a1578d0baa50c771cab4f33dc2c83aebdcebffafffb2b24",
+      "importedAt": "2026-10-04T16:30:41.949895+00:00",
+      "format": "csv",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "notes": [],
+        "sourceForensics": {
+          "mimeType": "text/csv",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 4,
+            "CR": 0
+          },
+          "nullByteCount": 0,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": null,
+      "id": "1f85c5bc-4d20-4262-beeb-3b9012303da7"
+    },
+    {
+      "name": "amphibian-observations.csv",
+      "base64": "cmVjb3JkX2lkLGV2ZW50X2lkLHJlY29yZGVkX25hbWUsY291bnQKMDAxLEEwMSxGaWN0aW9uYWwgZnJvZyBBLDAKMDAyLEEwMixGaWN0aW9uYWwgZnJvZyBBLDIKMDAzLEEwMixGaWN0aW9uYWwgZnJvZyBCLDEK",
+      "bytes": 120,
+      "sha256": "574ec11c920b75075250f33826ae136d69b66473c604c1dd3836fbae01c76b97",
+      "importedAt": "2026-10-04T16:30:41.950514+00:00",
+      "format": "csv",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "notes": [],
+        "sourceForensics": {
+          "mimeType": "text/csv",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 4,
+            "CR": 0
+          },
+          "nullByteCount": 0,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": null,
+      "id": "5c20cdeb-5197-460e-bfc6-fff4db726cbe"
+    },
+    {
+      "name": "practice-notes.txt",
+      "base64": "RklDVElPTkFMIFBSQUNUSUNFIE9OTFkuIE5vIGFjdHVhbCBzcGVjaW1lbnMsIHN1cnZleXMsIGxvY2F0aW9ucyBvciBtZWRpYS4KQWxsIHNjaWVudGlmaWMgbWVhbmluZ3Mgc3RhcnQgVW5rbm93biBhbmQgbXVzdCBiZSByZXZpZXdlZCBleHBsaWNpdGx5LgpBIHJlY29yZGVkIHplcm8gaXMgZGlzdGluY3QgZnJvbSBhIGJsYW5rIG9yIE5BIGxpdGVyYWwuCkRhdGVzIHJlbWFpbiBsaXRlcmFsOyBhbWJpZ3VvdXMgb3JkZXIgYW5kIHByZWNpc2lvbiBtdXN0IG5vdCBiZSBndWVzc2VkLgowMDEgYW5kIDEgYXJlIGRpc3RpbmN0IGlkZW50aWZpZXJzLiBEdXBsaWNhdGUgY29kZSBtZWFuaW5ncyBjb25mbGljdC4KQW4gZXZlbnQgd2l0aG91dCBvYnNlcnZhdGlvbnMgY2FuIHJldGFpbiBlZmZvcnQ7IHRoZSBtZWFuaW5nIG5lZWRzIHByb3RvY29sIHJldmlldy4KQ2FtZXJhIGZpbGUgcGF0aHMgYXJlIGZpY3Rpb25hbCByZWZlcmVuY2VzOyBubyBpbWFnZSBmaWxlcyBhcmUgaW5jbHVkZWQuCkNDMC0xLjAgYXBwbGllcyBvbmx5IHRvIHRoZXNlIGF1dGhvcmVkIGZpY3Rpb25hbCB0cmFpbmluZyBpbnB1dHMuCg==",
+      "bytes": 568,
+      "sha256": "588cae2c4defcbd669d3a64aa16cc615c3b739fcb4198fa733ad63aed339d956",
+      "importedAt": "2026-10-04T16:30:41.950780+00:00",
+      "format": "txt",
+      "adapterVersion": 1,
+      "role": "supporting",
+      "archaeology": {
+        "sourceForensics": {
+          "mimeType": "text/plain",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 8,
+            "CR": 0
+          },
+          "nullByteCount": 0,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": "Intentionally preserved as supporting evidence without tabular conversion.",
+      "id": "a4e7cd67-8679-4ba2-8a56-3a5a2a4def98"
+    }
+  ],
+  "tables": [
+    {
+      "headers": [
+        "event_id",
+        "date_literal",
+        "effort_minutes"
+      ],
+      "rows": [
+        [
+          "A01",
+          "2020-05-01",
+          "30"
+        ],
+        [
+          "A02",
+          "2020-05-02",
+          "30"
+        ],
+        [
+          "A03",
+          "2020-05-03",
+          "30"
+        ]
+      ],
+      "rowWidths": [
+        3,
+        3,
+        3
+      ],
+      "originalHeaders": [
+        "event_id",
+        "date_literal",
+        "effort_minutes"
+      ],
+      "parsing": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "format": "delimited",
+        "headerRow": 1,
+        "adapterVersion": 1,
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "escapeChar": null,
+        "skipInitialSpace": false,
+        "strict": true
+      },
+      "notes": [],
+      "name": "amphibian-events",
+      "sheet": null,
+      "id": "9e474b71-91e9-4fe5-bf89-d2d424e3564b",
+      "resourceId": "1f85c5bc-4d20-4262-beeb-3b9012303da7",
+      "rowOrigins": [
+        0,
+        1,
+        2
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "event_id",
+          "workingName": "event_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "date_literal",
+          "workingName": "date_literal",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 2,
+          "originalName": "effort_minutes",
+          "workingName": "effort_minutes",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "event_id",
+          "date_literal",
+          "effort_minutes"
+        ],
+        "rows": [
+          [
+            "A01",
+            "2020-05-01",
+            "30"
+          ],
+          [
+            "A02",
+            "2020-05-02",
+            "30"
+          ],
+          [
+            "A03",
+            "2020-05-03",
+            "30"
+          ]
+        ]
+      }
+    },
+    {
+      "headers": [
+        "record_id",
+        "event_id",
+        "recorded_name",
+        "count"
+      ],
+      "rows": [
+        [
+          "001",
+          "A01",
+          "Fictional frog A",
+          "0"
+        ],
+        [
+          "002",
+          "A02",
+          "Fictional frog A",
+          "2"
+        ],
+        [
+          "003",
+          "A02",
+          "Fictional frog B",
+          "1"
+        ]
+      ],
+      "rowWidths": [
+        4,
+        4,
+        4
+      ],
+      "originalHeaders": [
+        "record_id",
+        "event_id",
+        "recorded_name",
+        "count"
+      ],
+      "parsing": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "format": "delimited",
+        "headerRow": 1,
+        "adapterVersion": 1,
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "escapeChar": null,
+        "skipInitialSpace": false,
+        "strict": true
+      },
+      "notes": [],
+      "name": "amphibian-observations",
+      "sheet": null,
+      "id": "a26e05e5-d22c-4dac-a975-0a2f1969ac70",
+      "resourceId": "5c20cdeb-5197-460e-bfc6-fff4db726cbe",
+      "rowOrigins": [
+        0,
+        1,
+        2
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "record_id",
+          "workingName": "record_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "event_id",
+          "workingName": "event_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 2,
+          "originalName": "recorded_name",
+          "workingName": "recorded_name",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 3,
+          "originalName": "count",
+          "workingName": "count",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "record_id",
+          "event_id",
+          "recorded_name",
+          "count"
+        ],
+        "rows": [
+          [
+            "001",
+            "A01",
+            "Fictional frog A",
+            "0"
+          ],
+          [
+            "002",
+            "A02",
+            "Fictional frog A",
+            "2"
+          ],
+          [
+            "003",
+            "A02",
+            "Fictional frog B",
+            "1"
+          ]
+        ]
+      }
+    }
+  ],
+  "relationships": [],
+  "audit": [
+    {
+      "id": "d776e355-7058-4759-941f-22173ab0ee1c",
+      "at": "2026-10-04T16:30:42.048Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "1f85c5bc-4d20-4262-beeb-3b9012303da7",
+      "sourceHash": "ebd6ed641da375ab4a1578d0baa50c771cab4f33dc2c83aebdcebffafffb2b24",
+      "applicationVersion": "0.7.0-dev.0"
+    },
+    {
+      "id": "2dfc5520-282f-40d6-aeb2-0607f9e49b7a",
+      "at": "2026-10-04T16:30:42.048Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "5c20cdeb-5197-460e-bfc6-fff4db726cbe",
+      "sourceHash": "574ec11c920b75075250f33826ae136d69b66473c604c1dd3836fbae01c76b97",
+      "applicationVersion": "0.7.0-dev.0"
+    },
+    {
+      "id": "e2cf8dd9-bb28-4ad5-98c5-3c9af8f45561",
+      "at": "2026-10-04T16:30:42.048Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "a4e7cd67-8679-4ba2-8a56-3a5a2a4def98",
+      "sourceHash": "588cae2c4defcbd669d3a64aa16cc615c3b739fcb4198fa733ad63aed339d956",
+      "applicationVersion": "0.7.0-dev.0"
+    }
+  ],
+  "undoStack": [],
+  "redoStack": [],
+  "profiles": {
+    "frictionless": "1",
+    "darwinCoreGuide": "2026-05-26",
+    "roCrate": "1.3",
+    "eml": "2.2.0"
+  },
+  "mode": "beginner"
+}

@@ -1,0 +1,23 @@
+{
+  "fixtures": {
+    "fictional-legacy-notes.doc": {
+      "bytes": 9728,
+      "sha256": "7f472f1f97c8b4b9f216be9fec2d6306ca5e3cb09dbdd3243f6bc4bd5c5f6b24"
+    },
+    "fictional-doc-structural.doc": {
+      "bytes": 9728,
+      "sha256": "b3b078f627112dab27e1f38681c6611e1709acddf633469e197ebf2a2e4e5f8a"
+    },
+    "fictional-doc-protected.doc": {
+      "bytes": 9728,
+      "sha256": "11d81666785a20e2958e94c262695af8d2e9ac76c3a894c7190424cb056934ce"
+    }
+  },
+  "notes": "Fictional text only. legacy-notes uses the public Apache POI simple.doc Word 97 formatting streams with its entire 48-unit story replaced and all other OLE streams discarded. Structural/protected fixtures are minimal parser boundary cases, not full Word document reconstruction or authoring examples.",
+  "templateSource": {
+    "name": "simple.doc",
+    "url": "https://raw.githubusercontent.com/apache/poi/trunk/test-data/document/simple.doc",
+    "bytes": 19456,
+    "sha256": "4876e828e62d490fa188c7c4e47013e2e0dfdf02f5903dfd374bc0d2b2049ca1"
+  }
+}

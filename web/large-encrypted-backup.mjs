@@ -1,0 +1,5 @@
+import {t,htmlMessage as h,localizeMessage} from './i18n.mjs';
+export function mountLargeEncrypted(host,{id,json,notice}){
+ host.innerHTML=`<details class="large-metadata-panel"><summary>${h('workspace.encryptLarge')}</summary><p>${h('workspace.cryptoSafety')}</p><form data-large-encrypt><label>${h('workspace.backupPassword')}<input type="password" name="password" required minlength="12" maxlength="1024" autocomplete="new-password"></label><button class="button secondary">${h('workspace.encryptLarge')}</button></form></details>`;
+ const form=host.querySelector('form');form.onsubmit=async event=>{event.preventDefault();const input=form.elements.password,password=input.value;input.value='';const button=form.querySelector('button');button.disabled=true;try{const result=await json('/api/large-encrypted-export',{id,password});if(!host.isConnected)return;const link=document.createElement('a');link.href='/api/large-link-download?token='+encodeURIComponent(result.token);link.download='large-investigation.biorescue-encrypted';link.click();notice(t('v065.downloadReady'));}catch(error){notice(localizeMessage(error.message),true);}finally{button.disabled=false;}};
+}

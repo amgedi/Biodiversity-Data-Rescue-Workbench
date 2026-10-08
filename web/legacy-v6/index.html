@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#173e35"><title>Biodiversity Data Rescue Workbench</title><link rel="icon" href="/biodiversity-icon-32.png"><link rel="apple-touch-icon" href="/biodiversity-icon-192.png"><link rel="manifest" href="/manifest-v05.webmanifest"><script type="module" src="/app2.mjs"></script>
+
+<link rel="stylesheet" href="/workbench.css">
+
+</head>
+
+<body>
+
+<a class="skip" href="#main"><span data-i18n="ui.3ea656d347af">Skip to workspace</span></a>
+
+<button id="navigation-backdrop" tabindex="-1" aria-label="Close navigation"></button>
+
+<aside class="sidebar" id="workstation-navigation" aria-label="Workbench navigation">
+
+  <a class="brand" href="/" aria-label="Biodiversity Workbench home"><span class="brand-mark biodiversity-mark" aria-hidden="true"></span><span>BIODIVERSITY<small>DATA RESCUE WORKBENCH</small></span></a>
+
+  <button class="nav" id="workstation-home"><span aria-hidden="true">⌂</span><span data-i18n="v07.home">Home</span></button>
+
+  <button class="nav" id="home-button" data-tour-id="projects"><span aria-hidden="true">▦</span><span data-i18n="v07.library">Project library</span></button>
+
+  <div id="project-list" class="project-list"></div>
+
+  <div id="workflow-rail"></div>
+
+  <div class="rail-bottom">
+
+  <button class="nav" id="new-button" data-tour-id="import"><span aria-hidden="true">＋</span><span data-i18n="v07.start">Start a data rescue</span></button>
+
+  <button class="nav" id="restore-button"><span aria-hidden="true">↥</span><span data-i18n="backup">Open project backup</span></button>
+
+  <button class="nav" data-section="Help"><span aria-hidden="true">?</span><span data-i18n="v07.helpTitle">Help Center</span></button>
+
+  <button class="nav" data-desktop-new-window hidden><span aria-hidden="true">▣</span><span data-i18n="v07.newWindow">New window</span></button>
+
+  <button class="nav" data-section="Storage & Recovery"><span aria-hidden="true">↶</span><span>Recovery</span></button><div class="local-note"><span class="status-dot"></span><strong data-i18n="v07.local">Local only</strong></div>
+
+  </div>
+
+  <input id="backup-file" type="file" accept=".json" hidden>
+
+</aside>
+
+<div class="app-shell">
+
+  <header class="topbar"><button id="navigation-toggle" aria-controls="workstation-navigation" aria-expanded="false" aria-label="Open navigation">☰</button><div id="workstation-context"><span data-i18n="v07.home">Home</span></div><span class="local-pill" data-tour-id="local-status" data-i18n="v07.local">Local only</span></header>
+
+  <main id="main" tabindex="-1"><p role="status"><span class="about-mark biodiversity-mark" aria-hidden="true"></span> <span data-i18n="ui.9363f4337aa9">Biodiversity Workbench · Opening local workspace…</span></p></main>
+
+  <footer class="workstation-status"><span data-tour-id="local-status" data-i18n="v07.local">Local only</span><span id="workstation-state" role="status" data-i18n="v07.noProject">No project open</span><button class="text-button" data-section="Storage & Recovery" data-i18n="v07.history">History &amp; recovery</button></footer>
+
+</div>
+
+<div id="notice" role="status" aria-live="polite"></div>
+
+<dialog id="import-dialog" aria-labelledby="import-title">
+
+  <form id="import-form">
+
+    <div class="dialog-heading"><div><div class="eyebrow"><span data-i18n="ui.06f87d114e26">PRESERVE FIRST</span></div><h2 id="import-title"><span data-i18n="ui.bc8a24e4fc5d">Bring a dataset back into focus</span></h2></div><button type="button" class="icon-button" id="close-import" aria-label="Close import" data-i18n-attrs='{"aria-label":"ui.e68710b4e310"}'>×</button></div>
+
+    <p class="muted"><span data-i18n="ui.ec7d9b9efcd2">Your original file stays intact. Confirm how to read it before starting a rescue.</span></p>
+
+    <label class="dropzone upload-area" for="source-file" data-tour-id="import-zone"><span class="upload-symbol">↥</span><strong><span data-i18n="ui.89e3f72fb955">Choose a source file</span></strong><span><span data-i18n="ui.04cf47804f92">Data or supporting evidence · up to 20 MiB</span></span><input id="source-file" type="file" accept=".csv,.tsv,.txt,.xlsx,.xls" required></label>
+
+    <label class="checkbox-label"><input id="support-only" type="checkbox"><span data-i18n="ui.375ef41d353d">Preserve as supporting evidence only; do not extract tables.</span></label><div class="form-grid import-settings"><label><span data-i18n="v069.format">Text layout</span><select id="text-format"><option value="delimited" data-i18n="v069.delimited">Delimited text</option><option value="fixed-width" data-i18n="v069.fixed">Fixed-width text</option></select></label><label id="fixed-width-label" hidden><span data-i18n="v069.widths">Reviewed field widths</span><input id="fixed-widths" type="text" inputmode="numeric" aria-describedby="fixed-width-help" placeholder="3,3,1" maxlength="2000"></label><p id="fixed-width-help" class="callout" hidden data-i18n="v069.help">Enter comma-separated character counts, such as 3,3,1. Choose an explicit encoding. Header row 0 keeps all records and generates neutral field names. Widths count decoded Unicode characters, not bytes or visual columns. Review the preview before importing.</p>
+
+      <label><span data-i18n="ui.f6726ca0b9fe">Text encoding</span><select id="encoding"><option value="auto" data-i18n="ui.836e5a7f8e81">Detect automatically</option><option value="utf-8" data-i18n="ui.3ad3031f5503">UTF-8</option><option value="utf-8-sig" data-i18n="ui.8865dbc41fab">UTF-8 with BOM</option><option value="utf-16" data-i18n="ui.4e317c4cabfa">UTF-16</option><option value="cp1252" data-i18n="ui.25352a870ce5">Windows-1252</option><option value="latin-1" data-i18n="ui.7bff9594f61d">Latin-1</option></select></label>
+
+      <label><span data-i18n="ui.4b4eb3b88e85">Delimiter</span><select id="delimiter"><option value="auto" data-i18n="ui.836e5a7f8e81">Detect automatically</option><option value="," data-i18n="ui.80f2d0366b04">Comma</option><option value="tab" data-i18n="ui.90ddf1963abb">Tab</option><option value=";" data-i18n="ui.1a68548f90da">Semicolon</option><option value="|" data-i18n="ui.3725dbfedcd5">Pipe</option></select></label>
+
+      <label><span data-i18n="ui.4d7cc7ed47a9">Header row</span><input id="header-row" type="number" min="1" max="1000" value="1"></label>
+
+      <label><span data-i18n="ui.5f33b0ac1785">Worksheet</span><select id="sheet"><option value="" data-i18n="ui.8a1cdb63df6f">First worksheet</option></select></label>
+
+    </div>
+
+    <div class="dialog-actions"><button type="button" class="button secondary" id="inspect-button"><span data-i18n="ui.34f27ef27128">Inspect file</span></button><button class="button primary" id="create-button" disabled><span data-i18n="ui.fc178afba126">Create rescue project →</span></button></div>
+
+    <div id="import-preview" aria-live="polite"></div>
+
+  </form>
+
+</dialog>
+
+<dialog id="edit-dialog" aria-labelledby="edit-title"><form id="edit-form"><div class="dialog-heading"><h2 id="edit-title"><span data-i18n="ui.95abb4307338">Edit a working value</span></h2><button type="button" class="icon-button" id="close-edit" aria-label="Close cell edit" data-i18n-attrs='{"aria-label":"ui.46c2dc0a54bc"}'>×</button></div><p id="edit-context" class="muted"></p><label><span data-i18n="ui.7ca9b97db8e5">New value</span><textarea id="edit-value" rows="3"></textarea></label><label><span data-i18n="ui.9d3dc2ee05ba">Reason for this change</span><input id="edit-reason" required placeholder="e.g. Corrected from the original field notebook" data-i18n-attrs='{"placeholder":"ui.a4048e0d78e7"}'></label><div class="dialog-actions"><button class="button primary"><span data-i18n="ui.cdc7f43504e5">Save change</span></button></div></form></dialog>
+
+<dialog id="command-dialog" aria-label="Workbench commands" data-i18n-attrs='{"aria-label":"ui.97db69421e3a"}'><h2><span data-i18n="ui.97db69421e3a">Workbench commands</span></h2><p><span data-i18n="ui.d9bf7532c04b">Alt+Shift+P opens this panel. Escape closes it.</span></p><div class="command-grid"><button class="button secondary" data-section="Project"><span data-i18n="ui.89e313e15d5a">Project overview</span></button><button class="button secondary" data-section="Sources"><span data-i18n="ui.4cbc64f424ad">Verify / inspect sources</span></button><button class="button secondary" data-section="Snapshots"><span data-i18n="ui.f22333f786c7">Create checkpoint</span></button><button class="button secondary" data-section="Validate"><span data-i18n="ui.130a7bb74809">Run validation</span></button><button class="button secondary" data-section="Export"><span data-i18n="ui.3664895579f0">Export</span></button><button class="button secondary" data-section="Storage & Recovery"><span data-i18n="ui.a69c4dece144">Storage</span> & <span data-i18n="ui.8c585378513f">recovery</span></button><button class="button secondary" data-section="Large CSV"><span data-i18n="ui.81a0210061e8">Large CSV investigation</span></button><button class="button secondary" data-section="About"><span data-i18n="ui.d3cf4804aadf">About / help</span></button></div><form method="dialog"><button class="button secondary"><span data-i18n="ui.fc18135d713b">Close commands</span></button></form></dialog><dialog id="large-edit-dialog" aria-labelledby="large-edit-title"><form><h2 id="large-edit-title"><span data-i18n="ui.95abb4307338">Edit a working value</span></h2><p data-context></p><label><span data-i18n="ui.db2da04ee1d8">New literal value</span><textarea name="value" rows="4"></textarea></label><label><span data-i18n="ui.615dff528dba">Reason for change</span><input name="reason" required maxlength="2000"></label><div class="small-actions"><button class="button primary"><span data-i18n="ui.fe463ca6785a">Save audited change</span></button><button type="button" class="button secondary" data-close-large-edit><span data-i18n="cancel">Cancel</span></button></div></form></dialog></body></html>
+
+
+

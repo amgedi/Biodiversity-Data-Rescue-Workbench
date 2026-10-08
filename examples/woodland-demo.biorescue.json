@@ -1,0 +1,1234 @@
+{
+  "version": 1,
+  "id": "2c306f17-31c6-40ac-be5b-2e24f3b48641",
+  "createdAt": "2026-09-30T17:25:54.832Z",
+  "updatedAt": "2026-09-30T17:25:54.834Z",
+  "source": {
+    "name": "woodland-survey.csv",
+    "base64": "cmVjb3JkX2lkLHNjaWVudGlmaWNfbmFtZSxldmVudF9kYXRlLGxhdGl0dWRlLGxvbmdpdHVkZSxjb3VudCxzaXRlLGVmZm9ydF9taW51dGVzCjAwMSwgVHVyZHVzIG1pZ3JhdG9yaXVzLDIwMjMtMDUtMTIsNTMuNTQsLTExMy40OSwzLE5vcnRoIHdvb2RzLDMwCjAwMixQb2VjaWxlIGF0cmljYXBpbGx1cywwNS8wNi8yMDIzLDUzLjU1LC0xMTMuNTAsTkEsTm9ydGggd29vZHMsMzAKMDAzLFVua25vd24sMjAyMy0wNS0xNCwxNTMuNTYsLTExMy41MSx0d28sQ3JlZWsgYmVuZCwKMDA0LFBpY2EgaHVkc29uaWEsMjAyMy0wNS0xNSw1My41NywtMTEzLjUyLDIsIENyZWVrIGJlbmQgLDIwCjAwNCxQaWNhIGh1ZHNvbmlhLDIwMjMtMDUtMTUsNTMuNTcsLTExMy41MiwyLCBDcmVlayBiZW5kICwyMAowMDUsLDIwMjMtMDUtMTYsNTMuNTgsLTExMy41MywwLFNvdXRoIG1lYWRvdyw0NQo=",
+    "sha256": "cc2a41e459bf131c8decee6b1d5b2b6ea26d67773151de074024ed0ea0738221",
+    "bytes": 440
+  },
+  "headers": [
+    "record_id",
+    "scientific_name",
+    "event_date",
+    "latitude",
+    "longitude",
+    "count",
+    "site",
+    "effort_minutes"
+  ],
+  "rows": [
+    [
+      "001",
+      "Turdus migratorius",
+      "2023-05-12",
+      "53.54",
+      "-113.49",
+      "3",
+      "North woods",
+      "30"
+    ],
+    [
+      "002",
+      "Poecile atricapillus",
+      "05/06/2023",
+      "53.55",
+      "-113.50",
+      "",
+      "North woods",
+      "30"
+    ],
+    [
+      "003",
+      "Unknown",
+      "2023-05-14",
+      "153.56",
+      "-113.51",
+      "two",
+      "Creek bend",
+      ""
+    ],
+    [
+      "004",
+      "Pica hudsonia",
+      "2023-05-15",
+      "53.57",
+      "-113.52",
+      "2",
+      " Creek bend ",
+      "20"
+    ],
+    [
+      "004",
+      "Pica hudsonia",
+      "2023-05-15",
+      "53.57",
+      "-113.52",
+      "2",
+      " Creek bend ",
+      "20"
+    ],
+    [
+      "005",
+      "",
+      "2023-05-16",
+      "53.58",
+      "-113.53",
+      "0",
+      "South meadow",
+      "45"
+    ]
+  ],
+  "rowWidths": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "originalHeaders": [
+    "record_id",
+    "scientific_name",
+    "event_date",
+    "latitude",
+    "longitude",
+    "count",
+    "site",
+    "effort_minutes"
+  ],
+  "parsing": {
+    "encoding": "utf-8",
+    "delimiter": ",",
+    "format": "delimited",
+    "headerRow": 1
+  },
+  "notes": [],
+  "metadata": {
+    "title": "Woodland survey · demonstration",
+    "description": "Synthetic ecological records for demonstrating data rescue. Not real field observations.",
+    "creator": "Biodiversity Data Rescue Workbench demo",
+    "contact": "",
+    "license": "CC0-1.0 (synthetic example only)",
+    "methods": "Illustrative observations with recorded effort; no real survey was performed.",
+    "spatialCoverage": "Illustrative coordinates only. Coordinate reference system has not been verified.",
+    "temporalCoverage": "Illustrative dates in May–June 2023; ambiguous dates retained for review.",
+    "sensitivity": "Synthetic data; no real sensitive locations or personal information."
+  },
+  "columns": [
+    {
+      "description": "Local record identifier; preserve leading zeros",
+      "unit": "",
+      "term": "occurrenceID",
+      "missingToken": ""
+    },
+    {
+      "description": "Taxon label recorded by observer; not validated",
+      "unit": "",
+      "term": "scientificName",
+      "missingToken": ""
+    },
+    {
+      "description": "Observation date; slash dates have unknown day/month convention",
+      "unit": "",
+      "term": "eventDate",
+      "missingToken": ""
+    },
+    {
+      "description": "Reported latitude; check invalid range and confirm CRS",
+      "unit": "degrees",
+      "term": "decimalLatitude",
+      "missingToken": ""
+    },
+    {
+      "description": "Reported longitude; confirm CRS",
+      "unit": "degrees",
+      "term": "decimalLongitude",
+      "missingToken": ""
+    },
+    {
+      "description": "Reported individual count; NA represents missing in this synthetic example",
+      "unit": "individuals",
+      "term": "individualCount",
+      "missingToken": "NA"
+    },
+    {
+      "description": "Local survey site label",
+      "unit": "",
+      "term": "locality",
+      "missingToken": ""
+    },
+    {
+      "description": "Recorded survey effort; a blank means unknown",
+      "unit": "minutes",
+      "term": "samplingEffort",
+      "missingToken": ""
+    }
+  ],
+  "audit": [
+    {
+      "id": "0adc7bf5-fd1d-4477-a59d-48249feb7aff",
+      "at": "2026-09-30T17:25:54.832Z",
+      "action": "import",
+      "reason": "Imported source with explicit parsing settings.",
+      "sourceHash": "cc2a41e459bf131c8decee6b1d5b2b6ea26d67773151de074024ed0ea0738221",
+      "parsing": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "format": "delimited",
+        "headerRow": 1
+      },
+      "rowCount": 6
+    },
+    {
+      "id": "0c65ad8a-71de-4b74-9fdc-ae11f5b29c08",
+      "at": "2026-09-30T17:25:54.833Z",
+      "action": "update metadata",
+      "reason": "Document bundled synthetic example",
+      "before": {
+        "headers": [
+          "record_id",
+          "scientific_name",
+          "event_date",
+          "latitude",
+          "longitude",
+          "count",
+          "site",
+          "effort_minutes"
+        ],
+        "rows": [
+          [
+            "001",
+            " Turdus migratorius",
+            "2023-05-12",
+            "53.54",
+            "-113.49",
+            "3",
+            "North woods",
+            "30"
+          ],
+          [
+            "002",
+            "Poecile atricapillus",
+            "05/06/2023",
+            "53.55",
+            "-113.50",
+            "NA",
+            "North woods",
+            "30"
+          ],
+          [
+            "003",
+            "Unknown",
+            "2023-05-14",
+            "153.56",
+            "-113.51",
+            "two",
+            "Creek bend",
+            ""
+          ],
+          [
+            "004",
+            "Pica hudsonia",
+            "2023-05-15",
+            "53.57",
+            "-113.52",
+            "2",
+            " Creek bend ",
+            "20"
+          ],
+          [
+            "004",
+            "Pica hudsonia",
+            "2023-05-15",
+            "53.57",
+            "-113.52",
+            "2",
+            " Creek bend ",
+            "20"
+          ],
+          [
+            "005",
+            "",
+            "2023-05-16",
+            "53.58",
+            "-113.53",
+            "0",
+            "South meadow",
+            "45"
+          ]
+        ],
+        "metadata": {
+          "title": "",
+          "description": "",
+          "creator": "",
+          "contact": "",
+          "license": "",
+          "methods": "",
+          "spatialCoverage": "",
+          "temporalCoverage": "",
+          "sensitivity": ""
+        },
+        "columns": [
+          {
+            "description": "",
+            "unit": "",
+            "term": "",
+            "missingToken": ""
+          },
+          {
+            "description": "",
+            "unit": "",
+            "term": "",
+            "missingToken": ""
+          },
+          {
+            "description": "",
+            "unit": "",
+            "term": "",
+            "missingToken": ""
+          },
+          {
+            "description": "",
+            "unit": "",
+            "term": "",
+            "missingToken": ""
+          },
+          {
+            "description": "",
+            "unit": "",
+            "term": "",
+            "missingToken": ""
+          },
+          {
+            "description": "",
+            "unit": "",
+            "term": "",
+            "missingToken": ""
+          },
+          {
+            "description": "",
+            "unit": "",
+            "term": "",
+            "missingToken": ""
+          },
+          {
+            "description": "",
+            "unit": "",
+            "term": "",
+            "missingToken": ""
+          }
+        ]
+      },
+      "after": {
+        "headers": [
+          "record_id",
+          "scientific_name",
+          "event_date",
+          "latitude",
+          "longitude",
+          "count",
+          "site",
+          "effort_minutes"
+        ],
+        "rows": [
+          [
+            "001",
+            " Turdus migratorius",
+            "2023-05-12",
+            "53.54",
+            "-113.49",
+            "3",
+            "North woods",
+            "30"
+          ],
+          [
+            "002",
+            "Poecile atricapillus",
+            "05/06/2023",
+            "53.55",
+            "-113.50",
+            "NA",
+            "North woods",
+            "30"
+          ],
+          [
+            "003",
+            "Unknown",
+            "2023-05-14",
+            "153.56",
+            "-113.51",
+            "two",
+            "Creek bend",
+            ""
+          ],
+          [
+            "004",
+            "Pica hudsonia",
+            "2023-05-15",
+            "53.57",
+            "-113.52",
+            "2",
+            " Creek bend ",
+            "20"
+          ],
+          [
+            "004",
+            "Pica hudsonia",
+            "2023-05-15",
+            "53.57",
+            "-113.52",
+            "2",
+            " Creek bend ",
+            "20"
+          ],
+          [
+            "005",
+            "",
+            "2023-05-16",
+            "53.58",
+            "-113.53",
+            "0",
+            "South meadow",
+            "45"
+          ]
+        ],
+        "metadata": {
+          "title": "Woodland survey · demonstration",
+          "description": "Synthetic ecological records for demonstrating data rescue. Not real field observations.",
+          "creator": "Biodiversity Data Rescue Workbench demo",
+          "contact": "",
+          "license": "CC0-1.0 (synthetic example only)",
+          "methods": "Illustrative observations with recorded effort; no real survey was performed.",
+          "spatialCoverage": "Illustrative coordinates only. Coordinate reference system has not been verified.",
+          "temporalCoverage": "Illustrative dates in May–June 2023; ambiguous dates retained for review.",
+          "sensitivity": "Synthetic data; no real sensitive locations or personal information."
+        },
+        "columns": [
+          {
+            "description": "Local record identifier; preserve leading zeros",
+            "unit": "",
+            "term": "occurrenceID",
+            "missingToken": ""
+          },
+          {
+            "description": "Taxon label recorded by observer; not validated",
+            "unit": "",
+            "term": "scientificName",
+            "missingToken": ""
+          },
+          {
+            "description": "Observation date; slash dates have unknown day/month convention",
+            "unit": "",
+            "term": "eventDate",
+            "missingToken": ""
+          },
+          {
+            "description": "Reported latitude; check invalid range and confirm CRS",
+            "unit": "degrees",
+            "term": "decimalLatitude",
+            "missingToken": ""
+          },
+          {
+            "description": "Reported longitude; confirm CRS",
+            "unit": "degrees",
+            "term": "decimalLongitude",
+            "missingToken": ""
+          },
+          {
+            "description": "Reported individual count; NA represents missing in this synthetic example",
+            "unit": "individuals",
+            "term": "individualCount",
+            "missingToken": ""
+          },
+          {
+            "description": "Local survey site label",
+            "unit": "",
+            "term": "locality",
+            "missingToken": ""
+          },
+          {
+            "description": "Recorded survey effort; a blank means unknown",
+            "unit": "minutes",
+            "term": "samplingEffort",
+            "missingToken": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "64d5decb-64d6-4a34-9892-67086b50f32b",
+      "at": "2026-09-30T17:25:54.833Z",
+      "action": "trim whitespace",
+      "reason": "Remove accidental padding in synthetic taxon labels",
+      "before": {
+        "headers": [
+          "record_id",
+          "scientific_name",
+          "event_date",
+          "latitude",
+          "longitude",
+          "count",
+          "site",
+          "effort_minutes"
+        ],
+        "rows": [
+          [
+            "001",
+            " Turdus migratorius",
+            "2023-05-12",
+            "53.54",
+            "-113.49",
+            "3",
+            "North woods",
+            "30"
+          ],
+          [
+            "002",
+            "Poecile atricapillus",
+            "05/06/2023",
+            "53.55",
+            "-113.50",
+            "NA",
+            "North woods",
+            "30"
+          ],
+          [
+            "003",
+            "Unknown",
+            "2023-05-14",
+            "153.56",
+            "-113.51",
+            "two",
+            "Creek bend",
+            ""
+          ],
+          [
+            "004",
+            "Pica hudsonia",
+            "2023-05-15",
+            "53.57",
+            "-113.52",
+            "2",
+            " Creek bend ",
+            "20"
+          ],
+          [
+            "004",
+            "Pica hudsonia",
+            "2023-05-15",
+            "53.57",
+            "-113.52",
+            "2",
+            " Creek bend ",
+            "20"
+          ],
+          [
+            "005",
+            "",
+            "2023-05-16",
+            "53.58",
+            "-113.53",
+            "0",
+            "South meadow",
+            "45"
+          ]
+        ],
+        "metadata": {
+          "title": "Woodland survey · demonstration",
+          "description": "Synthetic ecological records for demonstrating data rescue. Not real field observations.",
+          "creator": "Biodiversity Data Rescue Workbench demo",
+          "contact": "",
+          "license": "CC0-1.0 (synthetic example only)",
+          "methods": "Illustrative observations with recorded effort; no real survey was performed.",
+          "spatialCoverage": "Illustrative coordinates only. Coordinate reference system has not been verified.",
+          "temporalCoverage": "Illustrative dates in May–June 2023; ambiguous dates retained for review.",
+          "sensitivity": "Synthetic data; no real sensitive locations or personal information."
+        },
+        "columns": [
+          {
+            "description": "Local record identifier; preserve leading zeros",
+            "unit": "",
+            "term": "occurrenceID",
+            "missingToken": ""
+          },
+          {
+            "description": "Taxon label recorded by observer; not validated",
+            "unit": "",
+            "term": "scientificName",
+            "missingToken": ""
+          },
+          {
+            "description": "Observation date; slash dates have unknown day/month convention",
+            "unit": "",
+            "term": "eventDate",
+            "missingToken": ""
+          },
+          {
+            "description": "Reported latitude; check invalid range and confirm CRS",
+            "unit": "degrees",
+            "term": "decimalLatitude",
+            "missingToken": ""
+          },
+          {
+            "description": "Reported longitude; confirm CRS",
+            "unit": "degrees",
+            "term": "decimalLongitude",
+            "missingToken": ""
+          },
+          {
+            "description": "Reported individual count; NA represents missing in this synthetic example",
+            "unit": "individuals",
+            "term": "individualCount",
+            "missingToken": ""
+          },
+          {
+            "description": "Local survey site label",
+            "unit": "",
+            "term": "locality",
+            "missingToken": ""
+          },
+          {
+            "description": "Recorded survey effort; a blank means unknown",
+            "unit": "minutes",
+            "term": "samplingEffort",
+            "missingToken": ""
+          }
+        ]
+      },
+      "after": {
+        "headers": [
+          "record_id",
+          "scientific_name",
+          "event_date",
+          "latitude",
+          "longitude",
+          "count",
+          "site",
+          "effort_minutes"
+        ],
+        "rows": [
+          [
+            "001",
+            "Turdus migratorius",
+            "2023-05-12",
+            "53.54",
+            "-113.49",
+            "3",
+            "North woods",
+            "30"
+          ],
+          [
+            "002",
+            "Poecile atricapillus",
+            "05/06/2023",
+            "53.55",
+            "-113.50",
+            "NA",
+            "North woods",
+            "30"
+          ],
+          [
+            "003",
+            "Unknown",
+            "2023-05-14",
+            "153.56",
+            "-113.51",
+            "two",
+            "Creek bend",
+            ""
+          ],
+          [
+            "004",
+            "Pica hudsonia",
+            "2023-05-15",
+            "53.57",
+            "-113.52",
+            "2",
+            " Creek bend ",
+            "20"
+          ],
+          [
+            "004",
+            "Pica hudsonia",
+            "2023-05-15",
+            "53.57",
+            "-113.52",
+            "2",
+            " Creek bend ",
+            "20"
+          ],
+          [
+            "005",
+            "",
+            "2023-05-16",
+            "53.58",
+            "-113.53",
+            "0",
+            "South meadow",
+            "45"
+          ]
+        ],
+        "metadata": {
+          "title": "Woodland survey · demonstration",
+          "description": "Synthetic ecological records for demonstrating data rescue. Not real field observations.",
+          "creator": "Biodiversity Data Rescue Workbench demo",
+          "contact": "",
+          "license": "CC0-1.0 (synthetic example only)",
+          "methods": "Illustrative observations with recorded effort; no real survey was performed.",
+          "spatialCoverage": "Illustrative coordinates only. Coordinate reference system has not been verified.",
+          "temporalCoverage": "Illustrative dates in May–June 2023; ambiguous dates retained for review.",
+          "sensitivity": "Synthetic data; no real sensitive locations or personal information."
+        },
+        "columns": [
+          {
+            "description": "Local record identifier; preserve leading zeros",
+            "unit": "",
+            "term": "occurrenceID",
+            "missingToken": ""
+          },
+          {
+            "description": "Taxon label recorded by observer; not validated",
+            "unit": "",
+            "term": "scientificName",
+            "missingToken": ""
+          },
+          {
+            "description": "Observation date; slash dates have unknown day/month convention",
+            "unit": "",
+            "term": "eventDate",
+            "missingToken": ""
+          },
+          {
+            "description": "Reported latitude; check invalid range and confirm CRS",
+            "unit": "degrees",
+            "term": "decimalLatitude",
+            "missingToken": ""
+          },
+          {
+            "description": "Reported longitude; confirm CRS",
+            "unit": "degrees",
+            "term": "decimalLongitude",
+            "missingToken": ""
+          },
+          {
+            "description": "Reported individual count; NA represents missing in this synthetic example",
+            "unit": "individuals",
+            "term": "individualCount",
+            "missingToken": ""
+          },
+          {
+            "description": "Local survey site label",
+            "unit": "",
+            "term": "locality",
+            "missingToken": ""
+          },
+          {
+            "description": "Recorded survey effort; a blank means unknown",
+            "unit": "minutes",
+            "term": "samplingEffort",
+            "missingToken": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "9f61a826-e424-4ac7-adb5-c7e089ff70f5",
+      "at": "2026-09-30T17:25:54.834Z",
+      "action": "normalize missing token",
+      "reason": "Synthetic example defines NA as missing, never zero",
+      "before": {
+        "headers": [
+          "record_id",
+          "scientific_name",
+          "event_date",
+          "latitude",
+          "longitude",
+          "count",
+          "site",
+          "effort_minutes"
+        ],
+        "rows": [
+          [
+            "001",
+            "Turdus migratorius",
+            "2023-05-12",
+            "53.54",
+            "-113.49",
+            "3",
+            "North woods",
+            "30"
+          ],
+          [
+            "002",
+            "Poecile atricapillus",
+            "05/06/2023",
+            "53.55",
+            "-113.50",
+            "NA",
+            "North woods",
+            "30"
+          ],
+          [
+            "003",
+            "Unknown",
+            "2023-05-14",
+            "153.56",
+            "-113.51",
+            "two",
+            "Creek bend",
+            ""
+          ],
+          [
+            "004",
+            "Pica hudsonia",
+            "2023-05-15",
+            "53.57",
+            "-113.52",
+            "2",
+            " Creek bend ",
+            "20"
+          ],
+          [
+            "004",
+            "Pica hudsonia",
+            "2023-05-15",
+            "53.57",
+            "-113.52",
+            "2",
+            " Creek bend ",
+            "20"
+          ],
+          [
+            "005",
+            "",
+            "2023-05-16",
+            "53.58",
+            "-113.53",
+            "0",
+            "South meadow",
+            "45"
+          ]
+        ],
+        "metadata": {
+          "title": "Woodland survey · demonstration",
+          "description": "Synthetic ecological records for demonstrating data rescue. Not real field observations.",
+          "creator": "Biodiversity Data Rescue Workbench demo",
+          "contact": "",
+          "license": "CC0-1.0 (synthetic example only)",
+          "methods": "Illustrative observations with recorded effort; no real survey was performed.",
+          "spatialCoverage": "Illustrative coordinates only. Coordinate reference system has not been verified.",
+          "temporalCoverage": "Illustrative dates in May–June 2023; ambiguous dates retained for review.",
+          "sensitivity": "Synthetic data; no real sensitive locations or personal information."
+        },
+        "columns": [
+          {
+            "description": "Local record identifier; preserve leading zeros",
+            "unit": "",
+            "term": "occurrenceID",
+            "missingToken": ""
+          },
+          {
+            "description": "Taxon label recorded by observer; not validated",
+            "unit": "",
+            "term": "scientificName",
+            "missingToken": ""
+          },
+          {
+            "description": "Observation date; slash dates have unknown day/month convention",
+            "unit": "",
+            "term": "eventDate",
+            "missingToken": ""
+          },
+          {
+            "description": "Reported latitude; check invalid range and confirm CRS",
+            "unit": "degrees",
+            "term": "decimalLatitude",
+            "missingToken": ""
+          },
+          {
+            "description": "Reported longitude; confirm CRS",
+            "unit": "degrees",
+            "term": "decimalLongitude",
+            "missingToken": ""
+          },
+          {
+            "description": "Reported individual count; NA represents missing in this synthetic example",
+            "unit": "individuals",
+            "term": "individualCount",
+            "missingToken": ""
+          },
+          {
+            "description": "Local survey site label",
+            "unit": "",
+            "term": "locality",
+            "missingToken": ""
+          },
+          {
+            "description": "Recorded survey effort; a blank means unknown",
+            "unit": "minutes",
+            "term": "samplingEffort",
+            "missingToken": ""
+          }
+        ]
+      },
+      "after": {
+        "headers": [
+          "record_id",
+          "scientific_name",
+          "event_date",
+          "latitude",
+          "longitude",
+          "count",
+          "site",
+          "effort_minutes"
+        ],
+        "rows": [
+          [
+            "001",
+            "Turdus migratorius",
+            "2023-05-12",
+            "53.54",
+            "-113.49",
+            "3",
+            "North woods",
+            "30"
+          ],
+          [
+            "002",
+            "Poecile atricapillus",
+            "05/06/2023",
+            "53.55",
+            "-113.50",
+            "",
+            "North woods",
+            "30"
+          ],
+          [
+            "003",
+            "Unknown",
+            "2023-05-14",
+            "153.56",
+            "-113.51",
+            "two",
+            "Creek bend",
+            ""
+          ],
+          [
+            "004",
+            "Pica hudsonia",
+            "2023-05-15",
+            "53.57",
+            "-113.52",
+            "2",
+            " Creek bend ",
+            "20"
+          ],
+          [
+            "004",
+            "Pica hudsonia",
+            "2023-05-15",
+            "53.57",
+            "-113.52",
+            "2",
+            " Creek bend ",
+            "20"
+          ],
+          [
+            "005",
+            "",
+            "2023-05-16",
+            "53.58",
+            "-113.53",
+            "0",
+            "South meadow",
+            "45"
+          ]
+        ],
+        "metadata": {
+          "title": "Woodland survey · demonstration",
+          "description": "Synthetic ecological records for demonstrating data rescue. Not real field observations.",
+          "creator": "Biodiversity Data Rescue Workbench demo",
+          "contact": "",
+          "license": "CC0-1.0 (synthetic example only)",
+          "methods": "Illustrative observations with recorded effort; no real survey was performed.",
+          "spatialCoverage": "Illustrative coordinates only. Coordinate reference system has not been verified.",
+          "temporalCoverage": "Illustrative dates in May–June 2023; ambiguous dates retained for review.",
+          "sensitivity": "Synthetic data; no real sensitive locations or personal information."
+        },
+        "columns": [
+          {
+            "description": "Local record identifier; preserve leading zeros",
+            "unit": "",
+            "term": "occurrenceID",
+            "missingToken": ""
+          },
+          {
+            "description": "Taxon label recorded by observer; not validated",
+            "unit": "",
+            "term": "scientificName",
+            "missingToken": ""
+          },
+          {
+            "description": "Observation date; slash dates have unknown day/month convention",
+            "unit": "",
+            "term": "eventDate",
+            "missingToken": ""
+          },
+          {
+            "description": "Reported latitude; check invalid range and confirm CRS",
+            "unit": "degrees",
+            "term": "decimalLatitude",
+            "missingToken": ""
+          },
+          {
+            "description": "Reported longitude; confirm CRS",
+            "unit": "degrees",
+            "term": "decimalLongitude",
+            "missingToken": ""
+          },
+          {
+            "description": "Reported individual count; NA represents missing in this synthetic example",
+            "unit": "individuals",
+            "term": "individualCount",
+            "missingToken": "NA"
+          },
+          {
+            "description": "Local survey site label",
+            "unit": "",
+            "term": "locality",
+            "missingToken": ""
+          },
+          {
+            "description": "Recorded survey effort; a blank means unknown",
+            "unit": "minutes",
+            "term": "samplingEffort",
+            "missingToken": ""
+          }
+        ]
+      }
+    }
+  ],
+  "qualityReview": [
+    {
+      "severity": "review",
+      "title": "Exact duplicate rows",
+      "detail": "1 repeated rows. Repeated observations can be valid; confirm before removing.",
+      "column": null,
+      "rows": [
+        4
+      ]
+    },
+    {
+      "severity": "info",
+      "title": "Leading zeros in record_id",
+      "detail": "Keep these values as text when opening exports to preserve identifiers.",
+      "column": 0,
+      "rows": []
+    },
+    {
+      "severity": "info",
+      "title": "Blank values in scientific_name",
+      "detail": "1 of 6 values are blank or whitespace. Blank does not mean zero or absence.",
+      "column": 1,
+      "rows": [
+        5
+      ]
+    },
+    {
+      "severity": "review",
+      "title": "Mixed types in event_date",
+      "detail": "Observed types: date-like (5), text (1). Values are preserved as strings.",
+      "column": 2,
+      "rows": []
+    },
+    {
+      "severity": "review",
+      "title": "Ambiguous dates in event_date",
+      "detail": "1 dates need a documented day/month convention. No dates have been converted.",
+      "column": 2,
+      "rows": [
+        1
+      ]
+    },
+    {
+      "severity": "review",
+      "title": "Invalid latitude range",
+      "detail": "1 values fall outside ±90 or are not numeric. Confirm units and coordinate reference system.",
+      "column": 3,
+      "rows": [
+        2
+      ]
+    },
+    {
+      "severity": "info",
+      "title": "Blank values in count",
+      "detail": "1 of 6 values are blank or whitespace. Blank does not mean zero or absence.",
+      "column": 5,
+      "rows": [
+        1
+      ]
+    },
+    {
+      "severity": "review",
+      "title": "Mixed types in count",
+      "detail": "Observed types: integer (4), text (1). Values are preserved as strings.",
+      "column": 5,
+      "rows": []
+    },
+    {
+      "severity": "review",
+      "title": "Review counts in count",
+      "detail": "1 nonblank values are not nonnegative integers; confirm missing tokens or measurement conventions.",
+      "column": 5,
+      "rows": [
+        2
+      ]
+    },
+    {
+      "severity": "review",
+      "title": "Whitespace in site",
+      "detail": "2 values have leading or trailing whitespace.",
+      "column": 6,
+      "rows": [
+        3,
+        4
+      ]
+    },
+    {
+      "severity": "info",
+      "title": "Blank values in effort_minutes",
+      "detail": "1 of 6 values are blank or whitespace. Blank does not mean zero or absence.",
+      "column": 7,
+      "rows": [
+        2
+      ]
+    }
+  ],
+  "columnProfiles": [
+    {
+      "name": "record_id",
+      "missing": 0,
+      "unique": 5,
+      "type": "integer",
+      "types": {
+        "integer": 6
+      },
+      "examples": [
+        "001",
+        "002",
+        "003"
+      ],
+      "whitespace": 0
+    },
+    {
+      "name": "scientific_name",
+      "missing": 1,
+      "unique": 4,
+      "type": "text",
+      "types": {
+        "text": 5
+      },
+      "examples": [
+        "Turdus migratorius",
+        "Poecile atricapillus",
+        "Unknown"
+      ],
+      "whitespace": 0
+    },
+    {
+      "name": "event_date",
+      "missing": 0,
+      "unique": 5,
+      "type": "date-like",
+      "types": {
+        "date-like": 5,
+        "text": 1
+      },
+      "examples": [
+        "2023-05-12",
+        "05/06/2023",
+        "2023-05-14"
+      ],
+      "whitespace": 0
+    },
+    {
+      "name": "latitude",
+      "missing": 0,
+      "unique": 5,
+      "type": "number",
+      "types": {
+        "number": 6
+      },
+      "examples": [
+        "53.54",
+        "53.55",
+        "153.56"
+      ],
+      "whitespace": 0
+    },
+    {
+      "name": "longitude",
+      "missing": 0,
+      "unique": 5,
+      "type": "number",
+      "types": {
+        "number": 6
+      },
+      "examples": [
+        "-113.49",
+        "-113.50",
+        "-113.51"
+      ],
+      "whitespace": 0
+    },
+    {
+      "name": "count",
+      "missing": 1,
+      "unique": 4,
+      "type": "integer",
+      "types": {
+        "integer": 4,
+        "text": 1
+      },
+      "examples": [
+        "3",
+        "two",
+        "2"
+      ],
+      "whitespace": 0
+    },
+    {
+      "name": "site",
+      "missing": 0,
+      "unique": 4,
+      "type": "text",
+      "types": {
+        "text": 6
+      },
+      "examples": [
+        "North woods",
+        "Creek bend",
+        " Creek bend "
+      ],
+      "whitespace": 2
+    },
+    {
+      "name": "effort_minutes",
+      "missing": 1,
+      "unique": 3,
+      "type": "integer",
+      "types": {
+        "integer": 5
+      },
+      "examples": [
+        "30",
+        "20",
+        "45"
+      ],
+      "whitespace": 0
+    }
+  ]
+}

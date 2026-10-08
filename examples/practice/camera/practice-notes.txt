@@ -1,0 +1,8 @@
+FICTIONAL PRACTICE ONLY. No actual specimens, surveys, locations or media.
+All scientific meanings start Unknown and must be reviewed explicitly.
+A recorded zero is distinct from a blank or NA literal.
+Dates remain literal; ambiguous order and precision must not be guessed.
+001 and 1 are distinct identifiers. Duplicate code meanings conflict.
+An event without observations can retain effort; the meaning needs protocol review.
+Camera file paths are fictional references; no image files are included.
+CC0-1.0 applies only to these authored fictional training inputs.

@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-native-accessibility"
+description = "Enables the native_accessibility command without any pre-configured scope."
+commands.allow = ["native_accessibility"]
+
+[[permission]]
+identifier = "deny-native-accessibility"
+description = "Denies the native_accessibility command without any pre-configured scope."
+commands.deny = ["native_accessibility"]

@@ -1,0 +1,30 @@
+{
+  "identifier": "desktop-workbench",
+  "description": "Only Workbench windows on the trusted loopback engine receive desktop commands.",
+  "windows": [
+    "workbench-*",
+    "startup-*"
+  ],
+  "remote": {
+    "urls": [
+      "http://127.0.0.1:*"
+    ]
+  },
+  "permissions": [
+    "core:default",
+    "allow-engine-status",
+    "allow-retry-engine",
+    "allow-close-startup",
+    "allow-open-workbench",
+    "allow-open-logs",
+    "allow-native-intake",
+    "allow-native-clipboard-intake",
+    "allow-native-save",
+    "allow-native-client-state",
+    "allow-native-window-recovery",
+    "allow-native-window-action",
+    "allow-native-accessibility",
+    "allow-initial-route",
+    "allow-native-stream-save"
+  ]
+}

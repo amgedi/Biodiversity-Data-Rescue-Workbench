@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {steps,glossary} from '../web/onboarding.mjs';
+test('amphibian tutorial contains 33 actionable steps ending with preservation review',()=>{assert.equal(steps.length,33);for(const row of steps){assert.equal(row.length,3);assert.ok(row.every(x=>x.length>0));}assert.equal(steps.at(-1)[0],'Export');assert.ok(steps.some(x=>x[2].includes('E404')));assert.ok(steps.some(x=>x[2].includes('code 4')));});
+test('glossary distinguishes inference, confirmation, provenance and non-detection',()=>{const terms=glossary.map(x=>x[0]);for(const key of ['Inferred','Confirmed','Provenance','Non-detection','Metadata'])assert.ok(terms.includes(key));});

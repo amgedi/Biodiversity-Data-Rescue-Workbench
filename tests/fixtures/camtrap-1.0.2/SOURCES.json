@@ -1,0 +1,22 @@
+[
+  {
+    "name": "datapackage.json",
+    "url": "https://raw.githubusercontent.com/tdwg/camtrap-dp/1.0.2/example/datapackage.json",
+    "sha256": "f619c8311796a0a26b6d46f911c9a4a8a17bf30e4f97485f6bc4fe91296139ab"
+  },
+  {
+    "name": "deployments.csv",
+    "url": "https://raw.githubusercontent.com/tdwg/camtrap-dp/1.0.2/example/deployments.csv",
+    "sha256": "96084baa2eaac9221780ebd0fc096c23a1317b354931b71be0335280e4bcec7b"
+  },
+  {
+    "name": "media.csv",
+    "url": "https://raw.githubusercontent.com/tdwg/camtrap-dp/1.0.2/example/media.csv",
+    "sha256": "910596bb60af429fc955f17401ce98b915e9c8e72e491c1e715f3b51cfc6bbce"
+  },
+  {
+    "name": "observations.csv",
+    "url": "https://raw.githubusercontent.com/tdwg/camtrap-dp/1.0.2/example/observations.csv",
+    "sha256": "845cfb09da01f3e60139b1c5b31088318ff17b7f4bafcc913bd7cd63f01289ca"
+  }
+]

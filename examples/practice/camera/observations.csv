@@ -1,0 +1,4 @@
+observation_id,media_id,recorded_name,count
+O01,M01,Fictional mammal A,1
+O02,M02,,0
+O03,M03,UNKNOWN,NA

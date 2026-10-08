@@ -1,0 +1,8 @@
+occurrence_id,survey_id,taxon,n,code,dt,lat,lon,mystery
+O1,E1,RAPI, 3 ,4,06/07/08,53.123456789,-113.25,8
+O1,E1,R. pipiens,999,4,39200,0,0,8
+O3,E404,Rana pipiens,NA,7,2006-02-30,-113,53,9
+O4,E2,northern leopard frog,0,4,2007-06,91,-113,?
+,E2,unknown,N/A,.,2010-06-12T10:00:00,53,-113,
+O6,E3,RAPI,-999,4,2011-06-12T10:00:00-06:00,10,120,
+O6,E3,RAPI,-999,4,2011-06-12T10:00:00-06:00,10,120,

@@ -1,0 +1,61 @@
+{
+  "guideVersion": "2023-09-13",
+  "retrieved": "2026-10-04",
+  "files": [
+    {
+      "url": "https://rs.tdwg.org/dwc/text/tdwg_dwc_text.xsd",
+      "retrieved": "2026-10-04",
+      "guideVersion": "2023-09-13",
+      "path": "tdwg_dwc_text.xsd",
+      "sha256": "66513a2b1f90c9db11d7e4ca2fa30011d01d0d27ee4c01099f3eb4ae791e565b",
+      "bytes": 5411
+    },
+    {
+      "path": "tdwg_dwcterms.xsd",
+      "url": "https://raw.githubusercontent.com/tdwg/dwc/master/docs/xml/tdwg_dwcterms.xsd",
+      "bytes": 44784,
+      "sha256": "b112071d20c2a4cf2cf4f3549065d6bccc37db665a5cd716c2bcafd859ffe9fb"
+    },
+    {
+      "path": "xml.xsd",
+      "url": "https://rs.gbif.org/schema/xml.xsd",
+      "bytes": 8834,
+      "sha256": "2eafaa6bab254e61051901082d9bc7703c932c1c1675ec3b8dd9ce7140076397"
+    },
+    {
+      "path": "tdwg_basetypes.xsd",
+      "url": "https://raw.githubusercontent.com/tdwg/dwc/master/docs/xml/tdwg_basetypes.xsd",
+      "fetchedUrl": "https://raw.githubusercontent.com/tdwg/dwc/master/docs/xml/tdwg_basetypes.xsd",
+      "sha256": "f1d9df4aa826942062f0c43aa66073f0315f8842794124d4b318266aaaa4350a",
+      "bytes": 3524
+    },
+    {
+      "path": "dcterms.xsd",
+      "url": "http://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd",
+      "fetchedUrl": "https://www.dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd",
+      "sha256": "d23102baf91c8df732f52a230f5fbf5307313ac9112d1374a038c297b2d42e96",
+      "bytes": 13441
+    },
+    {
+      "path": "dc.xsd",
+      "url": "http://dublincore.org/schemas/xmls/qdc/dc.xsd",
+      "fetchedUrl": "https://www.dublincore.org/schemas/xmls/qdc/dc.xsd",
+      "sha256": "638f5a69d97633b4871ec356a95f7086902916320085a164f267235367b1e3f8",
+      "bytes": 4174
+    },
+    {
+      "path": "w3c-xml.xsd",
+      "url": "http://www.w3.org/2001/03/xml.xsd",
+      "fetchedUrl": "https://www.w3.org/2001/03/xml.xsd",
+      "sha256": "0ed94db44402526e7a683424d0bd4b65e5bc50e65d9b9a762b11b30bae06d0c8",
+      "bytes": 4726
+    },
+    {
+      "path": "dcmitype.xsd",
+      "url": "http://dublincore.org/schemas/xmls/qdc/2008/02/11/dcmitype.xsd",
+      "fetchedUrl": "https://www.dublincore.org/schemas/xmls/qdc/2008/02/11/dcmitype.xsd",
+      "sha256": "04d8303aca4246d73dea2122467bef648c89bc6e43160990dc903e8bd0db19cc",
+      "bytes": 1522
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+FICTIONAL TRAINING EVIDENCE. README 2004: code 4 = juvenile. n is number of individuals visually encountered. NA denotes not recorded in observations. This does not establish meanings for other sentinel tokens. Datum and date convention not documented.

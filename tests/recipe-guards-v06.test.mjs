@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import {migrateProject,recipe,replay} from '../web/project.mjs';
+const project=()=>migrateProject(JSON.parse(fs.readFileSync(new URL('../examples/relational-demo.biorescue.json',import.meta.url),'utf8')));
+test('recipe dry run rejects changed source table definitions before any mutation',()=>{const p=project(),rec=recipe(p),before=structuredClone(p);rec.tableDefinitions[0].expectedOriginalHeaders=['unexpected'];assert.throws(()=>replay(p,rec),/schema|columns/);assert.deepEqual(p,before);});
+test('recipe dry run rejects source-byte-length and schema mismatches',()=>{const p=project(),rec=recipe(p);rec.sources[0].bytes+=1;assert.throws(()=>replay(p,rec),/length/);const r=recipe(p);r.projectSchemaVersion=99;assert.throws(()=>replay(p,r),/schema/);});

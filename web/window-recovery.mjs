@@ -1,0 +1,8 @@
+const native=()=>globalThis.window?.__TAURI_INTERNALS__?.invoke;
+// Local browser recovery copies are separate from committed projects and source archives.
+const DATABASE='biorescue-window-recovery';
+function database(){return new Promise((resolve,reject)=>{const request=indexedDB.open(DATABASE,1);request.onupgradeneeded=()=>request.result.createObjectStore('copies',{keyPath:'id'});request.onsuccess=()=>resolve(request.result);request.onerror=()=>reject(request.error);});}
+export async function retainWindowCopy(copy){if(native())return native()('native_window_recovery',{action:'retain',projectId:copy.projectId,id:copy.id,copy:JSON.stringify(copy)});const db=await database();try{await new Promise((resolve,reject)=>{const tx=db.transaction('copies','readwrite');tx.objectStore('copies').put(structuredClone(copy));tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||Error('Recovery storage aborted.'));});}finally{db.close();}}
+export async function windowCopies(projectId){if(native()){const copies=await native()('native_window_recovery',{action:'list',projectId,id:null,copy:null});return copies.sort((a,b)=>b.at.localeCompare(a.at));}const db=await database();try{return await new Promise((resolve,reject)=>{const request=db.transaction('copies','readonly').objectStore('copies').getAll();request.onsuccess=()=>resolve(request.result.filter(x=>x.projectId===projectId).sort((a,b)=>b.at.localeCompare(a.at)));request.onerror=()=>reject(request.error);});}finally{db.close();}}
+
+export async function getWindowCopy(id,projectId){if(native())return native()('native_window_recovery',{action:'get',projectId,id,copy:null});return (await windowCopies(projectId)).find(copy=>copy.id===id);}

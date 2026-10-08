@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {catalogs,localeInfo} from '../web/locales.mjs';
+import {catalogProblems,productionLocales,translate,htmlMessage,pluralFor} from '../web/i18n.mjs';
+test('all thirteen complete catalogs preserve every interpolation argument',()=>{assert.equal(Object.keys(catalogs).length,13);for(const locale of Object.keys(catalogs))assert.deepEqual(catalogProblems(locale),[],locale);});
+test('incomplete languages cannot be advertised as complete application languages',()=>{assert.deepEqual(productionLocales(),['en']);for(const [code,info]of Object.entries(localeInfo))if(code!=='en')assert.equal(info.applicationComplete,false);});
+test('scientific values passed to interpolation are kept literal',()=>{const literal='001 NA Rana temporaria حدث \"<script>\"';for(const locale of Object.keys(catalogs))assert.equal(translate(locale,'projectLabel',{name:literal}),literal);});
+test('missing keys and missing named arguments fail instead of quietly losing context',()=>{assert.throws(()=>translate('en','absent'),/UNKNOWN_KEY/);assert.throws(()=>translate('fr','projectLabel'),/MISSING_ARGUMENT/);});
+test('developer pseudo-locales expand interface labels without changing interpolation values',()=>{assert.match(translate('qps-ploc','projects'),/⟦/);assert.match(translate('qps-rtl','projectLabel',{name:'001'}),/001/);});
+test('pseudo accents preserve named arguments and render names safely as literal text',()=>{assert.equal(translate('qps-ploc','projectLabel',{name:'001 Rana temporaria'}),'⟦001 Rana temporaria⟧');assert.equal(htmlMessage('projectLabel',{name:'<script>&001'}),'&lt;script&gt;&amp;001');});
+test('English Polish and Arabic plural categories use native grammar keys',()=>{assert.equal(pluralFor('en','records',1),'1 record');assert.equal(pluralFor('en','records',3),'3 records');assert.match(pluralFor('pl','records',3),/rekordy/);assert.match(pluralFor('pl','records',5),/rekordów/);assert.match(pluralFor('ar','records',2),/سجلان/);});

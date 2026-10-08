@@ -1,0 +1,4 @@
+survey_id,temp,temp_unit,rain
+E1,12,C,0
+E2,60,F,NA
+E3,999,unknown,-9

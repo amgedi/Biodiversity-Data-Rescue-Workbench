@@ -1,0 +1,4 @@
+media_id,deployment_id,timestamp_literal,file_path
+M01,D01,2020-01-01T08:00:00,fictional/M01.jpg
+M02,D01,2020-01-01T09:00:00,fictional/M02.jpg
+M03,D404,2020-01-02,fictional/M03.jpg

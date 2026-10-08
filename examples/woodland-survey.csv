@@ -1,0 +1,7 @@
+record_id,scientific_name,event_date,latitude,longitude,count,site,effort_minutes
+001, Turdus migratorius,2023-05-12,53.54,-113.49,3,North woods,30
+002,Poecile atricapillus,05/06/2023,53.55,-113.50,NA,North woods,30
+003,Unknown,2023-05-14,153.56,-113.51,two,Creek bend,
+004,Pica hudsonia,2023-05-15,53.57,-113.52,2, Creek bend ,20
+004,Pica hudsonia,2023-05-15,53.57,-113.52,2, Creek bend ,20
+005,,2023-05-16,53.58,-113.53,0,South meadow,45

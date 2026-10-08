@@ -1,0 +1,17 @@
+{
+  "fictional-legacy-1904.xls": {
+    "bytes": 5632,
+    "sha256": "ca98d5213254bc7b0e723688efcaf54f5faf33d24ddc82e20c9f78badccfc4ef",
+    "fictional": true
+  },
+  "fictional-legacy-wide.xls": {
+    "bytes": 5632,
+    "sha256": "603c6c13a7486c797cc815f72e37b87cf0e3b71e6ad8ad201b7648d18470479f",
+    "fictional": true
+  },
+  "fictional-legacy.xls": {
+    "bytes": 5632,
+    "sha256": "ea17b60c5bd41a342a4332363e6c3f5b525031bbe1b4a134d31264e9897b0db5",
+    "fictional": true
+  }
+}

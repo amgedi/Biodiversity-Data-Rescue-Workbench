@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {defaults,sanitize} from '../web/preferences.mjs';
+test('unknown preference keys and invalid values cannot activate unsupported settings',()=>{assert.deepEqual(sanitize({theme:'evil',largePageSize:100000,deleteFiles:true}),defaults);});
+test('supported preferences retain values without persisting scientific conventions',()=>{const p=sanitize({theme:'paper',largePageSize:25,locale:'en-GB',showValidationInfo:false});assert.equal(p.theme,'paper');assert.equal(p.largePageSize,25);assert.equal(p.showValidationInfo,false);assert.equal(p.importEncoding,'auto');assert.equal(p.locale,'en-GB');});

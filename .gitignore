@@ -1,0 +1,65 @@
+# Dependencies and build output
+node_modules/
+.venv/
+venv/
+**/target/
+**/gen/
+__pycache__/
+*.py[cod]
+/artifacts/
+/release/
+/releases/
+/dist/
+/build/
+/coverage/
+app/desktop/src-tauri/engine/
+app/launcher/runtime/
+
+# Local runtime, data and diagnostics
+/versions/
+*.exe
+*.msi
+*.pdb
+*.dmp
+*.log
+*.pending
+/local-data/
+.local-preview/
+/work/
+tmp/
+temp/
+logs/
+screenshots/
+support-bundles/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+web/build-identity.json
+web/build-identity.mjs
+
+# Local development history; retain privately, do not publish
+CURRENT_STATUS.md
+docs/*
+!docs/README.md
+!docs/architecture.md
+!docs/data-safety.md
+!docs/build.md
+!docs/release-process.md
+scripts/qa/
+scripts/legacy/
+scripts/dev/*
+!scripts/dev/copy_workspace.py
+scripts/release/ui_v7_candidate.py
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Historical stylesheet reconstruction depends on private build captures
+scripts/build/styles.cjs

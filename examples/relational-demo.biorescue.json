@@ -1,0 +1,961 @@
+{
+  "version": 2,
+  "appVersion": "0.2.0",
+  "id": "19369ec6-9cd1-45b5-ad16-8f5a3eedd76a",
+  "revision": 0,
+  "createdAt": "2026-09-30T19:20:20.890Z",
+  "updatedAt": "2026-09-30T19:20:20.895Z",
+  "metadata": {
+    "title": {
+      "value": "Woodland 2008 · guided fictional rescue",
+      "status": "Confirmed",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "description": {
+      "value": "Deliberately messy fictional biodiversity records. Not real field observations. Training data includes unknown dates, undocumented codes and questionable coordinates.",
+      "status": "Confirmed",
+      "confidence": "",
+      "rationale": "The example was authored explicitly for this tutorial.",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "purpose": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "creator": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "contributors": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "contact": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "organizations": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "citation": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "publicationDate": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "license": {
+      "value": "CC0-1.0 (fictional tutorial files only)",
+      "status": "Confirmed",
+      "confidence": "",
+      "rationale": "Explicit license statement in the fictional training protocol.",
+      "evidence": [
+        "2d3a4ebc-239c-4f45-8b7b-d85019c4e4b7"
+      ],
+      "reviewerNotes": ""
+    },
+    "funding": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "methods": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "samplingProtocol": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "studyDesign": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "temporalCoverage": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "spatialCoverage": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "taxonomicCoverage": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "keywords": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "originalSoftware": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "publications": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "limitations": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "provenance": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "sensitivity": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "datum": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "coordinateUncertainty": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    }
+  },
+  "resources": [
+    {
+      "name": "events_2008.csv",
+      "base64": "ZXZlbnRfaWQsc2l0ZSxlZmZvcnRfbWluLGR0CkUwMSxOb3J0aCB3b29kcywzMCwwNS8wNi8yMDA4CkUwMiwgQ3JlZWsgYmVuZCAsMjAsMjAwOC0wNi0wNwpFMDMsU291dGggbWVhZG93LCwyMDA4Cg==",
+      "bytes": 112,
+      "sha256": "30e5cf99bb17e2317716120a9ff42e42d3c4d6927ecd6bbaf050db7b85cbc525",
+      "importedAt": "2026-09-30T19:20:20.844198+00:00",
+      "format": "csv",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "notes": []
+      },
+      "conversionIssue": null,
+      "id": "00fac96b-ce9d-48b0-b782-dd46dcd81259"
+    },
+    {
+      "name": "taxa_2008.csv",
+      "base64": "dGF4b25fY29kZSxzY2llbnRpZmljX25hbWUsY29tbW9uX25hbWUKVDEsVHVyZHVzIG1pZ3JhdG9yaXVzLEFtZXJpY2FuIHJvYmluClQyLFBvZWNpbGUgYXRyaWNhcGlsbHVzLEJsYWNrLWNhcHBlZCBjaGlja2FkZWUKVDMsUGljYSBodWRzb25pYSxCbGFjay1iaWxsZWQgbWFncGllCg==",
+      "bytes": 160,
+      "sha256": "4328ac702327a65f248d413cd5cb98dbc2144ba7c2ff8cfdca5f69e52b5b2a86",
+      "importedAt": "2026-09-30T19:20:20.845251+00:00",
+      "format": "csv",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "notes": []
+      },
+      "conversionIssue": null,
+      "id": "6ea886f3-d6cd-43ab-96d3-2d10452f8424"
+    },
+    {
+      "name": "obs_2008.csv",
+      "base64": "cmVjb3JkX2lkLGV2ZW50X2lkLHRheG9uX2NvZGUsbixsYXQsbG9uLGR0LGNvZGUKMDAxLEUwMSxUMSwgMyAsNTMuNTQsLTExMy40OSwwNS8wNi8yMDA4LEEKMDAyLEUwMSxUMixOQSw1My41NSwtMTEzLjUwLDIwMDgtMDYtMDUsQgowMDMsRTAyLFVOS05PV04sdHdvLDE1My41Niw1My41NiwyMDA4LTAyLTMwLD8KMDA0LEUwMixUMywyLDAsMCwyMDA4LTA2LEEKMDA0LEUwMixUMywyLDAsMCwyMDA4LTA2LEEKMDA1LEU0MDQsLDAsLTk5OTksOTk5OSwwNi8wNy8yMDA4LC0K",
+      "bytes": 267,
+      "sha256": "1f8f52f32ed35a9651ec89cf981155236f57d0438b735d6f33741960042334a4",
+      "importedAt": "2026-09-30T19:20:20.846263+00:00",
+      "format": "csv",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "notes": []
+      },
+      "conversionIssue": null,
+      "id": "39f91b36-9b03-485b-b665-7675425c9855"
+    },
+    {
+      "name": "protocol_2008.txt",
+      "base64": "V09PRExBTkQgMjAwOCDigJQgRklDVElPTkFMIFRSQUlOSU5HIFBST1RPQ09MCgpUaGlzIGlzIGZpY3Rpb25hbCB0cmFpbmluZyBtYXRlcmlhbCwgbm90IGFuIGFjdHVhbCBzdHVkeSBvciBhIGNsYWltIGFib3V0IHJlYWwgbG9jYXRpb25zLgoKVGhyZWUgaW5oZXJpdGVkIHRhYmxlczogZXZlbnRzLCBvYnMsIHRheGEuIGV2ZW50X2lkIGluIG9icyBpZGVudGlmaWVzIHRoZSBzdXJ2ZXkKcmVjb3JkIGluIGV2ZW50cy4gdGF4b25fY29kZSBsaW5rcyBhbiBvYnNlcnZhdGlvbiB0byBhIHRheGEgcm93LiBUaGUgbG9jYWwKZGljdGlvbmFyeSB3YXMgaW5jb21wbGV0ZTsgZG8gbm90IGFzc2lnbiBpZGVudGl0aWVzIHRvIHVua25vd24gdGF4b24gY29kZXMuCgpGaWVsZCBuOiBudW1iZXIgb2YgaW5kaXZpZHVhbHMgdmlzdWFsbHkgZGV0ZWN0ZWQgZHVyaW5nIHRoZSByZWNvcmRlZCBzdXJ2ZXkuClRoZSBjb2RlIE5BIG1lYW5zIHRoZSBjb3VudCB3YXMgbm90IHJlY29yZGVkLiBBIGxpdGVyYWwgemVybyBpcyBhIHJlY29yZGVkCnplcm8gY291bnQgYW5kIG11c3Qgbm90IGJlY29tZSBtaXNzaW5nLiBPdGhlciBzZW50aW5lbCBjb2RlcyB3ZXJlIG5vdCBkb2N1bWVudGVkLgoKU3VydmV5IGVmZm9ydCBpcyByZWNvcmRlZCBpbiBtaW51dGVzIGluIGVmZm9ydF9taW4uIEFuIGV2ZW50IHdpdGggbm8gb2JzZXJ2YXRpb24Kcm93cyBpcyBub3QgcHJvb2YgdGhhdCBubyBvcmdhbmlzbXMgd2VyZSBkZXRlY3RlZDsgcmVjb3JkcyBtYXkgYmUgbWlzc2luZy4KCk9ic2VydmVyIG5hbWVzIHdlcmUgcmVtb3ZlZCBmcm9tIHRoaXMgZmljdGlvbmFsIGV4YW1wbGUuIFNwZWNpZXMgbGFiZWxzIGFuZApjb29yZGluYXRlcyBhcmUgaWxsdXN0cmF0aXZlIG9ubHkuIFNvbWUgY29vcmRpbmF0ZXMgYXJlIGludGVudGlvbmFsbHkgcXVlc3Rpb25hYmxlLgpUaGUgY29vcmRpbmF0ZSBkYXR1bSBkaWQgbm90IHN1cnZpdmUuIERvIG5vdCBhc3N1bWUgV0dTODQuCgpEYXRlcyB3aXRoIHNsYXNoZXMgY291bGQgYmUgZGF5L21vbnRoIG9yIG1vbnRoL2RheTsgdGhlIG5vdGVib29rIGNvbnZlbnRpb24gaXMgbG9zdC4KVGhlIGNyeXB0aWMgZmllbGQgY29kZSBoYXMgbm8gc3Vydml2aW5nIGRlZmluaXRpb24uIEtlZXAgaXQgVW5rbm93bi4KVGhlcmUgaXMgbm8gZXZpZGVuY2Ugc3VwcG9ydGluZyBhdXRvbWF0aWMgZHVwbGljYXRlIHJlbW92YWwuCgpBbGwgZmlsZXMgaW4gdGhpcyBmaWN0aW9uYWwgdHV0b3JpYWwgYXJlIHByb3ZpZGVkIHVuZGVyIENDMC0xLjAuCg==",
+      "bytes": 1264,
+      "sha256": "dbba42a07bdf56362f1fe84ff5f88472cd9aac85b872c58a9940c95cf0f0d9e7",
+      "importedAt": "2026-09-30T19:20:20.846828+00:00",
+      "format": "txt",
+      "adapterVersion": 1,
+      "role": "supporting",
+      "archaeology": {},
+      "conversionIssue": "Intentionally preserved as supporting evidence without tabular conversion.",
+      "id": "2d3a4ebc-239c-4f45-8b7b-d85019c4e4b7"
+    }
+  ],
+  "tables": [
+    {
+      "headers": [
+        "event_id",
+        "site",
+        "effort_min",
+        "dt"
+      ],
+      "rows": [
+        [
+          "E01",
+          "North woods",
+          "30",
+          "05/06/2008"
+        ],
+        [
+          "E02",
+          " Creek bend ",
+          "20",
+          "2008-06-07"
+        ],
+        [
+          "E03",
+          "South meadow",
+          "",
+          "2008"
+        ]
+      ],
+      "rowWidths": [
+        4,
+        4,
+        4
+      ],
+      "originalHeaders": [
+        "event_id",
+        "site",
+        "effort_min",
+        "dt"
+      ],
+      "parsing": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "format": "delimited",
+        "headerRow": 1,
+        "adapterVersion": 1,
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "escapeChar": null,
+        "skipInitialSpace": false,
+        "strict": true
+      },
+      "notes": [],
+      "name": "events_2008",
+      "sheet": null,
+      "id": "2ea57d17-06d1-4a12-9f02-19df3c93bab6",
+      "resourceId": "00fac96b-ce9d-48b0-b782-dd46dcd81259",
+      "rowOrigins": [
+        0,
+        1,
+        2
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "event_id",
+          "workingName": "event_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "site",
+          "workingName": "site",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 2,
+          "originalName": "effort_min",
+          "workingName": "effort_min",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 3,
+          "originalName": "dt",
+          "workingName": "dt",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "event_id",
+          "site",
+          "effort_min",
+          "dt"
+        ],
+        "rows": [
+          [
+            "E01",
+            "North woods",
+            "30",
+            "05/06/2008"
+          ],
+          [
+            "E02",
+            " Creek bend ",
+            "20",
+            "2008-06-07"
+          ],
+          [
+            "E03",
+            "South meadow",
+            "",
+            "2008"
+          ]
+        ]
+      }
+    },
+    {
+      "headers": [
+        "taxon_code",
+        "scientific_name",
+        "common_name"
+      ],
+      "rows": [
+        [
+          "T1",
+          "Turdus migratorius",
+          "American robin"
+        ],
+        [
+          "T2",
+          "Poecile atricapillus",
+          "Black-capped chickadee"
+        ],
+        [
+          "T3",
+          "Pica hudsonia",
+          "Black-billed magpie"
+        ]
+      ],
+      "rowWidths": [
+        3,
+        3,
+        3
+      ],
+      "originalHeaders": [
+        "taxon_code",
+        "scientific_name",
+        "common_name"
+      ],
+      "parsing": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "format": "delimited",
+        "headerRow": 1,
+        "adapterVersion": 1,
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "escapeChar": null,
+        "skipInitialSpace": false,
+        "strict": true
+      },
+      "notes": [],
+      "name": "taxa_2008",
+      "sheet": null,
+      "id": "d2fa0655-e7f1-4bc5-ac3c-64dc231bda06",
+      "resourceId": "6ea886f3-d6cd-43ab-96d3-2d10452f8424",
+      "rowOrigins": [
+        0,
+        1,
+        2
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "taxon_code",
+          "workingName": "taxon_code",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "scientific_name",
+          "workingName": "scientific_name",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 2,
+          "originalName": "common_name",
+          "workingName": "common_name",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "taxon_code",
+          "scientific_name",
+          "common_name"
+        ],
+        "rows": [
+          [
+            "T1",
+            "Turdus migratorius",
+            "American robin"
+          ],
+          [
+            "T2",
+            "Poecile atricapillus",
+            "Black-capped chickadee"
+          ],
+          [
+            "T3",
+            "Pica hudsonia",
+            "Black-billed magpie"
+          ]
+        ]
+      }
+    },
+    {
+      "headers": [
+        "record_id",
+        "event_id",
+        "taxon_code",
+        "n",
+        "lat",
+        "lon",
+        "dt",
+        "code"
+      ],
+      "rows": [
+        [
+          "001",
+          "E01",
+          "T1",
+          " 3 ",
+          "53.54",
+          "-113.49",
+          "05/06/2008",
+          "A"
+        ],
+        [
+          "002",
+          "E01",
+          "T2",
+          "NA",
+          "53.55",
+          "-113.50",
+          "2008-06-05",
+          "B"
+        ],
+        [
+          "003",
+          "E02",
+          "UNKNOWN",
+          "two",
+          "153.56",
+          "53.56",
+          "2008-02-30",
+          "?"
+        ],
+        [
+          "004",
+          "E02",
+          "T3",
+          "2",
+          "0",
+          "0",
+          "2008-06",
+          "A"
+        ],
+        [
+          "004",
+          "E02",
+          "T3",
+          "2",
+          "0",
+          "0",
+          "2008-06",
+          "A"
+        ],
+        [
+          "005",
+          "E404",
+          "",
+          "0",
+          "-9999",
+          "9999",
+          "06/07/2008",
+          "-"
+        ]
+      ],
+      "rowWidths": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "originalHeaders": [
+        "record_id",
+        "event_id",
+        "taxon_code",
+        "n",
+        "lat",
+        "lon",
+        "dt",
+        "code"
+      ],
+      "parsing": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "format": "delimited",
+        "headerRow": 1,
+        "adapterVersion": 1,
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "escapeChar": null,
+        "skipInitialSpace": false,
+        "strict": true
+      },
+      "notes": [],
+      "name": "obs_2008",
+      "sheet": null,
+      "id": "6c7ca75c-e4e3-405e-9429-b7f610644786",
+      "resourceId": "39f91b36-9b03-485b-b665-7675425c9855",
+      "rowOrigins": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "record_id",
+          "workingName": "record_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "event_id",
+          "workingName": "event_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 2,
+          "originalName": "taxon_code",
+          "workingName": "taxon_code",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 3,
+          "originalName": "n",
+          "workingName": "n",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 4,
+          "originalName": "lat",
+          "workingName": "lat",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 5,
+          "originalName": "lon",
+          "workingName": "lon",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 6,
+          "originalName": "dt",
+          "workingName": "dt",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 7,
+          "originalName": "code",
+          "workingName": "code",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "record_id",
+          "event_id",
+          "taxon_code",
+          "n",
+          "lat",
+          "lon",
+          "dt",
+          "code"
+        ],
+        "rows": [
+          [
+            "001",
+            "E01",
+            "T1",
+            " 3 ",
+            "53.54",
+            "-113.49",
+            "05/06/2008",
+            "A"
+          ],
+          [
+            "002",
+            "E01",
+            "T2",
+            "NA",
+            "53.55",
+            "-113.50",
+            "2008-06-05",
+            "B"
+          ],
+          [
+            "003",
+            "E02",
+            "UNKNOWN",
+            "two",
+            "153.56",
+            "53.56",
+            "2008-02-30",
+            "?"
+          ],
+          [
+            "004",
+            "E02",
+            "T3",
+            "2",
+            "0",
+            "0",
+            "2008-06",
+            "A"
+          ],
+          [
+            "004",
+            "E02",
+            "T3",
+            "2",
+            "0",
+            "0",
+            "2008-06",
+            "A"
+          ],
+          [
+            "005",
+            "E404",
+            "",
+            "0",
+            "-9999",
+            "9999",
+            "06/07/2008",
+            "-"
+          ]
+        ]
+      }
+    }
+  ],
+  "relationships": [],
+  "audit": [
+    {
+      "id": "736036b6-305c-4de4-aa82-fa6ccaf8ef09",
+      "at": "2026-09-30T19:20:20.894Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "00fac96b-ce9d-48b0-b782-dd46dcd81259",
+      "sourceHash": "30e5cf99bb17e2317716120a9ff42e42d3c4d6927ecd6bbaf050db7b85cbc525",
+      "applicationVersion": "0.2.0"
+    },
+    {
+      "id": "2af54232-6822-434a-9bf5-04bb74e7d12e",
+      "at": "2026-09-30T19:20:20.894Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "6ea886f3-d6cd-43ab-96d3-2d10452f8424",
+      "sourceHash": "4328ac702327a65f248d413cd5cb98dbc2144ba7c2ff8cfdca5f69e52b5b2a86",
+      "applicationVersion": "0.2.0"
+    },
+    {
+      "id": "da10db8f-010f-47f9-81f6-ff5f1308df95",
+      "at": "2026-09-30T19:20:20.894Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "39f91b36-9b03-485b-b665-7675425c9855",
+      "sourceHash": "1f8f52f32ed35a9651ec89cf981155236f57d0438b735d6f33741960042334a4",
+      "applicationVersion": "0.2.0"
+    },
+    {
+      "id": "0123dfd3-6391-475c-9591-36a61be7e1ad",
+      "at": "2026-09-30T19:20:20.895Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "2d3a4ebc-239c-4f45-8b7b-d85019c4e4b7",
+      "sourceHash": "dbba42a07bdf56362f1fe84ff5f88472cd9aac85b872c58a9940c95cf0f0d9e7",
+      "applicationVersion": "0.2.0"
+    }
+  ],
+  "undoStack": [],
+  "redoStack": [],
+  "profiles": {
+    "frictionless": "1",
+    "darwinCoreGuide": "2026-05-26",
+    "roCrate": "1.2",
+    "eml": "2.2.0"
+  },
+  "mode": "beginner"
+}

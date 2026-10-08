@@ -1,0 +1,44 @@
+[
+  {
+    "name": "csv-dialect.json",
+    "url": "https://raw.githubusercontent.com/frictionlessdata/datapackage/16ef8f781ccc0a099ae7a268591f45fe77e87e78/schemas/csv-dialect.json",
+    "commit": "16ef8f781ccc0a099ae7a268591f45fe77e87e78",
+    "sha256": "96eb8d2b64a2cecff0ef0cf793fb897344fca68a22843e4a6adf8d8305e2084d",
+    "retrieved": "2026-09-30"
+  },
+  {
+    "name": "data-package.json",
+    "url": "https://raw.githubusercontent.com/frictionlessdata/datapackage/16ef8f781ccc0a099ae7a268591f45fe77e87e78/schemas/data-package.json",
+    "commit": "16ef8f781ccc0a099ae7a268591f45fe77e87e78",
+    "sha256": "80812b280be979e640279c5442468c49bfd99758af99e5f83cb144c0d077a05d",
+    "retrieved": "2026-09-30"
+  },
+  {
+    "name": "data-resource.json",
+    "url": "https://raw.githubusercontent.com/frictionlessdata/datapackage/16ef8f781ccc0a099ae7a268591f45fe77e87e78/schemas/data-resource.json",
+    "commit": "16ef8f781ccc0a099ae7a268591f45fe77e87e78",
+    "sha256": "64490bb0ce5af0fc511db000bcf04627bfb0fb0dab88a1f144a3a772da089865",
+    "retrieved": "2026-09-30"
+  },
+  {
+    "name": "table-schema.json",
+    "url": "https://raw.githubusercontent.com/frictionlessdata/datapackage/16ef8f781ccc0a099ae7a268591f45fe77e87e78/schemas/table-schema.json",
+    "commit": "16ef8f781ccc0a099ae7a268591f45fe77e87e78",
+    "sha256": "cb1389e7b0394f5f1f9a7e07d7301b145e67d393d693b953012988fba9bc8bea",
+    "retrieved": "2026-09-30"
+  },
+  {
+    "name": "tabular-data-resource.json",
+    "url": "https://raw.githubusercontent.com/frictionlessdata/datapackage/16ef8f781ccc0a099ae7a268591f45fe77e87e78/schemas/tabular-data-resource.json",
+    "commit": "16ef8f781ccc0a099ae7a268591f45fe77e87e78",
+    "sha256": "c7ff4381cf72cfe62477486e4d2d50170c4e5bfca806b27d7523d163bcd165d3",
+    "retrieved": "2026-09-30"
+  },
+  {
+    "name": "dictionary.json",
+    "url": "https://raw.githubusercontent.com/frictionlessdata/datapackage/16ef8f781ccc0a099ae7a268591f45fe77e87e78/schemas/dictionary.json",
+    "commit": "16ef8f781ccc0a099ae7a268591f45fe77e87e78",
+    "sha256": "72088052e7d7adfb5f7679f9906ae4656912f86e2e70cb8ec7af93fd64a75720",
+    "retrieved": "2026-09-30"
+  }
+]

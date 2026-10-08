@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-native-client-state"
+description = "Enables the native_client_state command without any pre-configured scope."
+commands.allow = ["native_client_state"]
+
+[[permission]]
+identifier = "deny-native-client-state"
+description = "Denies the native_client_state command without any pre-configured scope."
+commands.deny = ["native_client_state"]

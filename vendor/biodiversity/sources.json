@@ -1,0 +1,218 @@
+[
+  {
+    "path": "camtrap-1.0.2/camtrap-dp-profile.json",
+    "url": "https://raw.githubusercontent.com/tdwg/camtrap-dp/43aba7d61ec381a504426d41b42b2f5ea7ce1459/camtrap-dp-profile.json",
+    "sha256": "daea4da7d64531e17986daad30bd3852701c7326a79b1b5e49a213c5489a8652",
+    "commit": "43aba7d61ec381a504426d41b42b2f5ea7ce1459"
+  },
+  {
+    "path": "camtrap-1.0.2/deployments-table-schema.json",
+    "url": "https://raw.githubusercontent.com/tdwg/camtrap-dp/43aba7d61ec381a504426d41b42b2f5ea7ce1459/deployments-table-schema.json",
+    "sha256": "2893074dbc0a2331f038bca22626cfdc65614c7d2009df908adbb403281f4dfa",
+    "commit": "43aba7d61ec381a504426d41b42b2f5ea7ce1459"
+  },
+  {
+    "path": "camtrap-1.0.2/media-table-schema.json",
+    "url": "https://raw.githubusercontent.com/tdwg/camtrap-dp/43aba7d61ec381a504426d41b42b2f5ea7ce1459/media-table-schema.json",
+    "sha256": "79b3acb6e4431dd748829364b6df17c120774127a0091b9eaa7a012d9fae3867",
+    "commit": "43aba7d61ec381a504426d41b42b2f5ea7ce1459"
+  },
+  {
+    "path": "camtrap-1.0.2/observations-table-schema.json",
+    "url": "https://raw.githubusercontent.com/tdwg/camtrap-dp/43aba7d61ec381a504426d41b42b2f5ea7ce1459/observations-table-schema.json",
+    "sha256": "b008021a15c575f38468f511d8a3fd6468d2a670c952f3914481fb3379e6232a",
+    "commit": "43aba7d61ec381a504426d41b42b2f5ea7ce1459"
+  },
+  {
+    "path": "camtrap-1.0.2/LICENSE",
+    "url": "https://raw.githubusercontent.com/tdwg/camtrap-dp/43aba7d61ec381a504426d41b42b2f5ea7ce1459/LICENSE",
+    "sha256": "62fbe02066e064542927a95d4f2bfe16e9337a0f624bba57693c2d42ae364342",
+    "commit": "43aba7d61ec381a504426d41b42b2f5ea7ce1459"
+  },
+  {
+    "path": "eml-2.2.0/eml-access.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-access.xsd",
+    "sha256": "cceb1ff5ad5231d0071d1cdb47f4a5e18a3ef6fa56d65b9a25ad41ca64209d1e",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-attribute.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-attribute.xsd",
+    "sha256": "902f6f3cba66b9ee362d3b53cee69020dc0717c1d6dc889c7e5015c6aeca797f",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-constraint.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-constraint.xsd",
+    "sha256": "9178f1d5600adbf53f0c34bbf5a59a98452a95748e810896b8c89431cf524ec5",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-coverage.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-coverage.xsd",
+    "sha256": "5c0ed2c63ce486db3bb3a03587b782217ece87fe5c67e83bc9adafd756fdbb20",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-dataTable.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-dataTable.xsd",
+    "sha256": "76a9157a34aa09f910bec3aaad836085d1a7fa5d644f999e3e2c2a0e555a8f02",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-dataset.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-dataset.xsd",
+    "sha256": "d376054e440663adf5fbc35b536db2bd59f1d5fa664b943bff92b4c78cd35060",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-documentation.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-documentation.xsd",
+    "sha256": "ffebe48a437a25be1aa916e2f34bd61b8a68f5840c2cc65e8529e04ba692fa54",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-entity.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-entity.xsd",
+    "sha256": "41957c95e507af102c78f6b5405e03150afc0f2ae5964e5836964d9a0db48fd2",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-literature.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-literature.xsd",
+    "sha256": "4f2f38e0f7c42160d051731620359d7d002310a54feb60e6122f8222fd3c778c",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-methods.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-methods.xsd",
+    "sha256": "9621686ffff46dfad0cd556fe6ded2265b92f2ec4d5e2217af9bfb939b8e6701",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-party.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-party.xsd",
+    "sha256": "ec8e598c05380a21184e09162ac1e71a4fbbebb9fe0694387307bf4d16c43be6",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-physical.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-physical.xsd",
+    "sha256": "74d538266b6982ee26949750e59e975e45050291310379cb4e653c3cc9452133",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-project.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-project.xsd",
+    "sha256": "daeb3b1137824e9d77c17608817e48040159ffa0b4027ee00b1f605bbb6f632d",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-protocol.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-protocol.xsd",
+    "sha256": "bf9b67a62bc998d673dd9a68d1de5893dd83f1892098eeddf7239436e707fbae",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-resource.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-resource.xsd",
+    "sha256": "8a8732baefd740a5ce413ca0d03a0b8b7d0bc157e6c316d8e23720db21d00e82",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-semantics.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-semantics.xsd",
+    "sha256": "154246efa86f177256f2f073b2667abbc5066fbef12eed1f6090b3aea2314a22",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-software.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-software.xsd",
+    "sha256": "ed78571419fd4bff206850cb79b34460200f2249aef859e8c7fab20ce66fcd49",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-spatialRaster.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-spatialRaster.xsd",
+    "sha256": "c9dc78d083573b490ffb544e4ec197a7e08cdbe25371290fe2a3307f6cd5c172",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-spatialReference.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-spatialReference.xsd",
+    "sha256": "a7896a6ac0ff101801bcae54b217585ab76d14a7b6d8b147ce310532921d2252",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-spatialVector.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-spatialVector.xsd",
+    "sha256": "845de661565b3a9ae4c579979904fc6ce2bda548f99aa6b89fb8f65394a60462",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-storedProcedure.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-storedProcedure.xsd",
+    "sha256": "19a314f7d803e9a161115aedc3ba2582a13d9ddfa137b24c903581b371ccadf9",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-text.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-text.xsd",
+    "sha256": "595419363ff368f23d00ec5265003a7b490684e34c6247cf2d423093c393ceb2",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-unitTypeDefinitions.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-unitTypeDefinitions.xsd",
+    "sha256": "a01920a6e7681cc96b70a93f5c94c8ab13ac7ebfe5812442c01da1ec72c842ae",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml-view.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml-view.xsd",
+    "sha256": "aea2786845a104bc541e0a70a53bf70bce8566b1368dd3d87e5198ec8572576f",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/eml.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/eml.xsd",
+    "sha256": "031c5652982cca98b203eae3311739dd531c636cb3fa8eb6e17cb85176d1f004",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/stmml.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/stmml.xsd",
+    "sha256": "4f5f38c1f15a7ed3575e5efa46c0ebdf64065ad0892a8086f0197de87bac08b9",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/xml.xsd",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/xsd/xml.xsd",
+    "sha256": "6448b52cf4eced7203a24b49d1c9524e31596ed692042a7a471997b79db29011",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "eml-2.2.0/LICENSE",
+    "url": "https://raw.githubusercontent.com/NCEAS/eml/233427f03610694d2a865e6748bcf8bfb51be900/LICENSE",
+    "sha256": "b8d0e2bcbf36f6af3cdbf94055ad2ea675d5a19fc623eb0ec82febb2b08e719b",
+    "commit": "233427f03610694d2a865e6748bcf8bfb51be900"
+  },
+  {
+    "path": "dependencies/schema-store-geojson.json",
+    "url": "https://raw.githubusercontent.com/SchemaStore/schemastore/e45f98058abc8224650c86f72971d838a7aa3800/src/schemas/json/geojson.json",
+    "commit": "e45f98058abc8224650c86f72971d838a7aa3800",
+    "sha256": "5532d1f9974aa19b69846c1b1d902100fd375663595b849a17ff1ceac31e5774"
+  },
+  {
+    "path": "dependencies/LICENSE",
+    "url": "https://raw.githubusercontent.com/SchemaStore/schemastore/e45f98058abc8224650c86f72971d838a7aa3800/LICENSE",
+    "commit": "e45f98058abc8224650c86f72971d838a7aa3800",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "path": "dependencies/geojson-rfc.json",
+    "url": "https://geojson.org/schema/GeoJSON.json",
+    "sha256": "5456d0bdf070d3b654ee6b78c7d807c2663756931cf9f5e50726ed6241535666",
+    "commit": "Content pinned by SHA-256, official companion schema"
+  }
+]

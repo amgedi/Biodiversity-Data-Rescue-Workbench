@@ -1,0 +1,14 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {journeyModel,primaryWorkflow} from '../web/workflow-experience.mjs';
+import {analyzeProject} from '../web/smart-analysis.mjs';
+import {themePalette} from '../web/studio-themes.mjs';
+const project=()=>JSON.parse(fs.readFileSync(new URL('../examples/nightmare.biorescue.json',import.meta.url),'utf8'));
+const verified=p=>p.resources.map(()=>({backupMatches:true,diskMatches:true,backupByteLengthMatches:true,diskByteLengthMatches:true}));
+test('V6 presents all eight canonical workflow destinations',()=>assert.deepEqual(primaryWorkflow.map(x=>x[1]),['Overview','Sources','Understand','Review','Repair','Standardize','Validate','Package']));
+test('reviewing every finding does not confirm fields or grant package approval',()=>{const p=project(),before=structuredClone(p),analysis=analyzeProject(p),state={reviews:Object.fromEntries(analysis.items.map(item=>[item.id,{state:'Reviewed'}]))};const model=journeyModel(p,analysis,state,verified(p));assert.equal(model.stages[2].status,'Complete');assert.equal(model.stages[4].status,'Needs review');assert.notEqual(model.stages[6].status,'Complete');assert(model.unresolved>0);assert.deepEqual(p,before);});
+test('a verified subset of originals cannot establish project safety',()=>{const p=project(),model=journeyModel(p,analyzeProject(p),{reviews:{}},verified(p).slice(1));assert.equal(model.safe,false);assert.equal(model.stages[0].status,'Blocked');assert.equal(model.stages[6].status,'Blocked');assert.equal(model.next.id,'preserve');});
+test('original hashes alone do not grant safety when byte lengths disagree',()=>{const p=project(),integrity=verified(p);integrity[0].diskByteLengthMatches=false;const model=journeyModel(p,analyzeProject(p),{reviews:{}},integrity);assert.equal(model.safe,false);assert.equal(model.next.id,'preserve');});
+test('a source-free project never claims preservation or package readiness',()=>{const p=project();p.resources=[];p.tables=[];p.relationships=[];const model=journeyModel(p,analyzeProject(p),{reviews:{}},[]);assert.equal(model.safe,false);assert.equal(model.stages[0].status,'Ready');assert.equal(model.stages[6].status,'Blocked');});
+test('requested dark environments have distinct base and surface pairs',()=>{const keys=['dark','forest','midnight','ocean','aurora','slate','museum'];assert.equal(new Set(keys.map(key=>themePalette[key].slice(0,2).join(':'))).size,keys.length);});

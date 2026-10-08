@@ -1,0 +1,2574 @@
+{
+  "version": 2,
+  "projectSchemaVersion": 3,
+  "migrationHistory": [],
+  "evidenceAssertions": [],
+  "recovery": {},
+  "appVersion": "0.3.0",
+  "id": "d1d3d140-95ac-4f9b-8bb0-2689c5d7dc21",
+  "revision": 0,
+  "createdAt": "2026-09-30T20:17:57.215Z",
+  "updatedAt": "2026-09-30T20:17:57.223Z",
+  "metadata": {
+    "title": {
+      "value": "Rocky Mountain Amphibian Survey 2003–2011 · fictional archaeology",
+      "status": "Confirmed",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "description": {
+      "value": "Fictional training project with conflicting protocol definitions, multiple workbook versions, unknown dates/datum, mixed units and orphan relationships. No real field locations or species occurrences.",
+      "status": "Confirmed",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "purpose": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "creator": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "contributors": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "contact": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "organizations": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "citation": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "publicationDate": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "license": {
+      "value": "CC0-1.0 — fictional demo artifacts only",
+      "status": "Confirmed",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "funding": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "methods": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "samplingProtocol": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "studyDesign": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "temporalCoverage": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "spatialCoverage": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "taxonomicCoverage": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "keywords": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "originalSoftware": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "publications": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "limitations": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "provenance": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "sensitivity": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "datum": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "coordinateUncertainty": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    }
+  },
+  "resources": [
+    {
+      "name": "observations.csv",
+      "base64": "b2NjdXJyZW5jZV9pZCxzdXJ2ZXlfaWQsdGF4b24sbixjb2RlLGR0LGxhdCxsb24sbXlzdGVyeQpPMSxFMSxSQVBJLCAzICw0LDA2LzA3LzA4LDUzLjEyMzQ1Njc4OSwtMTEzLjI1LDgKTzEsRTEsUi4gcGlwaWVucyw5OTksNCwzOTIwMCwwLDAsOApPMyxFNDA0LFJhbmEgcGlwaWVucyxOQSw3LDIwMDYtMDItMzAsLTExMyw1Myw5Ck80LEUyLG5vcnRoZXJuIGxlb3BhcmQgZnJvZywwLDQsMjAwNy0wNiw5MSwtMTEzLD8KLEUyLHVua25vd24sTi9BLC4sMjAxMC0wNi0xMlQxMDowMDowMCw1MywtMTEzLApPNixFMyxSQVBJLC05OTksNCwyMDExLTA2LTEyVDEwOjAwOjAwLTA2OjAwLDEwLDEyMCwKTzYsRTMsUkFQSSwtOTk5LDQsMjAxMS0wNi0xMlQxMDowMDowMC0wNjowMCwxMCwxMjAsCg==",
+      "bytes": 388,
+      "sha256": "8355c47e94b7795eb9d010b6ce0fe32e7c7f5bd49cf4fad5a2dd008508b412c6",
+      "importedAt": "2026-09-30T20:17:57.160155+00:00",
+      "format": "csv",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "notes": [],
+        "sourceForensics": {
+          "mimeType": "text/csv",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 8,
+            "CR": 0
+          },
+          "nullByteCount": 0,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": null,
+      "id": "ffd28149-5d49-4151-b6f9-164ed72802b3"
+    },
+    {
+      "name": "events.csv",
+      "base64": "c3VydmV5X2lkLHNpdGVfaWQsZWZmb3J0X21pbixtZXRob2QKRTEsUzEsMTAsdmlzdWFsIGVuY291bnRlcgpFMixTMiwsdmlzdWFsIGVuY291bnRlcgpFMixTMiwxMCxjYWxsIHN1cnZleQpFMyxTMywyMCxjYWxsIHN1cnZleQpFNCxTNCwxMCx1bmtub3duCg==",
+      "bytes": 145,
+      "sha256": "142002cbba29182162c513498fc2057c39d5915a20c96d290ec707abd7ee4841",
+      "importedAt": "2026-09-30T20:17:57.160854+00:00",
+      "format": "csv",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "notes": [],
+        "sourceForensics": {
+          "mimeType": "text/csv",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 6,
+            "CR": 0
+          },
+          "nullByteCount": 0,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": null,
+      "id": "ad0de020-411e-4d5f-80a4-0f398d1f693e"
+    },
+    {
+      "name": "species_codes.csv",
+      "base64": "Y29kZSxuYW1lLG5hbWVBY2NvcmRpbmdUbwpSQVBJLFJhbmEgcGlwaWVucyxIaXN0b3JpY2FsIHByb2plY3QgbGlzdDsgYXV0aG9yaXR5IHVua25vd24KUkFQSSxSLiBwaXBpZW5zLFVucmVzb2x2ZWQgYWJicmV2aWF0aW9uClVOS05PV04sdW5rbm93biwK",
+      "bytes": 144,
+      "sha256": "29a3df0e0eac0b7aa58b02b53b1626a6636319468fdff529b00e3687065a501f",
+      "importedAt": "2026-09-30T20:17:57.161497+00:00",
+      "format": "csv",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "notes": [],
+        "sourceForensics": {
+          "mimeType": "text/csv",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 4,
+            "CR": 0
+          },
+          "nullByteCount": 0,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": null,
+      "id": "7b3f6cec-e736-416a-83f7-e80a592db8cd"
+    },
+    {
+      "name": "weather.csv",
+      "base64": "c3VydmV5X2lkLHRlbXAsdGVtcF91bml0LHJhaW4KRTEsMTIsQywwCkUyLDYwLEYsTkEKRTMsOTk5LHVua25vd24sLTkK",
+      "bytes": 69,
+      "sha256": "63e2589bd5669d74682c87c905bf30ace8215c500be55b99e4b3cf7f0dfb9419",
+      "importedAt": "2026-09-30T20:17:57.162068+00:00",
+      "format": "csv",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "notes": [],
+        "sourceForensics": {
+          "mimeType": "text/csv",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 4,
+            "CR": 0
+          },
+          "nullByteCount": 0,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": null,
+      "id": "6384566c-04ad-466d-a8ae-b8f243f92c5e"
+    },
+    {
+      "name": "README_old.txt",
+      "base64": "RklDVElPTkFMIFRSQUlOSU5HIEVWSURFTkNFLiBSRUFETUUgMjAwNDogY29kZSA0ID0ganV2ZW5pbGUuIG4gaXMgbnVtYmVyIG9mIGluZGl2aWR1YWxzIHZpc3VhbGx5IGVuY291bnRlcmVkLiBOQSBkZW5vdGVzIG5vdCByZWNvcmRlZCBpbiBvYnNlcnZhdGlvbnMuIFRoaXMgZG9lcyBub3QgZXN0YWJsaXNoIG1lYW5pbmdzIGZvciBvdGhlciBzZW50aW5lbCB0b2tlbnMuIERhdHVtIGFuZCBkYXRlIGNvbnZlbnRpb24gbm90IGRvY3VtZW50ZWQuCg==",
+      "bytes": 253,
+      "sha256": "1731cfe1011e83bc1372f34e187f0b4900beac969cc316b6f2cba68a60b6d832",
+      "importedAt": "2026-09-30T20:17:57.162362+00:00",
+      "format": "txt",
+      "adapterVersion": 1,
+      "role": "supporting",
+      "archaeology": {
+        "sourceForensics": {
+          "mimeType": "text/plain",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 1,
+            "CR": 0
+          },
+          "nullByteCount": 0,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": "Intentionally preserved as supporting evidence without tabular conversion.",
+      "id": "0aed7dfe-77d4-4fca-823e-72698efeaa66"
+    },
+    {
+      "name": "protocol_REVISED.txt",
+      "base64": "RklDVElPTkFMIFRSQUlOSU5HIEVWSURFTkNFLiBQcm90b2NvbCByZXZpc2lvbiAyMDA3LCBzZWN0aW9uIDM6IGNvZGUgNCA9IHVua25vd24gc2V4LiBJdCBpcyB1bmNsZWFyIHdoaWNoIGFubnVhbCBmaWxlIHVzZWQgdGhpcyByZXZpc2lvbi4gbiBkZW5vdGVzIG9ic2VydmVkIGluZGl2aWR1YWxzLiBFZmZvcnQgbWV0aG9kb2xvZ3kgY2hhbmdlZCB0byBjYWxsIHN1cnZleXMgaW4gMjAwNzsgY29tcGFyYWJpbGl0eSBpcyB1bnJlc29sdmVkLgo=",
+      "bytes": 251,
+      "sha256": "551cf80e7dadade0c4db8aefa31a5fa4b63a7fb2670d0df025d1594750e29afb",
+      "importedAt": "2026-09-30T20:17:57.163089+00:00",
+      "format": "txt",
+      "adapterVersion": 1,
+      "role": "supporting",
+      "archaeology": {
+        "sourceForensics": {
+          "mimeType": "text/plain",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 1,
+            "CR": 0
+          },
+          "nullByteCount": 0,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": "Intentionally preserved as supporting evidence without tabular conversion.",
+      "id": "b39a085e-8e11-4a4e-add8-54d1378936fb"
+    },
+    {
+      "name": "field_notes.txt",
+      "base64": "RklDVElPTkFMOiBzaXRlIFMxIHJlbmFtZWQgIkNyZWVrIEVhc3QiLiBGb3LqdCBub3RlcyBjb3BpZWQgZnJvbSBXaW5kb3dzLTEyNTIuIFRoZSBteXN0ZXJ5IGZpZWxkIGlzIHVucmVjb3ZlcmFibGUuIFNvbWUgbG9jYXRpb25zIGFyZSBkZWxpYmVyYXRlbHkgbWFya2VkIHNlbnNpdGl2ZS4K",
+      "bytes": 165,
+      "sha256": "139041fcba42df9d13079b11f1ac39d46c925cc99e250bab0d78611796c444f3",
+      "importedAt": "2026-09-30T20:17:57.163362+00:00",
+      "format": "txt",
+      "adapterVersion": 1,
+      "role": "supporting",
+      "archaeology": {
+        "sourceForensics": {
+          "mimeType": "text/plain",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 1,
+            "CR": 0
+          },
+          "nullByteCount": 0,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": "Intentionally preserved as supporting evidence without tabular conversion.",
+      "id": "65b7c259-6de4-4c13-b004-74431e9b4a12"
+    },
+    {
+      "name": "sites.geojson",
+      "base64": "eyJ0eXBlIjogIkZlYXR1cmVDb2xsZWN0aW9uIiwgImZlYXR1cmVzIjogW3sidHlwZSI6ICJGZWF0dXJlIiwgInByb3BlcnRpZXMiOiB7InNpdGVfaWQiOiAiUzEiLCAibG9jYWxpdHkiOiAiRmljdGlvbmFsIENyZWVrIEVhc3QifSwgImdlb21ldHJ5IjogeyJ0eXBlIjogIlBvaW50IiwgImNvb3JkaW5hdGVzIjogWy0xMTMuMjUsIDUzLjEyMzQ1Njc4OV19fV19",
+      "bytes": 204,
+      "sha256": "25af5ee2a4cb3e4b1a8b2b3d4d77f4fcc1b00021943011e424043bb7c3e3a5cb",
+      "importedAt": "2026-09-30T20:17:57.163674+00:00",
+      "format": "geojson",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "notes": [
+          "Geometry retained as literal JSON; no CRS assumption, reprojection or inferred coordinate fields."
+        ],
+        "foreignMembers": [],
+        "sourceForensics": {
+          "mimeType": "application/octet-stream",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 0,
+            "CR": 0
+          },
+          "nullByteCount": 0,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": null,
+      "id": "9587225c-b932-40b7-b4a5-774652ed8326"
+    },
+    {
+      "name": "survey_FINAL.xlsx",
+      "base64": "UEsDBBQAAAAAADxyPl0Bss72ZAEAAGQBAAAPAAAAeGwvd29ya2Jvb2sueG1sPHdvcmtib29rIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvc3ByZWFkc2hlZXRtbC8yMDA2L21haW4iIHhtbG5zOnI9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9vZmZpY2VEb2N1bWVudC8yMDA2L3JlbGF0aW9uc2hpcHMiPjxzaGVldHM+PHNoZWV0IG5hbWU9IlN1cnZleSIgcjppZD0icjEiLz48c2hlZXQgbmFtZT0iQ2x1ZXMiIHN0YXRlPSJ2ZXJ5SGlkZGVuIiByOmlkPSJyMiIvPjwvc2hlZXRzPjxkZWZpbmVkTmFtZXM+PGRlZmluZWROYW1lIG5hbWU9Ik9ic2VydmF0aW9ucyI+U3VydmV5ISRBJDE6JEIkMjwvZGVmaW5lZE5hbWU+PC9kZWZpbmVkTmFtZXM+PC93b3JrYm9vaz5QSwMEFAAAAAAAPHI+Xf+wfLmLAAAAiwAAABoAAAB4bC9fcmVscy93b3JrYm9vay54bWwucmVsczxSZWxhdGlvbnNoaXBzPjxSZWxhdGlvbnNoaXAgSWQ9InIxIiBUYXJnZXQ9IndvcmtzaGVldHMvc2hlZXQxLnhtbCIvPjxSZWxhdGlvbnNoaXAgSWQ9InIyIiBUYXJnZXQ9IndvcmtzaGVldHMvc2hlZXQyLnhtbCIvPjwvUmVsYXRpb25zaGlwcz5QSwMEFAAAAAAAPHI+XRSAZwZGAQAARgEAABgAAAB4bC93b3Jrc2hlZXRzL3NoZWV0MS54bWw8d29ya3NoZWV0IHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvc3ByZWFkc2hlZXRtbC8yMDA2L21haW4iPjxzaGVldERhdGE+PHJvdyByPSIxIj48YyByPSJBMSIgdD0iaW5saW5lU3RyIj48aXM+PHQ+c3VydmV5X2lkPC90PjwvaXM+PC9jPjxjIHI9IkIxIiB0PSJpbmxpbmVTdHIiPjxpcz48dD5jb3VudDwvdD48L2lzPjwvYz48L3Jvdz48cm93IHI9IjIiPjxjIHI9IkEyIiB0PSJpbmxpbmVTdHIiPjxpcz48dD5FMTwvdD48L2lzPjwvYz48YyByPSJCMiI+PGY+MSsyPC9mPjx2PjM8L3Y+PC9jPjwvcm93Pjwvc2hlZXREYXRhPjwvd29ya3NoZWV0PlBLAwQUAAAAAAA8cj5drx5yojABAAAwAQAAGAAAAHhsL3dvcmtzaGVldHMvc2hlZXQyLnhtbDx3b3Jrc2hlZXQgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9zcHJlYWRzaGVldG1sLzIwMDYvbWFpbiI+PHNoZWV0RGF0YT48cm93IHI9IjEiPjxjIHI9IkExIiB0PSJpbmxpbmVTdHIiPjxpcz48dD5ub3RlPC90PjwvaXM+PC9jPjwvcm93Pjxyb3cgcj0iMiI+PGMgcj0iQTIiIHQ9ImlubGluZVN0ciI+PGlzPjx0PkNhY2hlZCBmb3JtdWxhIGRpZmZlcnMgYmV0d2VlbiB2ZXJzaW9uczsgc291cmNlIGF1dGhvcml0eSB1bmtub3duLjwvdD48L2lzPjwvYz48L3Jvdz48L3NoZWV0RGF0YT48L3dvcmtzaGVldD5QSwMEFAAAAAAAPHI+XTT5rzdkAAAAZAAAACMAAAB4bC93b3Jrc2hlZXRzL19yZWxzL3NoZWV0MS54bWwucmVsczxSZWxhdGlvbnNoaXBzPjxSZWxhdGlvbnNoaXAgVHlwZT0idXJuOmV4YW1wbGUvY29tbWVudHMiIFRhcmdldD0iLi4vY29tbWVudHMxLnhtbCIvPjwvUmVsYXRpb25zaGlwcz5QSwMEFAAAAAAAPHI+XaKYcuAYAQAAGAEAABAAAAB4bC9jb21tZW50czEueG1sPGNvbW1lbnRzIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvc3ByZWFkc2hlZXRtbC8yMDA2L21haW4iPjxhdXRob3JzPjxhdXRob3I+RmljdGlvbmFsIHJlc2VhcmNoZXI8L2F1dGhvcj48L2F1dGhvcnM+PGNvbW1lbnRMaXN0Pjxjb21tZW50IHJlZj0iQjIiIGF1dGhvcklkPSIwIj48dGV4dD48dD5WaXN1YWwgY291bnQ7IGNhY2hlZCBmaWVsZCBmb3JtdWxhIGlzIHVudmVyaWZpZWQuPC90PjwvdGV4dD48L2NvbW1lbnQ+PC9jb21tZW50TGlzdD48L2NvbW1lbnRzPlBLAQIUABQAAAAAADxyPl0Bss72ZAEAAGQBAAAPAAAAAAAAAAAAAACAAQAAAAB4bC93b3JrYm9vay54bWxQSwECFAAUAAAAAAA8cj5d/7B8uYsAAACLAAAAGgAAAAAAAAAAAAAAgAGRAQAAeGwvX3JlbHMvd29ya2Jvb2sueG1sLnJlbHNQSwECFAAUAAAAAAA8cj5dFIBnBkYBAABGAQAAGAAAAAAAAAAAAAAAgAFUAgAAeGwvd29ya3NoZWV0cy9zaGVldDEueG1sUEsBAhQAFAAAAAAAPHI+Xa8ecqIwAQAAMAEAABgAAAAAAAAAAAAAAIAB0AMAAHhsL3dvcmtzaGVldHMvc2hlZXQyLnhtbFBLAQIUABQAAAAAADxyPl00+a83ZAAAAGQAAAAjAAAAAAAAAAAAAACAATYFAAB4bC93b3Jrc2hlZXRzL19yZWxzL3NoZWV0MS54bWwucmVsc1BLAQIUABQAAAAAADxyPl2imHLgGAEAABgBAAAQAAAAAAAAAAAAAACAAdsFAAB4bC9jb21tZW50czEueG1sUEsFBgAAAAAGAAYAoAEAACEHAAAAAA==",
+      "bytes": 2263,
+      "sha256": "d49ce2507d7ef43be43a0974f485d6b6ef3c9d5a687eab2ce3b9b874395f53a4",
+      "importedAt": "2026-09-30T20:17:57.165683+00:00",
+      "format": "xlsx",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "sheets": [
+          {
+            "name": "Survey",
+            "state": "visible",
+            "formulas": [
+              {
+                "cell": "B2",
+                "formula": "1+2",
+                "attributes": {},
+                "cachedValue": "3"
+              }
+            ],
+            "comments": [
+              {
+                "cell": "B2",
+                "author": "Fictional researcher",
+                "text": "Visual count; cached field formula is unverified."
+              }
+            ],
+            "mergedCells": [],
+            "firstRows": [
+              {
+                "row": "1",
+                "values": [
+                  "survey_id",
+                  "count"
+                ]
+              },
+              {
+                "row": "2",
+                "values": [
+                  "E1",
+                  "3"
+                ]
+              }
+            ],
+            "blankRows": [],
+            "occupiedRowNumbers": [
+              1,
+              2
+            ],
+            "irregularCellCounts": false,
+            "headerCandidates": [
+              "1",
+              "2"
+            ]
+          },
+          {
+            "name": "Clues",
+            "state": "veryHidden",
+            "formulas": [],
+            "comments": [],
+            "mergedCells": [],
+            "firstRows": [
+              {
+                "row": "1",
+                "values": [
+                  "note"
+                ]
+              },
+              {
+                "row": "2",
+                "values": [
+                  "Cached formula differs between versions; source authority unknown."
+                ]
+              }
+            ],
+            "blankRows": [],
+            "occupiedRowNumbers": [
+              1,
+              2
+            ],
+            "irregularCellCounts": false,
+            "headerCandidates": []
+          }
+        ],
+        "dateSystem": "1900",
+        "unsupported": [
+          "Formatting, charts, images, threaded comments, pivot tables, external links and embedded objects remain in the original workbook; not converted to tabular data.",
+          "Header candidates are suggestions only. Multiple header bands and preamble rows need explicit human selection."
+        ],
+        "sourceForensics": {
+          "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 0,
+            "CR": 0
+          },
+          "nullByteCount": 232,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": null,
+      "id": "3b02153b-2de0-43ac-8cb2-299864208023"
+    },
+    {
+      "name": "survey_FINAL2.xlsx",
+      "base64": "UEsDBBQAAAAAADxyPl0Bss72ZAEAAGQBAAAPAAAAeGwvd29ya2Jvb2sueG1sPHdvcmtib29rIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvc3ByZWFkc2hlZXRtbC8yMDA2L21haW4iIHhtbG5zOnI9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9vZmZpY2VEb2N1bWVudC8yMDA2L3JlbGF0aW9uc2hpcHMiPjxzaGVldHM+PHNoZWV0IG5hbWU9IlN1cnZleSIgcjppZD0icjEiLz48c2hlZXQgbmFtZT0iQ2x1ZXMiIHN0YXRlPSJ2ZXJ5SGlkZGVuIiByOmlkPSJyMiIvPjwvc2hlZXRzPjxkZWZpbmVkTmFtZXM+PGRlZmluZWROYW1lIG5hbWU9Ik9ic2VydmF0aW9ucyI+U3VydmV5ISRBJDE6JEIkMjwvZGVmaW5lZE5hbWU+PC9kZWZpbmVkTmFtZXM+PC93b3JrYm9vaz5QSwMEFAAAAAAAPHI+Xf+wfLmLAAAAiwAAABoAAAB4bC9fcmVscy93b3JrYm9vay54bWwucmVsczxSZWxhdGlvbnNoaXBzPjxSZWxhdGlvbnNoaXAgSWQ9InIxIiBUYXJnZXQ9IndvcmtzaGVldHMvc2hlZXQxLnhtbCIvPjxSZWxhdGlvbnNoaXAgSWQ9InIyIiBUYXJnZXQ9IndvcmtzaGVldHMvc2hlZXQyLnhtbCIvPjwvUmVsYXRpb25zaGlwcz5QSwMEFAAAAAAAPHI+XRSAZwZGAQAARgEAABgAAAB4bC93b3Jrc2hlZXRzL3NoZWV0MS54bWw8d29ya3NoZWV0IHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvc3ByZWFkc2hlZXRtbC8yMDA2L21haW4iPjxzaGVldERhdGE+PHJvdyByPSIxIj48YyByPSJBMSIgdD0iaW5saW5lU3RyIj48aXM+PHQ+c3VydmV5X2lkPC90PjwvaXM+PC9jPjxjIHI9IkIxIiB0PSJpbmxpbmVTdHIiPjxpcz48dD5jb3VudDwvdD48L2lzPjwvYz48L3Jvdz48cm93IHI9IjIiPjxjIHI9IkEyIiB0PSJpbmxpbmVTdHIiPjxpcz48dD5FMTwvdD48L2lzPjwvYz48YyByPSJCMiI+PGY+MSsyPC9mPjx2PjM8L3Y+PC9jPjwvcm93Pjwvc2hlZXREYXRhPjwvd29ya3NoZWV0PlBLAwQUAAAAAAA8cj5drx5yojABAAAwAQAAGAAAAHhsL3dvcmtzaGVldHMvc2hlZXQyLnhtbDx3b3Jrc2hlZXQgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9zcHJlYWRzaGVldG1sLzIwMDYvbWFpbiI+PHNoZWV0RGF0YT48cm93IHI9IjEiPjxjIHI9IkExIiB0PSJpbmxpbmVTdHIiPjxpcz48dD5ub3RlPC90PjwvaXM+PC9jPjwvcm93Pjxyb3cgcj0iMiI+PGMgcj0iQTIiIHQ9ImlubGluZVN0ciI+PGlzPjx0PkNhY2hlZCBmb3JtdWxhIGRpZmZlcnMgYmV0d2VlbiB2ZXJzaW9uczsgc291cmNlIGF1dGhvcml0eSB1bmtub3duLjwvdD48L2lzPjwvYz48L3Jvdz48L3NoZWV0RGF0YT48L3dvcmtzaGVldD5QSwMEFAAAAAAAPHI+XTT5rzdkAAAAZAAAACMAAAB4bC93b3Jrc2hlZXRzL19yZWxzL3NoZWV0MS54bWwucmVsczxSZWxhdGlvbnNoaXBzPjxSZWxhdGlvbnNoaXAgVHlwZT0idXJuOmV4YW1wbGUvY29tbWVudHMiIFRhcmdldD0iLi4vY29tbWVudHMxLnhtbCIvPjwvUmVsYXRpb25zaGlwcz5QSwMEFAAAAAAAPHI+XaKYcuAYAQAAGAEAABAAAAB4bC9jb21tZW50czEueG1sPGNvbW1lbnRzIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvc3ByZWFkc2hlZXRtbC8yMDA2L21haW4iPjxhdXRob3JzPjxhdXRob3I+RmljdGlvbmFsIHJlc2VhcmNoZXI8L2F1dGhvcj48L2F1dGhvcnM+PGNvbW1lbnRMaXN0Pjxjb21tZW50IHJlZj0iQjIiIGF1dGhvcklkPSIwIj48dGV4dD48dD5WaXN1YWwgY291bnQ7IGNhY2hlZCBmaWVsZCBmb3JtdWxhIGlzIHVudmVyaWZpZWQuPC90PjwvdGV4dD48L2NvbW1lbnQ+PC9jb21tZW50TGlzdD48L2NvbW1lbnRzPlBLAQIUABQAAAAAADxyPl0Bss72ZAEAAGQBAAAPAAAAAAAAAAAAAACAAQAAAAB4bC93b3JrYm9vay54bWxQSwECFAAUAAAAAAA8cj5d/7B8uYsAAACLAAAAGgAAAAAAAAAAAAAAgAGRAQAAeGwvX3JlbHMvd29ya2Jvb2sueG1sLnJlbHNQSwECFAAUAAAAAAA8cj5dFIBnBkYBAABGAQAAGAAAAAAAAAAAAAAAgAFUAgAAeGwvd29ya3NoZWV0cy9zaGVldDEueG1sUEsBAhQAFAAAAAAAPHI+Xa8ecqIwAQAAMAEAABgAAAAAAAAAAAAAAIAB0AMAAHhsL3dvcmtzaGVldHMvc2hlZXQyLnhtbFBLAQIUABQAAAAAADxyPl00+a83ZAAAAGQAAAAjAAAAAAAAAAAAAACAATYFAAB4bC93b3Jrc2hlZXRzL19yZWxzL3NoZWV0MS54bWwucmVsc1BLAQIUABQAAAAAADxyPl2imHLgGAEAABgBAAAQAAAAAAAAAAAAAACAAdsFAAB4bC9jb21tZW50czEueG1sUEsFBgAAAAAGAAYAoAEAACEHAAAAAA==",
+      "bytes": 2263,
+      "sha256": "d49ce2507d7ef43be43a0974f485d6b6ef3c9d5a687eab2ce3b9b874395f53a4",
+      "importedAt": "2026-09-30T20:17:57.166863+00:00",
+      "format": "xlsx",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "sheets": [
+          {
+            "name": "Survey",
+            "state": "visible",
+            "formulas": [
+              {
+                "cell": "B2",
+                "formula": "1+2",
+                "attributes": {},
+                "cachedValue": "3"
+              }
+            ],
+            "comments": [
+              {
+                "cell": "B2",
+                "author": "Fictional researcher",
+                "text": "Visual count; cached field formula is unverified."
+              }
+            ],
+            "mergedCells": [],
+            "firstRows": [
+              {
+                "row": "1",
+                "values": [
+                  "survey_id",
+                  "count"
+                ]
+              },
+              {
+                "row": "2",
+                "values": [
+                  "E1",
+                  "3"
+                ]
+              }
+            ],
+            "blankRows": [],
+            "occupiedRowNumbers": [
+              1,
+              2
+            ],
+            "irregularCellCounts": false,
+            "headerCandidates": [
+              "1",
+              "2"
+            ]
+          },
+          {
+            "name": "Clues",
+            "state": "veryHidden",
+            "formulas": [],
+            "comments": [],
+            "mergedCells": [],
+            "firstRows": [
+              {
+                "row": "1",
+                "values": [
+                  "note"
+                ]
+              },
+              {
+                "row": "2",
+                "values": [
+                  "Cached formula differs between versions; source authority unknown."
+                ]
+              }
+            ],
+            "blankRows": [],
+            "occupiedRowNumbers": [
+              1,
+              2
+            ],
+            "irregularCellCounts": false,
+            "headerCandidates": []
+          }
+        ],
+        "dateSystem": "1900",
+        "unsupported": [
+          "Formatting, charts, images, threaded comments, pivot tables, external links and embedded objects remain in the original workbook; not converted to tabular data.",
+          "Header candidates are suggestions only. Multiple header bands and preamble rows need explicit human selection."
+        ],
+        "sourceForensics": {
+          "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 0,
+            "CR": 0
+          },
+          "nullByteCount": 232,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": null,
+      "id": "8e82b21e-c782-4030-a08c-89af7e12079e"
+    },
+    {
+      "name": "survey_FINAL_FIXED.xlsx",
+      "base64": "UEsDBBQAAAAAADxyPl0Bss72ZAEAAGQBAAAPAAAAeGwvd29ya2Jvb2sueG1sPHdvcmtib29rIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvc3ByZWFkc2hlZXRtbC8yMDA2L21haW4iIHhtbG5zOnI9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9vZmZpY2VEb2N1bWVudC8yMDA2L3JlbGF0aW9uc2hpcHMiPjxzaGVldHM+PHNoZWV0IG5hbWU9IlN1cnZleSIgcjppZD0icjEiLz48c2hlZXQgbmFtZT0iQ2x1ZXMiIHN0YXRlPSJ2ZXJ5SGlkZGVuIiByOmlkPSJyMiIvPjwvc2hlZXRzPjxkZWZpbmVkTmFtZXM+PGRlZmluZWROYW1lIG5hbWU9Ik9ic2VydmF0aW9ucyI+U3VydmV5ISRBJDE6JEIkMjwvZGVmaW5lZE5hbWU+PC9kZWZpbmVkTmFtZXM+PC93b3JrYm9vaz5QSwMEFAAAAAAAPHI+Xf+wfLmLAAAAiwAAABoAAAB4bC9fcmVscy93b3JrYm9vay54bWwucmVsczxSZWxhdGlvbnNoaXBzPjxSZWxhdGlvbnNoaXAgSWQ9InIxIiBUYXJnZXQ9IndvcmtzaGVldHMvc2hlZXQxLnhtbCIvPjxSZWxhdGlvbnNoaXAgSWQ9InIyIiBUYXJnZXQ9IndvcmtzaGVldHMvc2hlZXQyLnhtbCIvPjwvUmVsYXRpb25zaGlwcz5QSwMEFAAAAAAAPHI+XQq0qTRGAQAARgEAABgAAAB4bC93b3Jrc2hlZXRzL3NoZWV0MS54bWw8d29ya3NoZWV0IHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvc3ByZWFkc2hlZXRtbC8yMDA2L21haW4iPjxzaGVldERhdGE+PHJvdyByPSIxIj48YyByPSJBMSIgdD0iaW5saW5lU3RyIj48aXM+PHQ+c3VydmV5X2lkPC90PjwvaXM+PC9jPjxjIHI9IkIxIiB0PSJpbmxpbmVTdHIiPjxpcz48dD5jb3VudDwvdD48L2lzPjwvYz48L3Jvdz48cm93IHI9IjIiPjxjIHI9IkEyIiB0PSJpbmxpbmVTdHIiPjxpcz48dD5FMTwvdD48L2lzPjwvYz48YyByPSJCMiI+PGY+MSsyPC9mPjx2PjQ8L3Y+PC9jPjwvcm93Pjwvc2hlZXREYXRhPjwvd29ya3NoZWV0PlBLAwQUAAAAAAA8cj5drx5yojABAAAwAQAAGAAAAHhsL3dvcmtzaGVldHMvc2hlZXQyLnhtbDx3b3Jrc2hlZXQgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9zcHJlYWRzaGVldG1sLzIwMDYvbWFpbiI+PHNoZWV0RGF0YT48cm93IHI9IjEiPjxjIHI9IkExIiB0PSJpbmxpbmVTdHIiPjxpcz48dD5ub3RlPC90PjwvaXM+PC9jPjwvcm93Pjxyb3cgcj0iMiI+PGMgcj0iQTIiIHQ9ImlubGluZVN0ciI+PGlzPjx0PkNhY2hlZCBmb3JtdWxhIGRpZmZlcnMgYmV0d2VlbiB2ZXJzaW9uczsgc291cmNlIGF1dGhvcml0eSB1bmtub3duLjwvdD48L2lzPjwvYz48L3Jvdz48L3NoZWV0RGF0YT48L3dvcmtzaGVldD5QSwMEFAAAAAAAPHI+XTT5rzdkAAAAZAAAACMAAAB4bC93b3Jrc2hlZXRzL19yZWxzL3NoZWV0MS54bWwucmVsczxSZWxhdGlvbnNoaXBzPjxSZWxhdGlvbnNoaXAgVHlwZT0idXJuOmV4YW1wbGUvY29tbWVudHMiIFRhcmdldD0iLi4vY29tbWVudHMxLnhtbCIvPjwvUmVsYXRpb25zaGlwcz5QSwMEFAAAAAAAPHI+XaKYcuAYAQAAGAEAABAAAAB4bC9jb21tZW50czEueG1sPGNvbW1lbnRzIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvc3ByZWFkc2hlZXRtbC8yMDA2L21haW4iPjxhdXRob3JzPjxhdXRob3I+RmljdGlvbmFsIHJlc2VhcmNoZXI8L2F1dGhvcj48L2F1dGhvcnM+PGNvbW1lbnRMaXN0Pjxjb21tZW50IHJlZj0iQjIiIGF1dGhvcklkPSIwIj48dGV4dD48dD5WaXN1YWwgY291bnQ7IGNhY2hlZCBmaWVsZCBmb3JtdWxhIGlzIHVudmVyaWZpZWQuPC90PjwvdGV4dD48L2NvbW1lbnQ+PC9jb21tZW50TGlzdD48L2NvbW1lbnRzPlBLAQIUABQAAAAAADxyPl0Bss72ZAEAAGQBAAAPAAAAAAAAAAAAAACAAQAAAAB4bC93b3JrYm9vay54bWxQSwECFAAUAAAAAAA8cj5d/7B8uYsAAACLAAAAGgAAAAAAAAAAAAAAgAGRAQAAeGwvX3JlbHMvd29ya2Jvb2sueG1sLnJlbHNQSwECFAAUAAAAAAA8cj5dCrSpNEYBAABGAQAAGAAAAAAAAAAAAAAAgAFUAgAAeGwvd29ya3NoZWV0cy9zaGVldDEueG1sUEsBAhQAFAAAAAAAPHI+Xa8ecqIwAQAAMAEAABgAAAAAAAAAAAAAAIAB0AMAAHhsL3dvcmtzaGVldHMvc2hlZXQyLnhtbFBLAQIUABQAAAAAADxyPl00+a83ZAAAAGQAAAAjAAAAAAAAAAAAAACAATYFAAB4bC93b3Jrc2hlZXRzL19yZWxzL3NoZWV0MS54bWwucmVsc1BLAQIUABQAAAAAADxyPl2imHLgGAEAABgBAAAQAAAAAAAAAAAAAACAAdsFAAB4bC9jb21tZW50czEueG1sUEsFBgAAAAAGAAYAoAEAACEHAAAAAA==",
+      "bytes": 2263,
+      "sha256": "d4e8a7a6730a64de91de8285881142894f2af4758599979d4fcab3e847e4793a",
+      "importedAt": "2026-09-30T20:17:57.167890+00:00",
+      "format": "xlsx",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "sheets": [
+          {
+            "name": "Survey",
+            "state": "visible",
+            "formulas": [
+              {
+                "cell": "B2",
+                "formula": "1+2",
+                "attributes": {},
+                "cachedValue": "4"
+              }
+            ],
+            "comments": [
+              {
+                "cell": "B2",
+                "author": "Fictional researcher",
+                "text": "Visual count; cached field formula is unverified."
+              }
+            ],
+            "mergedCells": [],
+            "firstRows": [
+              {
+                "row": "1",
+                "values": [
+                  "survey_id",
+                  "count"
+                ]
+              },
+              {
+                "row": "2",
+                "values": [
+                  "E1",
+                  "4"
+                ]
+              }
+            ],
+            "blankRows": [],
+            "occupiedRowNumbers": [
+              1,
+              2
+            ],
+            "irregularCellCounts": false,
+            "headerCandidates": [
+              "1",
+              "2"
+            ]
+          },
+          {
+            "name": "Clues",
+            "state": "veryHidden",
+            "formulas": [],
+            "comments": [],
+            "mergedCells": [],
+            "firstRows": [
+              {
+                "row": "1",
+                "values": [
+                  "note"
+                ]
+              },
+              {
+                "row": "2",
+                "values": [
+                  "Cached formula differs between versions; source authority unknown."
+                ]
+              }
+            ],
+            "blankRows": [],
+            "occupiedRowNumbers": [
+              1,
+              2
+            ],
+            "irregularCellCounts": false,
+            "headerCandidates": []
+          }
+        ],
+        "dateSystem": "1900",
+        "unsupported": [
+          "Formatting, charts, images, threaded comments, pivot tables, external links and embedded objects remain in the original workbook; not converted to tabular data.",
+          "Header candidates are suggestions only. Multiple header bands and preamble rows need explicit human selection."
+        ],
+        "sourceForensics": {
+          "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 2,
+            "CR": 0
+          },
+          "nullByteCount": 232,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": null,
+      "id": "eacc385c-8354-435e-a15e-2ae31dd05ce9"
+    },
+    {
+      "name": "sites.dbf",
+      "base64": "AwAAAAMAAACBABkAAAAAAAAAAAAAAAAAAAAAAAAAAABzaXRlX2lkAAAAAEMAAAAACAAAAAAAAAAAAAAAAAAAAGVsZXYAAAAAAAAAQwAAAAAIAAAAAAAAAAAAAAAAAAAAdW5pdAAAAAAAAABDAAAAAAgAAAAAAAAAAAAAAAAAAAANIFMxICAgICAgNzUwICAgICBtICAgICAgICBTMiAgICAgIDI1MDAgICAgZnQgICAgICAqUzMgICAgICAtOTk5ICAgIHVua25vd24gGg==",
+      "bytes": 205,
+      "sha256": "7a39598028c9a9d0d610a40c2fd9d3b1bd117c0c8b06bd9eaba51ffe5d9ec1df",
+      "importedAt": "2026-09-30T20:17:57.168290+00:00",
+      "format": "dbf",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "fields": [
+          {
+            "name": "site_id",
+            "type": "C",
+            "length": 8,
+            "decimals": 0
+          },
+          {
+            "name": "elev",
+            "type": "C",
+            "length": 8,
+            "decimals": 0
+          },
+          {
+            "name": "unit",
+            "type": "C",
+            "length": 8,
+            "decimals": 0
+          }
+        ],
+        "codePageByte": 0,
+        "notes": [
+          "Deleted records retained and flagged. Character/numeric/date values remain literal; memo/binary fields represented as hex pointers, associated memo files must be preserved separately. Auto encoding is Windows-1252, an explicit reviewable assumption."
+        ],
+        "sourceForensics": {
+          "mimeType": "application/octet-stream",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 0,
+            "CR": 1
+          },
+          "nullByteCount": 103,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": null,
+      "id": "169ac234-a335-4fba-9574-f1d44283041b"
+    }
+  ],
+  "tables": [
+    {
+      "headers": [
+        "occurrence_id",
+        "survey_id",
+        "taxon",
+        "n",
+        "code",
+        "dt",
+        "lat",
+        "lon",
+        "mystery"
+      ],
+      "rows": [
+        [
+          "O1",
+          "E1",
+          "RAPI",
+          " 3 ",
+          "4",
+          "06/07/08",
+          "53.123456789",
+          "-113.25",
+          "8"
+        ],
+        [
+          "O1",
+          "E1",
+          "R. pipiens",
+          "999",
+          "4",
+          "39200",
+          "0",
+          "0",
+          "8"
+        ],
+        [
+          "O3",
+          "E404",
+          "Rana pipiens",
+          "NA",
+          "7",
+          "2006-02-30",
+          "-113",
+          "53",
+          "9"
+        ],
+        [
+          "O4",
+          "E2",
+          "northern leopard frog",
+          "0",
+          "4",
+          "2007-06",
+          "91",
+          "-113",
+          "?"
+        ],
+        [
+          "",
+          "E2",
+          "unknown",
+          "N/A",
+          ".",
+          "2010-06-12T10:00:00",
+          "53",
+          "-113",
+          ""
+        ],
+        [
+          "O6",
+          "E3",
+          "RAPI",
+          "-999",
+          "4",
+          "2011-06-12T10:00:00-06:00",
+          "10",
+          "120",
+          ""
+        ],
+        [
+          "O6",
+          "E3",
+          "RAPI",
+          "-999",
+          "4",
+          "2011-06-12T10:00:00-06:00",
+          "10",
+          "120",
+          ""
+        ]
+      ],
+      "rowWidths": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "originalHeaders": [
+        "occurrence_id",
+        "survey_id",
+        "taxon",
+        "n",
+        "code",
+        "dt",
+        "lat",
+        "lon",
+        "mystery"
+      ],
+      "parsing": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "format": "delimited",
+        "headerRow": 1,
+        "adapterVersion": 1,
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "escapeChar": null,
+        "skipInitialSpace": false,
+        "strict": true
+      },
+      "notes": [],
+      "name": "observations",
+      "sheet": null,
+      "id": "8047d8d0-a547-4871-8d70-da8c5fd70c71",
+      "resourceId": "ffd28149-5d49-4151-b6f9-164ed72802b3",
+      "rowOrigins": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "occurrence_id",
+          "workingName": "occurrence_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "survey_id",
+          "workingName": "survey_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 2,
+          "originalName": "taxon",
+          "workingName": "taxon",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 3,
+          "originalName": "n",
+          "workingName": "n",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 4,
+          "originalName": "code",
+          "workingName": "code",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 5,
+          "originalName": "dt",
+          "workingName": "dt",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 6,
+          "originalName": "lat",
+          "workingName": "lat",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": true,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 7,
+          "originalName": "lon",
+          "workingName": "lon",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": true,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 8,
+          "originalName": "mystery",
+          "workingName": "mystery",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "occurrence_id",
+          "survey_id",
+          "taxon",
+          "n",
+          "code",
+          "dt",
+          "lat",
+          "lon",
+          "mystery"
+        ],
+        "rows": [
+          [
+            "O1",
+            "E1",
+            "RAPI",
+            " 3 ",
+            "4",
+            "06/07/08",
+            "53.123456789",
+            "-113.25",
+            "8"
+          ],
+          [
+            "O1",
+            "E1",
+            "R. pipiens",
+            "999",
+            "4",
+            "39200",
+            "0",
+            "0",
+            "8"
+          ],
+          [
+            "O3",
+            "E404",
+            "Rana pipiens",
+            "NA",
+            "7",
+            "2006-02-30",
+            "-113",
+            "53",
+            "9"
+          ],
+          [
+            "O4",
+            "E2",
+            "northern leopard frog",
+            "0",
+            "4",
+            "2007-06",
+            "91",
+            "-113",
+            "?"
+          ],
+          [
+            "",
+            "E2",
+            "unknown",
+            "N/A",
+            ".",
+            "2010-06-12T10:00:00",
+            "53",
+            "-113",
+            ""
+          ],
+          [
+            "O6",
+            "E3",
+            "RAPI",
+            "-999",
+            "4",
+            "2011-06-12T10:00:00-06:00",
+            "10",
+            "120",
+            ""
+          ],
+          [
+            "O6",
+            "E3",
+            "RAPI",
+            "-999",
+            "4",
+            "2011-06-12T10:00:00-06:00",
+            "10",
+            "120",
+            ""
+          ]
+        ]
+      }
+    },
+    {
+      "headers": [
+        "survey_id",
+        "site_id",
+        "effort_min",
+        "method"
+      ],
+      "rows": [
+        [
+          "E1",
+          "S1",
+          "10",
+          "visual encounter"
+        ],
+        [
+          "E2",
+          "S2",
+          "",
+          "visual encounter"
+        ],
+        [
+          "E2",
+          "S2",
+          "10",
+          "call survey"
+        ],
+        [
+          "E3",
+          "S3",
+          "20",
+          "call survey"
+        ],
+        [
+          "E4",
+          "S4",
+          "10",
+          "unknown"
+        ]
+      ],
+      "rowWidths": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "originalHeaders": [
+        "survey_id",
+        "site_id",
+        "effort_min",
+        "method"
+      ],
+      "parsing": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "format": "delimited",
+        "headerRow": 1,
+        "adapterVersion": 1,
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "escapeChar": null,
+        "skipInitialSpace": false,
+        "strict": true
+      },
+      "notes": [],
+      "name": "events",
+      "sheet": null,
+      "id": "c5c3317e-861c-48da-a444-9e68a4b9b817",
+      "resourceId": "ad0de020-411e-4d5f-80a4-0f398d1f693e",
+      "rowOrigins": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "survey_id",
+          "workingName": "survey_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "site_id",
+          "workingName": "site_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 2,
+          "originalName": "effort_min",
+          "workingName": "effort_min",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 3,
+          "originalName": "method",
+          "workingName": "method",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "survey_id",
+          "site_id",
+          "effort_min",
+          "method"
+        ],
+        "rows": [
+          [
+            "E1",
+            "S1",
+            "10",
+            "visual encounter"
+          ],
+          [
+            "E2",
+            "S2",
+            "",
+            "visual encounter"
+          ],
+          [
+            "E2",
+            "S2",
+            "10",
+            "call survey"
+          ],
+          [
+            "E3",
+            "S3",
+            "20",
+            "call survey"
+          ],
+          [
+            "E4",
+            "S4",
+            "10",
+            "unknown"
+          ]
+        ]
+      }
+    },
+    {
+      "headers": [
+        "code",
+        "name",
+        "nameAccordingTo"
+      ],
+      "rows": [
+        [
+          "RAPI",
+          "Rana pipiens",
+          "Historical project list; authority unknown"
+        ],
+        [
+          "RAPI",
+          "R. pipiens",
+          "Unresolved abbreviation"
+        ],
+        [
+          "UNKNOWN",
+          "unknown",
+          ""
+        ]
+      ],
+      "rowWidths": [
+        3,
+        3,
+        3
+      ],
+      "originalHeaders": [
+        "code",
+        "name",
+        "nameAccordingTo"
+      ],
+      "parsing": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "format": "delimited",
+        "headerRow": 1,
+        "adapterVersion": 1,
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "escapeChar": null,
+        "skipInitialSpace": false,
+        "strict": true
+      },
+      "notes": [],
+      "name": "species_codes",
+      "sheet": null,
+      "id": "3cd89946-5d30-4e5a-b2cd-d5ba7fb3d485",
+      "resourceId": "7b3f6cec-e736-416a-83f7-e80a592db8cd",
+      "rowOrigins": [
+        0,
+        1,
+        2
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "code",
+          "workingName": "code",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "name",
+          "workingName": "name",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 2,
+          "originalName": "nameAccordingTo",
+          "workingName": "nameAccordingTo",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "code",
+          "name",
+          "nameAccordingTo"
+        ],
+        "rows": [
+          [
+            "RAPI",
+            "Rana pipiens",
+            "Historical project list; authority unknown"
+          ],
+          [
+            "RAPI",
+            "R. pipiens",
+            "Unresolved abbreviation"
+          ],
+          [
+            "UNKNOWN",
+            "unknown",
+            ""
+          ]
+        ]
+      }
+    },
+    {
+      "headers": [
+        "survey_id",
+        "temp",
+        "temp_unit",
+        "rain"
+      ],
+      "rows": [
+        [
+          "E1",
+          "12",
+          "C",
+          "0"
+        ],
+        [
+          "E2",
+          "60",
+          "F",
+          "NA"
+        ],
+        [
+          "E3",
+          "999",
+          "unknown",
+          "-9"
+        ]
+      ],
+      "rowWidths": [
+        4,
+        4,
+        4
+      ],
+      "originalHeaders": [
+        "survey_id",
+        "temp",
+        "temp_unit",
+        "rain"
+      ],
+      "parsing": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "format": "delimited",
+        "headerRow": 1,
+        "adapterVersion": 1,
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "escapeChar": null,
+        "skipInitialSpace": false,
+        "strict": true
+      },
+      "notes": [],
+      "name": "weather",
+      "sheet": null,
+      "id": "ccc0ab2e-65f3-4096-8a44-b6dea20bac02",
+      "resourceId": "6384566c-04ad-466d-a8ae-b8f243f92c5e",
+      "rowOrigins": [
+        0,
+        1,
+        2
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "survey_id",
+          "workingName": "survey_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "temp",
+          "workingName": "temp",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 2,
+          "originalName": "temp_unit",
+          "workingName": "temp_unit",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 3,
+          "originalName": "rain",
+          "workingName": "rain",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "survey_id",
+          "temp",
+          "temp_unit",
+          "rain"
+        ],
+        "rows": [
+          [
+            "E1",
+            "12",
+            "C",
+            "0"
+          ],
+          [
+            "E2",
+            "60",
+            "F",
+            "NA"
+          ],
+          [
+            "E3",
+            "999",
+            "unknown",
+            "-9"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "sites",
+      "sheet": null,
+      "headers": [
+        "site_id",
+        "locality",
+        "_feature_id",
+        "_geometry_json"
+      ],
+      "rows": [
+        [
+          "S1",
+          "Fictional Creek East",
+          "",
+          "{\"type\":\"Point\",\"coordinates\":[-113.25,53.123456789]}"
+        ]
+      ],
+      "rowWidths": [
+        4
+      ],
+      "originalHeaders": [
+        "site_id",
+        "locality",
+        "_feature_id",
+        "_geometry_json"
+      ],
+      "parsing": {
+        "format": "geojson",
+        "headerRow": 1,
+        "adapterVersion": 1
+      },
+      "notes": [],
+      "id": "705511d0-a1f3-45ca-8b43-86330f351e94",
+      "resourceId": "9587225c-b932-40b7-b4a5-774652ed8326",
+      "rowOrigins": [
+        0
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "site_id",
+          "workingName": "site_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "locality",
+          "workingName": "locality",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": true,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 2,
+          "originalName": "_feature_id",
+          "workingName": "_feature_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 3,
+          "originalName": "_geometry_json",
+          "workingName": "_geometry_json",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": true,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "site_id",
+          "locality",
+          "_feature_id",
+          "_geometry_json"
+        ],
+        "rows": [
+          [
+            "S1",
+            "Fictional Creek East",
+            "",
+            "{\"type\":\"Point\",\"coordinates\":[-113.25,53.123456789]}"
+          ]
+        ]
+      }
+    },
+    {
+      "headers": [
+        "survey_id",
+        "count"
+      ],
+      "rows": [
+        [
+          "E1",
+          "3"
+        ]
+      ],
+      "rowWidths": [
+        2
+      ],
+      "originalHeaders": [
+        "survey_id",
+        "count"
+      ],
+      "parsing": {
+        "format": "xlsx",
+        "encoding": "XLSX XML",
+        "delimiter": null,
+        "sheet": "Survey",
+        "sheets": [
+          "Survey",
+          "Clues"
+        ],
+        "headerRow": 1,
+        "adapterVersion": 1
+      },
+      "notes": [
+        "XLSX reads stored values only. Formulas are not recalculated; numeric Excel dates need explicit review.",
+        "1 formula cells imported as cached values; absent caches become empty cells."
+      ],
+      "name": "Survey",
+      "sheet": "Survey",
+      "id": "4de0ad1f-b4c4-4b06-98ad-cb394eeb021c",
+      "resourceId": "3b02153b-2de0-43ac-8cb2-299864208023",
+      "rowOrigins": [
+        0
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "survey_id",
+          "workingName": "survey_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "count",
+          "workingName": "count",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "survey_id",
+          "count"
+        ],
+        "rows": [
+          [
+            "E1",
+            "3"
+          ]
+        ]
+      }
+    },
+    {
+      "headers": [
+        "note"
+      ],
+      "rows": [
+        [
+          "Cached formula differs between versions; source authority unknown."
+        ]
+      ],
+      "rowWidths": [
+        1
+      ],
+      "originalHeaders": [
+        "note"
+      ],
+      "parsing": {
+        "format": "xlsx",
+        "encoding": "XLSX XML",
+        "delimiter": null,
+        "sheet": "Clues",
+        "sheets": [
+          "Survey",
+          "Clues"
+        ],
+        "headerRow": 1,
+        "adapterVersion": 1
+      },
+      "notes": [
+        "XLSX reads stored values only. Formulas are not recalculated; numeric Excel dates need explicit review."
+      ],
+      "name": "Clues",
+      "sheet": "Clues",
+      "id": "e67838d5-e76e-473d-ae09-07d5476f12ba",
+      "resourceId": "3b02153b-2de0-43ac-8cb2-299864208023",
+      "rowOrigins": [
+        0
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "note",
+          "workingName": "note",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "note"
+        ],
+        "rows": [
+          [
+            "Cached formula differs between versions; source authority unknown."
+          ]
+        ]
+      }
+    },
+    {
+      "headers": [
+        "survey_id",
+        "count"
+      ],
+      "rows": [
+        [
+          "E1",
+          "3"
+        ]
+      ],
+      "rowWidths": [
+        2
+      ],
+      "originalHeaders": [
+        "survey_id",
+        "count"
+      ],
+      "parsing": {
+        "format": "xlsx",
+        "encoding": "XLSX XML",
+        "delimiter": null,
+        "sheet": "Survey",
+        "sheets": [
+          "Survey",
+          "Clues"
+        ],
+        "headerRow": 1,
+        "adapterVersion": 1
+      },
+      "notes": [
+        "XLSX reads stored values only. Formulas are not recalculated; numeric Excel dates need explicit review.",
+        "1 formula cells imported as cached values; absent caches become empty cells."
+      ],
+      "name": "Survey",
+      "sheet": "Survey",
+      "id": "920d301b-00bb-467f-a5ec-7dc70d2886ea",
+      "resourceId": "8e82b21e-c782-4030-a08c-89af7e12079e",
+      "rowOrigins": [
+        0
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "survey_id",
+          "workingName": "survey_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "count",
+          "workingName": "count",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "survey_id",
+          "count"
+        ],
+        "rows": [
+          [
+            "E1",
+            "3"
+          ]
+        ]
+      }
+    },
+    {
+      "headers": [
+        "note"
+      ],
+      "rows": [
+        [
+          "Cached formula differs between versions; source authority unknown."
+        ]
+      ],
+      "rowWidths": [
+        1
+      ],
+      "originalHeaders": [
+        "note"
+      ],
+      "parsing": {
+        "format": "xlsx",
+        "encoding": "XLSX XML",
+        "delimiter": null,
+        "sheet": "Clues",
+        "sheets": [
+          "Survey",
+          "Clues"
+        ],
+        "headerRow": 1,
+        "adapterVersion": 1
+      },
+      "notes": [
+        "XLSX reads stored values only. Formulas are not recalculated; numeric Excel dates need explicit review."
+      ],
+      "name": "Clues",
+      "sheet": "Clues",
+      "id": "596f7957-314f-4373-b7ab-83e870773203",
+      "resourceId": "8e82b21e-c782-4030-a08c-89af7e12079e",
+      "rowOrigins": [
+        0
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "note",
+          "workingName": "note",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "note"
+        ],
+        "rows": [
+          [
+            "Cached formula differs between versions; source authority unknown."
+          ]
+        ]
+      }
+    },
+    {
+      "headers": [
+        "survey_id",
+        "count"
+      ],
+      "rows": [
+        [
+          "E1",
+          "4"
+        ]
+      ],
+      "rowWidths": [
+        2
+      ],
+      "originalHeaders": [
+        "survey_id",
+        "count"
+      ],
+      "parsing": {
+        "format": "xlsx",
+        "encoding": "XLSX XML",
+        "delimiter": null,
+        "sheet": "Survey",
+        "sheets": [
+          "Survey",
+          "Clues"
+        ],
+        "headerRow": 1,
+        "adapterVersion": 1
+      },
+      "notes": [
+        "XLSX reads stored values only. Formulas are not recalculated; numeric Excel dates need explicit review.",
+        "1 formula cells imported as cached values; absent caches become empty cells."
+      ],
+      "name": "Survey",
+      "sheet": "Survey",
+      "id": "b83d2d40-a5cf-4050-b717-69eed470cf58",
+      "resourceId": "eacc385c-8354-435e-a15e-2ae31dd05ce9",
+      "rowOrigins": [
+        0
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "survey_id",
+          "workingName": "survey_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "count",
+          "workingName": "count",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "survey_id",
+          "count"
+        ],
+        "rows": [
+          [
+            "E1",
+            "4"
+          ]
+        ]
+      }
+    },
+    {
+      "headers": [
+        "note"
+      ],
+      "rows": [
+        [
+          "Cached formula differs between versions; source authority unknown."
+        ]
+      ],
+      "rowWidths": [
+        1
+      ],
+      "originalHeaders": [
+        "note"
+      ],
+      "parsing": {
+        "format": "xlsx",
+        "encoding": "XLSX XML",
+        "delimiter": null,
+        "sheet": "Clues",
+        "sheets": [
+          "Survey",
+          "Clues"
+        ],
+        "headerRow": 1,
+        "adapterVersion": 1
+      },
+      "notes": [
+        "XLSX reads stored values only. Formulas are not recalculated; numeric Excel dates need explicit review."
+      ],
+      "name": "Clues",
+      "sheet": "Clues",
+      "id": "f7d9c506-3d65-499b-b497-4c2960079a25",
+      "resourceId": "eacc385c-8354-435e-a15e-2ae31dd05ce9",
+      "rowOrigins": [
+        0
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "note",
+          "workingName": "note",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "note"
+        ],
+        "rows": [
+          [
+            "Cached formula differs between versions; source authority unknown."
+          ]
+        ]
+      }
+    },
+    {
+      "name": "sites",
+      "sheet": null,
+      "headers": [
+        "site_id",
+        "elev",
+        "unit",
+        "_dbf_deleted"
+      ],
+      "rows": [
+        [
+          "S1",
+          "750",
+          "m",
+          "false"
+        ],
+        [
+          "S2",
+          "2500",
+          "ft",
+          "false"
+        ],
+        [
+          "S3",
+          "-999",
+          "unknown",
+          "true"
+        ]
+      ],
+      "rowWidths": [
+        4,
+        4,
+        4
+      ],
+      "originalHeaders": [
+        "site_id",
+        "elev",
+        "unit",
+        "_dbf_deleted"
+      ],
+      "parsing": {
+        "format": "dbf",
+        "encoding": "cp1252",
+        "headerRow": 1,
+        "adapterVersion": 1
+      },
+      "notes": [],
+      "id": "80f6d31d-680b-4f2f-ad6e-efbf1bf88d3f",
+      "resourceId": "169ac234-a335-4fba-9574-f1d44283041b",
+      "rowOrigins": [
+        0,
+        1,
+        2
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "site_id",
+          "workingName": "site_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "elev",
+          "workingName": "elev",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 2,
+          "originalName": "unit",
+          "workingName": "unit",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 3,
+          "originalName": "_dbf_deleted",
+          "workingName": "_dbf_deleted",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "site_id",
+          "elev",
+          "unit",
+          "_dbf_deleted"
+        ],
+        "rows": [
+          [
+            "S1",
+            "750",
+            "m",
+            "false"
+          ],
+          [
+            "S2",
+            "2500",
+            "ft",
+            "false"
+          ],
+          [
+            "S3",
+            "-999",
+            "unknown",
+            "true"
+          ]
+        ]
+      }
+    }
+  ],
+  "relationships": [],
+  "audit": [
+    {
+      "id": "5003827c-e0f3-44ea-81ee-49e9eaa62990",
+      "at": "2026-09-30T20:17:57.221Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "ffd28149-5d49-4151-b6f9-164ed72802b3",
+      "sourceHash": "8355c47e94b7795eb9d010b6ce0fe32e7c7f5bd49cf4fad5a2dd008508b412c6",
+      "applicationVersion": "0.3.0"
+    },
+    {
+      "id": "5f3d06c0-aba8-470c-9dae-57f65ea95711",
+      "at": "2026-09-30T20:17:57.221Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "ad0de020-411e-4d5f-80a4-0f398d1f693e",
+      "sourceHash": "142002cbba29182162c513498fc2057c39d5915a20c96d290ec707abd7ee4841",
+      "applicationVersion": "0.3.0"
+    },
+    {
+      "id": "13d50dc6-f4af-4564-ae02-8c9af208fac6",
+      "at": "2026-09-30T20:17:57.221Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "7b3f6cec-e736-416a-83f7-e80a592db8cd",
+      "sourceHash": "29a3df0e0eac0b7aa58b02b53b1626a6636319468fdff529b00e3687065a501f",
+      "applicationVersion": "0.3.0"
+    },
+    {
+      "id": "12664138-ffc0-4797-8c52-702b6791d912",
+      "at": "2026-09-30T20:17:57.221Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "6384566c-04ad-466d-a8ae-b8f243f92c5e",
+      "sourceHash": "63e2589bd5669d74682c87c905bf30ace8215c500be55b99e4b3cf7f0dfb9419",
+      "applicationVersion": "0.3.0"
+    },
+    {
+      "id": "9b176504-7ee5-46bd-8584-28810b0cac34",
+      "at": "2026-09-30T20:17:57.221Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "0aed7dfe-77d4-4fca-823e-72698efeaa66",
+      "sourceHash": "1731cfe1011e83bc1372f34e187f0b4900beac969cc316b6f2cba68a60b6d832",
+      "applicationVersion": "0.3.0"
+    },
+    {
+      "id": "273b028b-749d-481f-87c9-eda7ff615e21",
+      "at": "2026-09-30T20:17:57.221Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "b39a085e-8e11-4a4e-add8-54d1378936fb",
+      "sourceHash": "551cf80e7dadade0c4db8aefa31a5fa4b63a7fb2670d0df025d1594750e29afb",
+      "applicationVersion": "0.3.0"
+    },
+    {
+      "id": "36e9b4fe-1639-4e29-b717-d45a26d64aac",
+      "at": "2026-09-30T20:17:57.222Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "65b7c259-6de4-4c13-b004-74431e9b4a12",
+      "sourceHash": "139041fcba42df9d13079b11f1ac39d46c925cc99e250bab0d78611796c444f3",
+      "applicationVersion": "0.3.0"
+    },
+    {
+      "id": "e9df8ea0-a74b-4cba-8717-793cb1b1710e",
+      "at": "2026-09-30T20:17:57.222Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "9587225c-b932-40b7-b4a5-774652ed8326",
+      "sourceHash": "25af5ee2a4cb3e4b1a8b2b3d4d77f4fcc1b00021943011e424043bb7c3e3a5cb",
+      "applicationVersion": "0.3.0"
+    },
+    {
+      "id": "a1271537-06bb-4230-8092-ad9ec6495179",
+      "at": "2026-09-30T20:17:57.222Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "3b02153b-2de0-43ac-8cb2-299864208023",
+      "sourceHash": "d49ce2507d7ef43be43a0974f485d6b6ef3c9d5a687eab2ce3b9b874395f53a4",
+      "applicationVersion": "0.3.0"
+    },
+    {
+      "id": "3515dff4-9d62-4aea-a79b-4cdb87133e0f",
+      "at": "2026-09-30T20:17:57.223Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "8e82b21e-c782-4030-a08c-89af7e12079e",
+      "sourceHash": "d49ce2507d7ef43be43a0974f485d6b6ef3c9d5a687eab2ce3b9b874395f53a4",
+      "applicationVersion": "0.3.0"
+    },
+    {
+      "id": "ae5b3eb4-61a1-4154-b9c1-fd1c612294f2",
+      "at": "2026-09-30T20:17:57.223Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "eacc385c-8354-435e-a15e-2ae31dd05ce9",
+      "sourceHash": "d4e8a7a6730a64de91de8285881142894f2af4758599979d4fcab3e847e4793a",
+      "applicationVersion": "0.3.0"
+    },
+    {
+      "id": "122a019a-d9b4-49d0-b1bb-e6654e7b46a8",
+      "at": "2026-09-30T20:17:57.223Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "169ac234-a335-4fba-9574-f1d44283041b",
+      "sourceHash": "7a39598028c9a9d0d610a40c2fd9d3b1bd117c0c8b06bd9eaba51ffe5d9ec1df",
+      "applicationVersion": "0.3.0"
+    }
+  ],
+  "undoStack": [],
+  "redoStack": [],
+  "profiles": {
+    "frictionless": "1",
+    "darwinCoreGuide": "2026-05-26",
+    "roCrate": "1.2",
+    "eml": "2.2.0"
+  },
+  "mode": "beginner"
+}

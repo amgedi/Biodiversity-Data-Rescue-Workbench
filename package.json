@@ -1,0 +1,23 @@
+{
+  "name": "biodiversity-data-rescue-workbench",
+  "version": "0.7.0-dev.0",
+  "private": true,
+  "type": "module",
+  "description": "Local scientific Workbench with a bundled Windows desktop engine and optional browser/PWA developer workflow.",
+  "scripts": {
+    "test": "node --test --test-isolation=none tests/*.test.mjs",
+    "audit:i18n": "node tools/audit_i18n.mjs",
+    "audit:i18n:strict": "node tools/audit_i18n.mjs --strict"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "acorn": "8.15.0",
+    "esbuild": "^0.28.2",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "typescript": "^7.0.2"
+  },
+  "license": "AGPL-3.0-only"
+}

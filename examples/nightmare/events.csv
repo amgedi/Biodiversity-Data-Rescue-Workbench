@@ -1,0 +1,6 @@
+survey_id,site_id,effort_min,method
+E1,S1,10,visual encounter
+E2,S2,,visual encounter
+E2,S2,10,call survey
+E3,S3,20,call survey
+E4,S4,10,unknown

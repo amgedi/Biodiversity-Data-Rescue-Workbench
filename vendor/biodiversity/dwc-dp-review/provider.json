@@ -1,0 +1,511 @@
+{
+  "providerId": "tdwg-review-2026-07",
+  "releaseStatus": "review-draft",
+  "ratified": false,
+  "schemaVersion": "1.0-DEV",
+  "commit": "0fc041559db078c0c1cbdba8f8ffb4073319e2fa",
+  "retrievedAt": "2026-09-30",
+  "authority": "TDWG Darwin Core Maintenance Group public review links this GBIF-hosted schema set; repository hosting does not establish ratification.",
+  "reviewSource": "https://github.com/tdwg/dwc/issues/903",
+  "guideSource": "https://dwc.tdwg.org/dp/",
+  "files": [
+    {
+      "path": "LICENSE",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/LICENSE",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "bytes": 7048
+    },
+    {
+      "path": "dwc-dp-profile.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/dwc-dp-profile.json",
+      "sha256": "f78f06f6935ef69b91c1aca4dc63a1e5924b1a018eac4373abc50ad9acfd2d8e",
+      "bytes": 4648
+    },
+    {
+      "path": "table-schemas/agent-agent-role.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/agent-agent-role.json",
+      "sha256": "defe1f2cfc69b4692c9079738cfa91f2531a39abe2f0e9211f43fc76eddb799f",
+      "bytes": 5583
+    },
+    {
+      "path": "table-schemas/agent-identifier.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/agent-identifier.json",
+      "sha256": "703b2b2da8ec07c4fe914f9e6a5080461c95eff457565314d572f426e3590b66",
+      "bytes": 3748
+    },
+    {
+      "path": "table-schemas/agent-media.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/agent-media.json",
+      "sha256": "81227ebc70b909d4d1d242e068297ca57c2b6dfbf0de8f10135bbd2936126b4d",
+      "bytes": 6256
+    },
+    {
+      "path": "table-schemas/agent.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/agent.json",
+      "sha256": "3c03e7a854a017869195a5d8797f4277a01cd5ef29dce2f2fb310e9c067d0989",
+      "bytes": 3111
+    },
+    {
+      "path": "table-schemas/bibliographic-resource.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/bibliographic-resource.json",
+      "sha256": "26bd0bd640af853e103f534cff5ec80e1636050281e9148d3d1e236850e71d28",
+      "bytes": 15384
+    },
+    {
+      "path": "table-schemas/chronometric-age-agent-role.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/chronometric-age-agent-role.json",
+      "sha256": "e63dcda30583b7fba21484820c598c79b7409ef93b2bcc44294b92def8dc94cb",
+      "bytes": 5329
+    },
+    {
+      "path": "table-schemas/chronometric-age-assertion.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/chronometric-age-assertion.json",
+      "sha256": "2c1b58e5f042cc313e99554c4c57da2278a73a61e9a935ff80c3bb0f15521fd3",
+      "bytes": 13938
+    },
+    {
+      "path": "table-schemas/chronometric-age-media.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/chronometric-age-media.json",
+      "sha256": "9073105f4b9dc06d3feb73f852b26626fed25108fec7ccb6ca610da991ef97b0",
+      "bytes": 6333
+    },
+    {
+      "path": "table-schemas/chronometric-age-protocol.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/chronometric-age-protocol.json",
+      "sha256": "2ff3a5940df7e5a201a83d76f42d912bb11c03b153ee9c459069a1d8a56212b5",
+      "bytes": 1967
+    },
+    {
+      "path": "table-schemas/chronometric-age-reference.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/chronometric-age-reference.json",
+      "sha256": "1bc4e6b39d00a245baafc02323624c3a067e2d636bd4057ff1861e5c64d93ef7",
+      "bytes": 2498
+    },
+    {
+      "path": "table-schemas/chronometric-age.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/chronometric-age.json",
+      "sha256": "5d5624e0b948d82d0ae7a2fc0a429fce89b79c57d9845635474b0bc7f53545a2",
+      "bytes": 16789
+    },
+    {
+      "path": "table-schemas/event-agent-role.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/event-agent-role.json",
+      "sha256": "00385c36553db78f606e92c397a6a49f2607b96db09e0603672a9edbf6ef9a85",
+      "bytes": 5180
+    },
+    {
+      "path": "table-schemas/event-assertion.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/event-assertion.json",
+      "sha256": "b5f0554048312db61d60359eb6ec2cd3dd47fe37967887723516ae27478eadbe",
+      "bytes": 13800
+    },
+    {
+      "path": "table-schemas/event-identifier.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/event-identifier.json",
+      "sha256": "f7ef6ae00be36e222f5925c777fb558ace4c965a6dff44fdd476f2a5fc10ced5",
+      "bytes": 3553
+    },
+    {
+      "path": "table-schemas/event-media.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/event-media.json",
+      "sha256": "924a1d9bde6a8ec47f5cbdb16c762ac7f156f923a1aa69666af8d874233f6ae0",
+      "bytes": 6184
+    },
+    {
+      "path": "table-schemas/event-protocol.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/event-protocol.json",
+      "sha256": "a58e1c472e7e94f89e0f47141d2507bf1f47930a1a871cfb01e3bf32a0b7a46c",
+      "bytes": 1821
+    },
+    {
+      "path": "table-schemas/event-provenance.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/event-provenance.json",
+      "sha256": "05f3397b8dfd8fecee2e0d8cbf244648ef5abaecce1e5aed6b4dcdbcd3302c3e",
+      "bytes": 1833
+    },
+    {
+      "path": "table-schemas/event-reference.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/event-reference.json",
+      "sha256": "1307695fa2585a462e0a9d3013b52080d60573919f82c23c366f68b5b73aefbf",
+      "bytes": 2349
+    },
+    {
+      "path": "table-schemas/event-usage-policy.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/event-usage-policy.json",
+      "sha256": "0019d80f15299f0d55e2ff090a3a7dd50c10c0486dc9862e9cac05d2fa1ce171",
+      "bytes": 1897
+    },
+    {
+      "path": "table-schemas/event.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/event.json",
+      "sha256": "2e0603714f8e5d76a88d97573de85641cb28c75cca2a8a161b2264a918dac011",
+      "bytes": 63868
+    },
+    {
+      "path": "table-schemas/geological-context-media.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/geological-context-media.json",
+      "sha256": "a7143e31492e3af750a6244da61e1e6622e1eb3297ca5960c17201ae9d1b536b",
+      "bytes": 6347
+    },
+    {
+      "path": "table-schemas/geological-context.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/geological-context.json",
+      "sha256": "9a1579e322bceebbd0b189aba59ed048077c7623fe3518e05148fa107be3768c",
+      "bytes": 13330
+    },
+    {
+      "path": "table-schemas/geological-material.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/geological-material.json",
+      "sha256": "1d85d89859ee7edacd326ec82a1861176c26e8eca2068ff5941b90bfc12cc42c",
+      "bytes": 9561
+    },
+    {
+      "path": "table-schemas/identification-agent-role.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/identification-agent-role.json",
+      "sha256": "21c3a2d481aadb5ef70c49b36b9bdf10106de60865c1ba49a9e6ecb1ac3589ca",
+      "bytes": 5297
+    },
+    {
+      "path": "table-schemas/identification-reference.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/identification-reference.json",
+      "sha256": "2a361355391819a5f8fcbe3854553b9dd9ce790759d4ace34efa1e97935f082c",
+      "bytes": 2451
+    },
+    {
+      "path": "table-schemas/identification-taxon.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/identification-taxon.json",
+      "sha256": "33a8c30037d517aa0b9ff5eca58c3ec21121f80f5c7350608746afc4d4a03b0b",
+      "bytes": 20966
+    },
+    {
+      "path": "table-schemas/identification.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/identification.json",
+      "sha256": "4e9a428dd0c0507c5e84717a545014a44d1014566dcd5a961a295601e57581b3",
+      "bytes": 39060
+    },
+    {
+      "path": "table-schemas/material-agent-role.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/material-agent-role.json",
+      "sha256": "9c949b361c1de516bc050b5fd679e64b79d365f28916ac00e12423422a471acc",
+      "bytes": 5262
+    },
+    {
+      "path": "table-schemas/material-assertion.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/material-assertion.json",
+      "sha256": "f3bcf03ee1b383c39e2a5471d672ccc4e356d724e1711c674ec1564062ad2a7f",
+      "bytes": 13879
+    },
+    {
+      "path": "table-schemas/material-geological-context.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/material-geological-context.json",
+      "sha256": "e276704061932c3b43aa5d2957954be62ad28f02268c4214fb055bf6c1897789",
+      "bytes": 2126
+    },
+    {
+      "path": "table-schemas/material-identifier.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/material-identifier.json",
+      "sha256": "cedce46f444a316a648c81d678a1b4ead64df10393a45e267adc3def7f51c197",
+      "bytes": 3632
+    },
+    {
+      "path": "table-schemas/material-media.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/material-media.json",
+      "sha256": "fac2847085733ca1f8e8c43e6b3a0c9a4e5ba2986f6d3c20cdca01e89171c7ae",
+      "bytes": 6266
+    },
+    {
+      "path": "table-schemas/material-protocol.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/material-protocol.json",
+      "sha256": "e13250b6131d659633ee146ba2823c7da33878a3fbd9a1a401556db521ad631c",
+      "bytes": 1900
+    },
+    {
+      "path": "table-schemas/material-provenance.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/material-provenance.json",
+      "sha256": "deaeec4ab7ea0ce26be0b68480faa1af6229a640a7c1b99822f5786b7f4d7aa5",
+      "bytes": 1915
+    },
+    {
+      "path": "table-schemas/material-reference.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/material-reference.json",
+      "sha256": "ccb24ea315ac7c9908c03358ee9f473f0a80e48ffde94b54919c8fb53f8443fc",
+      "bytes": 2431
+    },
+    {
+      "path": "table-schemas/material-usage-policy.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/material-usage-policy.json",
+      "sha256": "c44f9f1dfda26114c94d1ec0566c0d7ad1314303ece0ae448e7854c1bc42f828",
+      "bytes": 1969
+    },
+    {
+      "path": "table-schemas/material.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/material.json",
+      "sha256": "7f809c4e9dd2accd91bb50b16461261275ea0fc4aec90d53f64dc2b17b902364",
+      "bytes": 53713
+    },
+    {
+      "path": "table-schemas/media-agent-role.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/media-agent-role.json",
+      "sha256": "f5a7c42296d9f0469e89ba127b5fd20cb0f7408f6e52560df605b44f8920f0fa",
+      "bytes": 5199
+    },
+    {
+      "path": "table-schemas/media-assertion.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/media-assertion.json",
+      "sha256": "e9ec64a516f6d8da1cfe9659d64d38aa9f37be5bf3a287ae6c111cc5069c7287",
+      "bytes": 13819
+    },
+    {
+      "path": "table-schemas/media-identifier.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/media-identifier.json",
+      "sha256": "600f556e98aedd0b5e402d3771099540f33f1de92a4263660a6b18d2599cf237",
+      "bytes": 3572
+    },
+    {
+      "path": "table-schemas/media-provenance.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/media-provenance.json",
+      "sha256": "f9cec260d91f2131557981c1d80c034947d7825b1c50f34c330c1e78f92c389a",
+      "bytes": 1852
+    },
+    {
+      "path": "table-schemas/media-usage-policy.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/media-usage-policy.json",
+      "sha256": "14e890dbdae23d2bafa6d6f2e16734f6feb27514e3d8034461d3292c0fecc53d",
+      "bytes": 1906
+    },
+    {
+      "path": "table-schemas/media.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/media.json",
+      "sha256": "221fdad12cc1c112a3c8d7e9d91adbfef6c56dfc4aa9a3899c95a5101b6dc3cf",
+      "bytes": 69447
+    },
+    {
+      "path": "table-schemas/molecular-protocol-agent-role.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/molecular-protocol-agent-role.json",
+      "sha256": "2fa5f2a66c0f08a413b8897785fc2c27d55048cb9aa0f9fea80070340b309ed4",
+      "bytes": 5343
+    },
+    {
+      "path": "table-schemas/molecular-protocol-assertion.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/molecular-protocol-assertion.json",
+      "sha256": "261932183230f44b972f44f9dfa30af7560e7c11ec591daeb2bef880346992ec",
+      "bytes": 13947
+    },
+    {
+      "path": "table-schemas/molecular-protocol-reference.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/molecular-protocol-reference.json",
+      "sha256": "688a3a4fc3dacfd6ef188a8eb9c30a757ae8d91eaeb24afc8910f6d6af84b12a",
+      "bytes": 2515
+    },
+    {
+      "path": "table-schemas/molecular-protocol.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/molecular-protocol.json",
+      "sha256": "50f0fd08c6a4190b33852d044b55d162bf5a86ced49d8adc93970a4d019ccd80",
+      "bytes": 61064
+    },
+    {
+      "path": "table-schemas/nucleotide-analysis-assertion.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/nucleotide-analysis-assertion.json",
+      "sha256": "4d2b1e83727f43d5b2e686feff12af09e2877f29cd0fc1e35110ef79c7cf7ec5",
+      "bytes": 12063
+    },
+    {
+      "path": "table-schemas/nucleotide-analysis.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/nucleotide-analysis.json",
+      "sha256": "ebd235695d783e30a1e08156666a53a5049cca3a23c7fdfdd096539bd86e0cee",
+      "bytes": 5863
+    },
+    {
+      "path": "table-schemas/nucleotide-sequence.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/nucleotide-sequence.json",
+      "sha256": "da765f29cb89b9c902a223c0004d97b13e0a1dddaccc4efb4950d82ec7ed791c",
+      "bytes": 2258
+    },
+    {
+      "path": "table-schemas/occurrence-agent-role.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/occurrence-agent-role.json",
+      "sha256": "0eaccc93ec54a40a4f6ce5cf9d4375ba59fbe5a8f8a4c6a5aeb582dd4d505180",
+      "bytes": 5245
+    },
+    {
+      "path": "table-schemas/occurrence-assertion.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/occurrence-assertion.json",
+      "sha256": "4eb6d373646a7d62bb67f6d22338f4c1288a8173838fccb2df62d6f379e8fa55",
+      "bytes": 13860
+    },
+    {
+      "path": "table-schemas/occurrence-identifier.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/occurrence-identifier.json",
+      "sha256": "2ff11adb09c650a043e89256fadb92543e3b876d108b2b24c22fb197bf18b46b",
+      "bytes": 3613
+    },
+    {
+      "path": "table-schemas/occurrence-media.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/occurrence-media.json",
+      "sha256": "3424410d50a9c1f67ea385bc97f0659a37239b3df48641a54c944cefd34e3ac1",
+      "bytes": 6249
+    },
+    {
+      "path": "table-schemas/occurrence-protocol.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/occurrence-protocol.json",
+      "sha256": "8929ab9753287891e4b7d2fbcff13bfcb1291bb5c2754e7547ac3adbf91e7e3b",
+      "bytes": 1897
+    },
+    {
+      "path": "table-schemas/occurrence-reference.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/occurrence-reference.json",
+      "sha256": "7a3c11420454914592448feccbe102599b93be3f5d5e95c6a05ca2e74af8b4f7",
+      "bytes": 2414
+    },
+    {
+      "path": "table-schemas/occurrence.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/occurrence.json",
+      "sha256": "0f501f688bbbc23df56c793153cc359edea27588acbc0ce8ac8f9c21aa982e72",
+      "bytes": 34402
+    },
+    {
+      "path": "table-schemas/organism-assertion.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/organism-assertion.json",
+      "sha256": "7c80dd27fd0a1366a91ae5aa1c83a0d3262074c1dda8db4f7c3a87c186982443",
+      "bytes": 13836
+    },
+    {
+      "path": "table-schemas/organism-identifier.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/organism-identifier.json",
+      "sha256": "73245936fcd5594f58b446db049f6fff235125439f2cdff654d74c2c42f26fd6",
+      "bytes": 3589
+    },
+    {
+      "path": "table-schemas/organism-interaction-agent-role.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/organism-interaction-agent-role.json",
+      "sha256": "2df3acfb4da8c0f3dc1468ec95f0a4ff488f85d4bada9b8ef5f7ec1f97503b9b",
+      "bytes": 5369
+    },
+    {
+      "path": "table-schemas/organism-interaction-assertion.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/organism-interaction-assertion.json",
+      "sha256": "2d8eadf806066db1a900dacfabbd9cda8d805b159b3a8658c14ed042031b5a56",
+      "bytes": 13974
+    },
+    {
+      "path": "table-schemas/organism-interaction-media.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/organism-interaction-media.json",
+      "sha256": "ca3fa407c38b03eb39d344957d8b0baa6a7070f2512b71f49799395fd2bd2cb2",
+      "bytes": 6354
+    },
+    {
+      "path": "table-schemas/organism-interaction-reference.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/organism-interaction-reference.json",
+      "sha256": "6455b9b3692a7d7b6a5849dd44b206cc239d0fed2fac95eff6a225218678c3a4",
+      "bytes": 2538
+    },
+    {
+      "path": "table-schemas/organism-interaction.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/organism-interaction.json",
+      "sha256": "55b227d12410507040c2d43ef750108092a00e80d6d835d6c7156a6dec32e770",
+      "bytes": 8973
+    },
+    {
+      "path": "table-schemas/organism-reference.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/organism-reference.json",
+      "sha256": "c2357d3d28732d113c491da824a09bc928ce6a23db25dedb0436e8680759f8c2",
+      "bytes": 2388
+    },
+    {
+      "path": "table-schemas/organism-relationship.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/organism-relationship.json",
+      "sha256": "bd6f320da57b2ffb6a5fb74ff9719aa5c7669982c611f7f577749433acca13d8",
+      "bytes": 9242
+    },
+    {
+      "path": "table-schemas/organism.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/organism.json",
+      "sha256": "28388a3c926d9e8f2cc8a03e160ee6f24c2cf1efacba2f91c076f89fe1a398a0",
+      "bytes": 5163
+    },
+    {
+      "path": "table-schemas/protocol-reference.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/protocol-reference.json",
+      "sha256": "9a2b35914788b069ada15fd1c223da293d982416397ec4c9d42ed02ad00f361b",
+      "bytes": 2388
+    },
+    {
+      "path": "table-schemas/protocol.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/protocol.json",
+      "sha256": "434db67677ea756fa1a3fef1c5a5c5bd60954bb517329107dc2e2200a83bdfff",
+      "bytes": 3844
+    },
+    {
+      "path": "table-schemas/provenance.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/provenance.json",
+      "sha256": "a2761472c0ffdbac00014a41d74f8a8e5803f955db6e49ef2a0d195b4c796219",
+      "bytes": 20189
+    },
+    {
+      "path": "table-schemas/resource-relationship.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/resource-relationship.json",
+      "sha256": "e0e781b4a2fe0e1a3c3094a411d4f5f189ef7cb9e17161fd8d6c3c3dc4901ed2",
+      "bytes": 9939
+    },
+    {
+      "path": "table-schemas/survey-agent-role.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/survey-agent-role.json",
+      "sha256": "63af714080e8cb322e4fa97d8a53111c326d851118afc4817f27199c4ae942d7",
+      "bytes": 5195
+    },
+    {
+      "path": "table-schemas/survey-assertion.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/survey-assertion.json",
+      "sha256": "1832b508ae540458f0aa6dc6d43e657b0a05ace2d0abda52ceef3c28780cca97",
+      "bytes": 13814
+    },
+    {
+      "path": "table-schemas/survey-identifier.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/survey-identifier.json",
+      "sha256": "0c2aaa26620994d92e3c72e9abbb706b0c64f377d117038b1d01f20f6819ee6d",
+      "bytes": 3567
+    },
+    {
+      "path": "table-schemas/survey-protocol.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/survey-protocol.json",
+      "sha256": "100a306a0b4c6d91a776fc9f8318de48c349a3dbf75e1be08da3e6dc641a0a36",
+      "bytes": 1836
+    },
+    {
+      "path": "table-schemas/survey-reference.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/survey-reference.json",
+      "sha256": "6627f05de9580bbc5a69a8c3052535d1bbcd0d17b846d873b25ed7baec396f60",
+      "bytes": 2364
+    },
+    {
+      "path": "table-schemas/survey-survey-target.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/survey-survey-target.json",
+      "sha256": "525e9b71bebae8328e550580db303992172c4029a2bf9949fcb7ece71ec12c18",
+      "bytes": 1898
+    },
+    {
+      "path": "table-schemas/survey-target-descriptor.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/survey-target-descriptor.json",
+      "sha256": "cb7d9f8b2a3c597635d876c54ffb0c17692ce79a66c16a1f6ccc7f4d7668f552",
+      "bytes": 6217
+    },
+    {
+      "path": "table-schemas/survey-target.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/survey-target.json",
+      "sha256": "e589b1afb07d0b2ac88eaf338fe2bd4ab5a8dc3a8655ab0ae314d27c488543fe",
+      "bytes": 4019
+    },
+    {
+      "path": "table-schemas/survey.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/survey.json",
+      "sha256": "fb197969446a06fe995edff4c21aec46bc7ab7dae9c000e4deb529e4973358da",
+      "bytes": 45023
+    },
+    {
+      "path": "table-schemas/usage-policy.json",
+      "source": "https://raw.githubusercontent.com/gbif/dwc-dp/0fc041559db078c0c1cbdba8f8ffb4073319e2fa/dwc-dp/table-schemas/usage-policy.json",
+      "sha256": "771b29a661fe8a196de598fb1c6c618d44d2ca95e35cb3ccf91d63525c92c851",
+      "bytes": 12048
+    }
+  ]
+}

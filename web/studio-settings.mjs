@@ -1,0 +1,28 @@
+import {themeNames} from './studio-themes.mjs';
+import {getPreferences,setPreferences} from './preferences.mjs';
+import {icon,routeIcon} from './studio-icons.mjs';
+import {themePalette} from './studio-themes.mjs';
+import {t,htmlMessage as h} from './i18n.mjs';
+export function decorateStudioSettings(form){
+ if(!form||form.dataset.studio)return;form.dataset.studio='true';form.classList.add('studio-settings-shell');
+ const field=name=>form.querySelector('#settings-v06-'+name);
+ const theme=form.querySelector('[name=theme]'),gallery=form.querySelector('.theme-grid');
+ theme.innerHTML=Object.keys(themePalette).map(name=>`<option value="${name}">${themeNames[name]}</option>`).join('');theme.value=getPreferences().theme;
+ gallery.innerHTML=Object.entries(themePalette).map(([name,[background,panel,accent,text]])=>`<button type="button" class="theme-card" data-theme="${name}" aria-pressed="${name===getPreferences().theme}"><span class="theme-preview"><i></i><i></i></span><strong>${themeNames[name]}</strong></button>`).join('');
+ gallery.querySelectorAll('button').forEach(button=>{const [background,panel,accent,text]=themePalette[button.dataset.theme],preview=button.querySelector('.theme-preview');preview.style.backgroundColor=background;preview.style.setProperty('--preview-text',text);preview.style.setProperty('--preview-accent',accent);preview.children[0].style.backgroundColor=accent;preview.children[1].style.backgroundColor=panel;preview.children[1].style.border='1px solid '+text+'44';});
+ gallery.querySelectorAll('button').forEach(button=>button.onclick=()=>{setPreferences({...getPreferences(),theme:button.dataset.theme});theme.value=button.dataset.theme;gallery.querySelectorAll('button').forEach(card=>card.setAttribute('aria-pressed',card===button));});
+ const add=(group,key,label,options,description)=>{let host=field(group).querySelector('.studio-setting-group');if(!host){host=document.createElement('div');host.className='studio-setting-group';field(group).append(host);}const row=document.createElement('label');row.className='studio-setting-row';row.innerHTML=`<span>${h('studio.'+label)}${description?`<small>${h('studio.'+description)}</small>`:''}</span>${options?`<select data-studio-pref="${key}">${options.map(([value,name])=>`<option value="${value}">${h('studio.'+name)}</option>`).join('')}</select>`:`<input type="checkbox" data-studio-pref="${key}">`}`;host.append(row);const input=row.querySelector('input,select');if(options)input.value=getPreferences()[key];else input.checked=getPreferences()[key];input.onchange=()=>setPreferences({...getPreferences(),[key]:options?(key==='automaticAnalysis'?(input.value==='true'?true:input.value==='false'?false:'ask'):input.value):input.checked});};
+ add('Appearance','surface','surface',[['solid','solid'],['frosted','frosted'],['glass','glass'],['minimal','minimal']],'surfaceBody');
+ const material=document.createElement('section');material.className='material-laboratory';material.innerHTML=`<div><span class="eyebrow">${h('rescue.materialPreview')}</span><h3>${h('studio.yourWorkbench')}</h3><p>${h('rescue.materialIntro')}</p><div class="material-switch">${['solid','frosted','glass','minimal'].map(value=>`<button type="button" class="button secondary" data-material="${value}" aria-pressed="${getPreferences().surface===value}">${h('studio.'+value)}</button>`).join('')}</div></div><div class="material-scene" aria-hidden="true"><div class="material-scene-rail"><i></i><i></i><i></i></div><div class="material-scene-window"><span>${h('studio.assistant')}</span><div></div><div></div><div></div></div></div>`;gallery.before(material);material.querySelectorAll('[data-material]').forEach(button=>button.onclick=()=>{setPreferences({...getPreferences(),surface:button.dataset.material});form.querySelector('[data-studio-pref=surface]').value=button.dataset.material;material.querySelectorAll('button').forEach(choice=>choice.setAttribute('aria-pressed',String(choice===button)));});
+ add('Appearance','ambient','ambient',null,'ambientBody');add('Appearance','sidebar','sidebar',[['expanded','expanded'],['compact','compact']]);add('Appearance','tableDensity','tableDensity',[['comfortable','comfortable'],['compact','compact'],['dense','dense']]);add('Appearance','visualNoise','noise',[['normal','normal'],['quiet','quiet']]);
+ add('Accessibility','reducedTransparency','transparency',null,'transparencyBody');add('Accessibility','focusEmphasis','focus');add('Accessibility','tableAccess','tableAccess',null,'tableAccessBody');add('Workspace','automaticAnalysis','analysisMode',[[true,'automatic'],['ask','askFirst'],[false,'off']],'autoBody');
+ field('Accessibility').insertAdjacentHTML('beforeend',`<p class="settings-system-note">${h('studio.systemAccessibility')}</p>`);
+ form.querySelectorAll('[data-category]').forEach(button=>{const glyph={Home:'home',Appearance:'window',Language:'translate',Workspace:'grid',Accessibility:'help',Saving:'history',Import:'files',Validation:'review',Large:'grid'}[button.dataset.category];if(glyph)button.insertAdjacentHTML('afterbegin',icon(glyph));});
+ const search=document.querySelector('#settings-search'),draw=search.oninput;search.oninput=event=>{draw?.(event);form.classList.toggle('settings-searching',!!search.value.trim());};
+ const regionNote=form.querySelector('[data-i18n="ui.23ebf6b9a243"]');if(regionNote)field('Language').append(regionNote);
+
+
+ const content=document.createElement('div');content.className='v6-settings-content';for(const group of form.querySelectorAll(':scope>fieldset'))content.append(group);for(const child of [...form.children])if(!child.matches('.settings-nav'))content.append(child);form.append(content);
+
+}
+

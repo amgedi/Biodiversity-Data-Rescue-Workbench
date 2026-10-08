@@ -1,0 +1,847 @@
+{
+  "version": 2,
+  "projectSchemaVersion": 3,
+  "migrationHistory": [],
+  "evidenceAssertions": [],
+  "recovery": {},
+  "appVersion": "0.7.0-dev.0",
+  "id": "2420d938-018d-424d-b970-22c1096b8695",
+  "revision": 0,
+  "createdAt": "2026-10-04T16:30:42.050Z",
+  "updatedAt": "2026-10-04T16:30:42.050Z",
+  "metadata": {
+    "title": {
+      "value": "Camera-trap collection · fictional practice",
+      "status": "Confirmed",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "description": {
+      "value": "Authored fictional training collection. Inspect literals, uncertainty, evidence and package purpose. No real research records.",
+      "status": "Confirmed",
+      "confidence": "",
+      "rationale": "Authored exclusively for local practice.",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "purpose": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "creator": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "contributors": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "contact": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "organizations": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "citation": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "publicationDate": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "license": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "funding": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "methods": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "samplingProtocol": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "studyDesign": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "temporalCoverage": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "spatialCoverage": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "taxonomicCoverage": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "keywords": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "originalSoftware": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "publications": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "limitations": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "provenance": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "sensitivity": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "datum": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    },
+    "coordinateUncertainty": {
+      "value": "",
+      "status": "Unknown",
+      "confidence": "",
+      "rationale": "",
+      "evidence": [],
+      "reviewerNotes": ""
+    }
+  },
+  "resources": [
+    {
+      "name": "deployments.csv",
+      "base64": "ZGVwbG95bWVudF9pZCxzdGFydF9saXRlcmFsLGVuZF9saXRlcmFsLGVmZm9ydF9ob3VycwpEMDEsMjAyMC0wMS0wMSwyMDIwLTAxLTAyLDI0CkQwMiwyMDIwLTAxLTAyLDIwMjAtMDEtMDMsMjQK",
+      "bytes": 111,
+      "sha256": "74210e118539effb37b8fdf4b79113e664248b797da375ff234d7ec466c2b123",
+      "importedAt": "2026-10-04T16:30:41.952607+00:00",
+      "format": "csv",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "notes": [],
+        "sourceForensics": {
+          "mimeType": "text/csv",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 3,
+            "CR": 0
+          },
+          "nullByteCount": 0,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": null,
+      "id": "be80453b-7952-4f64-a787-897b51cd8038"
+    },
+    {
+      "name": "media.csv",
+      "base64": "bWVkaWFfaWQsZGVwbG95bWVudF9pZCx0aW1lc3RhbXBfbGl0ZXJhbCxmaWxlX3BhdGgKTTAxLEQwMSwyMDIwLTAxLTAxVDA4OjAwOjAwLGZpY3Rpb25hbC9NMDEuanBnCk0wMixEMDEsMjAyMC0wMS0wMVQwOTowMDowMCxmaWN0aW9uYWwvTTAyLmpwZwpNMDMsRDQwNCwyMDIwLTAxLTAyLGZpY3Rpb25hbC9NMDMuanBnCg==",
+      "bytes": 181,
+      "sha256": "d53303b8b76f6ff1d5cb64f931fa4af22aed547b77077e0b079e320a941546b5",
+      "importedAt": "2026-10-04T16:30:41.953051+00:00",
+      "format": "csv",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "notes": [],
+        "sourceForensics": {
+          "mimeType": "text/csv",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 4,
+            "CR": 0
+          },
+          "nullByteCount": 0,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": null,
+      "id": "bf0f8d4f-9d59-48a1-a46e-b35bce16d7be"
+    },
+    {
+      "name": "observations.csv",
+      "base64": "b2JzZXJ2YXRpb25faWQsbWVkaWFfaWQscmVjb3JkZWRfbmFtZSxjb3VudApPMDEsTTAxLEZpY3Rpb25hbCBtYW1tYWwgQSwxCk8wMixNMDIsLDAKTzAzLE0wMyxVTktOT1dOLE5BCg==",
+      "bytes": 103,
+      "sha256": "24a6e12402dab2adac8899e24516b830b1d95e44ac5ccefff18d2d0662a53b0e",
+      "importedAt": "2026-10-04T16:30:41.953468+00:00",
+      "format": "csv",
+      "adapterVersion": 1,
+      "role": "data",
+      "archaeology": {
+        "notes": [],
+        "sourceForensics": {
+          "mimeType": "text/csv",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 4,
+            "CR": 0
+          },
+          "nullByteCount": 0,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": null,
+      "id": "1c830d85-fbf1-4200-b8f0-8f36f35a08ec"
+    },
+    {
+      "name": "practice-notes.txt",
+      "base64": "RklDVElPTkFMIFBSQUNUSUNFIE9OTFkuIE5vIGFjdHVhbCBzcGVjaW1lbnMsIHN1cnZleXMsIGxvY2F0aW9ucyBvciBtZWRpYS4KQWxsIHNjaWVudGlmaWMgbWVhbmluZ3Mgc3RhcnQgVW5rbm93biBhbmQgbXVzdCBiZSByZXZpZXdlZCBleHBsaWNpdGx5LgpBIHJlY29yZGVkIHplcm8gaXMgZGlzdGluY3QgZnJvbSBhIGJsYW5rIG9yIE5BIGxpdGVyYWwuCkRhdGVzIHJlbWFpbiBsaXRlcmFsOyBhbWJpZ3VvdXMgb3JkZXIgYW5kIHByZWNpc2lvbiBtdXN0IG5vdCBiZSBndWVzc2VkLgowMDEgYW5kIDEgYXJlIGRpc3RpbmN0IGlkZW50aWZpZXJzLiBEdXBsaWNhdGUgY29kZSBtZWFuaW5ncyBjb25mbGljdC4KQW4gZXZlbnQgd2l0aG91dCBvYnNlcnZhdGlvbnMgY2FuIHJldGFpbiBlZmZvcnQ7IHRoZSBtZWFuaW5nIG5lZWRzIHByb3RvY29sIHJldmlldy4KQ2FtZXJhIGZpbGUgcGF0aHMgYXJlIGZpY3Rpb25hbCByZWZlcmVuY2VzOyBubyBpbWFnZSBmaWxlcyBhcmUgaW5jbHVkZWQuCkNDMC0xLjAgYXBwbGllcyBvbmx5IHRvIHRoZXNlIGF1dGhvcmVkIGZpY3Rpb25hbCB0cmFpbmluZyBpbnB1dHMuCg==",
+      "bytes": 568,
+      "sha256": "588cae2c4defcbd669d3a64aa16cc615c3b739fcb4198fa733ad63aed339d956",
+      "importedAt": "2026-10-04T16:30:41.953728+00:00",
+      "format": "txt",
+      "adapterVersion": 1,
+      "role": "supporting",
+      "archaeology": {
+        "sourceForensics": {
+          "mimeType": "text/plain",
+          "filesystemModifiedAt": null,
+          "lineEndings": {
+            "CRLF": 0,
+            "LF": 8,
+            "CR": 0
+          },
+          "nullByteCount": 0,
+          "preservation": "Original bytes retained; extraction may be incomplete."
+        }
+      },
+      "conversionIssue": "Intentionally preserved as supporting evidence without tabular conversion.",
+      "id": "ceffe1b9-ed59-4742-a69c-f86b23d2947c"
+    }
+  ],
+  "tables": [
+    {
+      "headers": [
+        "deployment_id",
+        "start_literal",
+        "end_literal",
+        "effort_hours"
+      ],
+      "rows": [
+        [
+          "D01",
+          "2020-01-01",
+          "2020-01-02",
+          "24"
+        ],
+        [
+          "D02",
+          "2020-01-02",
+          "2020-01-03",
+          "24"
+        ]
+      ],
+      "rowWidths": [
+        4,
+        4
+      ],
+      "originalHeaders": [
+        "deployment_id",
+        "start_literal",
+        "end_literal",
+        "effort_hours"
+      ],
+      "parsing": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "format": "delimited",
+        "headerRow": 1,
+        "adapterVersion": 1,
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "escapeChar": null,
+        "skipInitialSpace": false,
+        "strict": true
+      },
+      "notes": [],
+      "name": "deployments",
+      "sheet": null,
+      "id": "ef72711b-c210-4ca6-8123-25a7aca037b8",
+      "resourceId": "be80453b-7952-4f64-a787-897b51cd8038",
+      "rowOrigins": [
+        0,
+        1
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "deployment_id",
+          "workingName": "deployment_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "start_literal",
+          "workingName": "start_literal",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 2,
+          "originalName": "end_literal",
+          "workingName": "end_literal",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 3,
+          "originalName": "effort_hours",
+          "workingName": "effort_hours",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "deployment_id",
+          "start_literal",
+          "end_literal",
+          "effort_hours"
+        ],
+        "rows": [
+          [
+            "D01",
+            "2020-01-01",
+            "2020-01-02",
+            "24"
+          ],
+          [
+            "D02",
+            "2020-01-02",
+            "2020-01-03",
+            "24"
+          ]
+        ]
+      }
+    },
+    {
+      "headers": [
+        "media_id",
+        "deployment_id",
+        "timestamp_literal",
+        "file_path"
+      ],
+      "rows": [
+        [
+          "M01",
+          "D01",
+          "2020-01-01T08:00:00",
+          "fictional/M01.jpg"
+        ],
+        [
+          "M02",
+          "D01",
+          "2020-01-01T09:00:00",
+          "fictional/M02.jpg"
+        ],
+        [
+          "M03",
+          "D404",
+          "2020-01-02",
+          "fictional/M03.jpg"
+        ]
+      ],
+      "rowWidths": [
+        4,
+        4,
+        4
+      ],
+      "originalHeaders": [
+        "media_id",
+        "deployment_id",
+        "timestamp_literal",
+        "file_path"
+      ],
+      "parsing": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "format": "delimited",
+        "headerRow": 1,
+        "adapterVersion": 1,
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "escapeChar": null,
+        "skipInitialSpace": false,
+        "strict": true
+      },
+      "notes": [],
+      "name": "media",
+      "sheet": null,
+      "id": "ee265a0f-4a28-4ce6-9ee7-25b17a68d7c7",
+      "resourceId": "bf0f8d4f-9d59-48a1-a46e-b35bce16d7be",
+      "rowOrigins": [
+        0,
+        1,
+        2
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "media_id",
+          "workingName": "media_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "deployment_id",
+          "workingName": "deployment_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 2,
+          "originalName": "timestamp_literal",
+          "workingName": "timestamp_literal",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 3,
+          "originalName": "file_path",
+          "workingName": "file_path",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "media_id",
+          "deployment_id",
+          "timestamp_literal",
+          "file_path"
+        ],
+        "rows": [
+          [
+            "M01",
+            "D01",
+            "2020-01-01T08:00:00",
+            "fictional/M01.jpg"
+          ],
+          [
+            "M02",
+            "D01",
+            "2020-01-01T09:00:00",
+            "fictional/M02.jpg"
+          ],
+          [
+            "M03",
+            "D404",
+            "2020-01-02",
+            "fictional/M03.jpg"
+          ]
+        ]
+      }
+    },
+    {
+      "headers": [
+        "observation_id",
+        "media_id",
+        "recorded_name",
+        "count"
+      ],
+      "rows": [
+        [
+          "O01",
+          "M01",
+          "Fictional mammal A",
+          "1"
+        ],
+        [
+          "O02",
+          "M02",
+          "",
+          "0"
+        ],
+        [
+          "O03",
+          "M03",
+          "UNKNOWN",
+          "NA"
+        ]
+      ],
+      "rowWidths": [
+        4,
+        4,
+        4
+      ],
+      "originalHeaders": [
+        "observation_id",
+        "media_id",
+        "recorded_name",
+        "count"
+      ],
+      "parsing": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "format": "delimited",
+        "headerRow": 1,
+        "adapterVersion": 1,
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "escapeChar": null,
+        "skipInitialSpace": false,
+        "strict": true
+      },
+      "notes": [],
+      "name": "observations",
+      "sheet": null,
+      "id": "1ac24eaf-28d3-4c53-92f0-42fd681634af",
+      "resourceId": "1c830d85-fbf1-4200-b8f0-8f36f35a08ec",
+      "rowOrigins": [
+        0,
+        1,
+        2
+      ],
+      "columns": [
+        {
+          "sourceIndex": 0,
+          "originalName": "observation_id",
+          "workingName": "observation_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 1,
+          "originalName": "media_id",
+          "workingName": "media_id",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 2,
+          "originalName": "recorded_name",
+          "workingName": "recorded_name",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        },
+        {
+          "sourceIndex": 3,
+          "originalName": "count",
+          "workingName": "count",
+          "description": "",
+          "dataType": "string",
+          "unit": "",
+          "allowedValues": [],
+          "missingToken": "",
+          "term": "",
+          "status": "Unknown",
+          "confidence": "",
+          "rationale": "",
+          "evidence": [],
+          "reviewerNotes": "",
+          "sensitive": false,
+          "constraints": {}
+        }
+      ],
+      "primaryKey": [],
+      "originalTable": {
+        "headers": [
+          "observation_id",
+          "media_id",
+          "recorded_name",
+          "count"
+        ],
+        "rows": [
+          [
+            "O01",
+            "M01",
+            "Fictional mammal A",
+            "1"
+          ],
+          [
+            "O02",
+            "M02",
+            "",
+            "0"
+          ],
+          [
+            "O03",
+            "M03",
+            "UNKNOWN",
+            "NA"
+          ]
+        ]
+      }
+    }
+  ],
+  "relationships": [],
+  "audit": [
+    {
+      "id": "eefb9b83-8cdb-41a3-8c46-44facafb3804",
+      "at": "2026-10-04T16:30:42.050Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "be80453b-7952-4f64-a787-897b51cd8038",
+      "sourceHash": "74210e118539effb37b8fdf4b79113e664248b797da375ff234d7ec466c2b123",
+      "applicationVersion": "0.7.0-dev.0"
+    },
+    {
+      "id": "d6f08b27-3b39-4c60-bef2-a5580828592d",
+      "at": "2026-10-04T16:30:42.050Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "bf0f8d4f-9d59-48a1-a46e-b35bce16d7be",
+      "sourceHash": "d53303b8b76f6ff1d5cb64f931fa4af22aed547b77077e0b079e320a941546b5",
+      "applicationVersion": "0.7.0-dev.0"
+    },
+    {
+      "id": "2017b252-6f59-40dc-935b-10fc45cdcf1c",
+      "at": "2026-10-04T16:30:42.050Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "1c830d85-fbf1-4200-b8f0-8f36f35a08ec",
+      "sourceHash": "24a6e12402dab2adac8899e24516b830b1d95e44ac5ccefff18d2d0662a53b0e",
+      "applicationVersion": "0.7.0-dev.0"
+    },
+    {
+      "id": "58900054-708f-4231-82df-bed12668caec",
+      "at": "2026-10-04T16:30:42.050Z",
+      "action": "preserve source",
+      "reason": "Original bytes archived; tables are independent working copies. Import structure and unsupported features remain recorded.",
+      "resourceId": "ceffe1b9-ed59-4742-a69c-f86b23d2947c",
+      "sourceHash": "588cae2c4defcbd669d3a64aa16cc615c3b739fcb4198fa733ad63aed339d956",
+      "applicationVersion": "0.7.0-dev.0"
+    }
+  ],
+  "undoStack": [],
+  "redoStack": [],
+  "profiles": {
+    "frictionless": "1",
+    "darwinCoreGuide": "2026-05-26",
+    "roCrate": "1.3",
+    "eml": "2.2.0"
+  },
+  "mode": "beginner"
+}
