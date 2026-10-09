@@ -1,18 +1,52 @@
 version: 2
 updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: monthly
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      npm-development:
+        dependency-type: development
+        patterns:
+          - "*"
+
   - package-ecosystem: pip
     directory: /
     schedule:
-      interval: monthly
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      python-dependencies:
+        patterns:
+          - "*"
+
   - package-ecosystem: cargo
     directory: /app/desktop/src-tauri
     schedule:
-      interval: monthly
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      desktop-rust:
+        patterns:
+          - "*"
+
   - package-ecosystem: cargo
     directory: /app/launcher/src-tauri
     schedule:
-      interval: monthly
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      launcher-rust:
+        patterns:
+          - "*"
