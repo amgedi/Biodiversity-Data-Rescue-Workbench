@@ -1,14 +1,19 @@
 name: Source acceptance
+
 on:
   push:
     branches: [main]
   pull_request:
+    branches: [main]
   workflow_dispatch:
+
 permissions:
   contents: read
+
 concurrency:
   group: source-acceptance-${{ github.ref }}
   cancel-in-progress: true
+
 jobs:
   acceptance:
     name: Windows source acceptance
@@ -16,6 +21,9 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
       - name: Use one Windows temporary path
         shell: pwsh
         run: |
@@ -23,16 +31,20 @@ jobs:
           New-Item -ItemType Directory -Force -Path $scratch | Out-Null
           'TEMP=' + $scratch >> $env:GITHUB_ENV
           'TMP=' + $scratch >> $env:GITHUB_ENV
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.14'
           cache: pip
           cache-dependency-path: requirements*.txt
+
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
           cache: npm
+
       - uses: dtolnay/rust-toolchain@stable
+
       - uses: actions/cache@v4
         with:
           path: |
@@ -42,13 +54,17 @@ jobs:
             app/launcher/src-tauri/target
           key: windows-rust-${{ hashFiles('**/Cargo.lock', '.github/workflows/ci.yml') }}
           restore-keys: windows-rust-
+
       - name: Restore dependencies
         run: |
           python -m pip install -r requirements-build.txt
           npm ci
+
       - name: Tests and full desktop / launcher build
         run: python scripts/build/workbench.py build --no-activate
+
       - name: Native Workbench tests
         run: cargo test --manifest-path app/desktop/src-tauri/Cargo.toml --release --bins
+
       - name: Native launcher and dispatcher tests
         run: cargo test --manifest-path app/launcher/src-tauri/Cargo.toml --release --bins
