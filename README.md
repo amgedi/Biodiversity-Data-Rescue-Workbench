@@ -142,7 +142,7 @@ A saved project is not an independent backup. Read [Data safety](docs/data-safet
 
 Current release: **0.7.0**.
 
-Bio is early 0.x research software and I am still actively testing it against real-world messiness. Windows x64 and WebView2 are required. Current binaries are unsigned. Packaged use does not require Python or Node, while source builds use the documented development toolchain.
+Bio is early 0.x research software and I am still actively testing it against real-world messiness. Windows x64 and WebView2 are required & Current binaries are unsigned. Packaged use does not require Python or Node, while source builds use the documented development toolchain.
 
 The portable distribution includes the launcher and selected runtime, so keep its folders together. Manual native visual acceptance was deferred by the maintainer. Automated checks, native unit tests, and headless browser checks passed for the release.
 
