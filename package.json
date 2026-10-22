@@ -10,13 +10,13 @@
     "audit:i18n:strict": "node tools/audit_i18n.mjs --strict"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^2.12.1",
+    "@tauri-apps/cli": "^2.12.3",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "acorn": "8.15.0",
+    "acorn": "8.19.0",
     "esbuild": "^0.28.2",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "typescript": "^7.0.2"
   },
   "license": "AGPL-3.0-only"
